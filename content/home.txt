@@ -4,7 +4,7 @@ text:
 
 Networks (physical, virtual, social) aren’t going anywhere, and the internet is the largest one today.
 
-That network is becoming increasingly centralized, driven by corperate growth, and designed for max engagement. When these corperations fail to generate revenue, entire communities are abandoned and dismantled.
+That network is becoming increasingly centralized, driven by corperate growth, and designed for maximum engagement. When these corperations fail to generate revenue, entire communities are abandoned and dismantled.
 
 Meanwhile, this network is becoming increasingly entangled with our minds, bodies and, environments.
 
@@ -18,7 +18,7 @@ So, what is there to do?
 
 - Let’s use it to make websites and pages today, while considering the implements and environments of tomorrow.
 
-- Let’s make it easy for the novice, and enjoyable for the pro, all while being appropriate for personal use and client comissions.
+- Let’s make it easy for the novice, enjoyable for the pro, and perfect for personal use or client comissions.
 
 - Let’s try to be fun and light while addressing important issues and doing it right.
 
