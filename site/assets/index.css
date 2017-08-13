@@ -70,6 +70,8 @@ h1, .fs3 { font-size: 4rem }
 h2, .fs2 { font-size: 2rem }
 h3, .fs1-5 { font-size: 1.5rem; font-weight: 500 }
 
+.copy h2:not(:first-child) { margin-top: 5rem }
+
 .fs1 { font-size: 1rem }
 .lh1 { line-height: 1 }
 .lh1-25 { line-height: 1.25 }
