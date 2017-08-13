@@ -14,7 +14,7 @@ So, what is there to do?
 
 - Let’s place an emphasis on archivability, longevity, and portability—you shouldn’t be locked into a service, or require them to be maintained for your work to exist.
 
-- Let’s build the tool on top of existing mature open-source projects created by strong and growing communities.
+- Let’s build the tool on top of existing [open](https://github.com/choojs/choo) [source](https://beakerbrowser.com) [projects](http://hashbase.io) created by strong and growing communities.
 
 - Let’s use it to make websites and pages today, while considering the implements and environments of tomorrow.
 
@@ -27,13 +27,11 @@ So, what is there to do?
 ----
 preview: ## Programmer Preview
 
-There are several steps along the way, and this is the first.
+Know some javascript? The **[Starter Kit](https://github.com/jondashkyle/enoki-starterkit)**, which glues together some of the tools, is in pre-alpha today.
 
 ```
 git clone https://github.com/jondashkyle/enoki-starterkit.git
 ```
-
-For those who have a moderate familiarity with programming javascript, the pre-alpha of the CLI and JS Module is [available today](https://github.com/jondashkyle/enoki), but it’s suggested you download the **[Starter Kit](https://github.com/jondashkyle/enoki-starterkit)**.
 
 You will run into bugs and limitations, but it’d be great if you could [report them and contribute feedback](https://github.com/jondashkyle/enoki).
 ----
@@ -43,4 +41,4 @@ If the project continues to grow, there will be a stream of updates over the nex
 ----
 contact:
 
-This page is built with [Enoki](http://enoki.site) and published to the (distributed) web with [Dat](http://datproject.org) and [Hashbase](https://hashbase.io/jkm/hashbase-site). [Get in touch](mailto:enodotki@gmail.com).
+This page is [built](https://github.com/jondashkyle/enoki-site) with [Enoki](http://enoki.site) and published to the (distributed) web with [Dat](http://datproject.org) and [Hashbase](https://hashbase.io/jkm/hashbase-site). [Get in touch](mailto:enodotki@gmail.com).
