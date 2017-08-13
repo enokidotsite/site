@@ -1,0 +1,9 @@
+.DS_Store
+.dat
+node_modules/
+
+.log
+dat.json
+public/
+config.defaults.yml
+config.yml

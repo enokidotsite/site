@@ -1,0 +1,46 @@
+title: Enoki
+----
+text:
+
+Networks (physical, virtual, social) aren’t going anywhere, and the internet is the largest one today.
+
+That network is becoming increasingly centralized, driven by corperate growth, and designed for max engagement. When these corperations fail to generate revenue, entire communities are abandoned and dismantled.
+
+Meanwhile, this network is becoming increasingly entangled with our minds, bodies and, environments.
+
+So, what is there to do?
+
+- Let’s try to make a self-publishing and networking tool which gives everyone autonomous ownership over their data and basic building blocks with great defaults to help them along.
+
+- Let’s place an emphasis on archivability, longevity, and portability—you shouldn’t be locked into a service, or require them to be maintained for your work to exist.
+
+- Let’s build the tool on top of existing mature open-source projects created by strong and growing communities.
+
+- Let’s use it to make websites and pages today, while considering the implements and environments of tomorrow.
+
+- Let’s make it easy for the novice, and enjoyable for the pro, all while being appropriate for personal use and client comissions.
+
+- Let’s try to be fun and light while addressing important issues and doing it right.
+
+- Let’s call it **[Enoki](https://en.wikipedia.org/wiki/Enokitake)**.
+
+----
+preview: ## Programmer Preview
+
+There are several steps along the way, and this is the first.
+
+```
+git clone https://github.com/jondashkyle/enoki-starterkit.git
+```
+
+For those who have a moderate familiarity with programming javascript, the pre-alpha of the CLI and JS Module is [available today](https://github.com/jondashkyle/enoki), but it’s suggested you download the **[Starter Kit](https://github.com/jondashkyle/enoki-starterkit)**.
+
+You will run into bugs and limitations, but it’d be great if you could [report them and contribute feedback](https://github.com/jondashkyle/enoki).
+----
+email: ## Stay in the loop
+
+If the project continues to grow, there will be a stream of updates over the next few months. This is also a beta reservation (you know how it goes.)
+----
+contact:
+
+This page is built with [Enoki](http://enoki.site) and published to the (distributed) web with [Dat](http://datproject.org) and [Hashbase](https://hashbase.io/jkm/hashbase-site). [Get in touch](mailto:enodotki@gmail.com).
