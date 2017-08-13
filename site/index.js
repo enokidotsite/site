@@ -6,10 +6,7 @@ var config = require('./app')
 var app = config(choo())
 
 // create your app
-app.use(require('./plugins/counter'))
 app.use(require('./plugins/scroll'))
-
-// error route
 app.route('*', require('./views/notfound'))
 
 // public

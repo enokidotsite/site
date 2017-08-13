@@ -2,32 +2,24 @@ title: Enoki
 ----
 text:
 
-Networks (physical, virtual, social) aren’t going anywhere, and the internet is the largest one today.
+Some ideas:
 
-That network is becoming increasingly centralized, driven by corperate growth, and designed for maximum engagement. When these corperations fail to generate revenue, entire communities are abandoned and dismantled.
+- Let’s try to make a self-publishing and networking tool.
 
-Meanwhile, this network is becoming increasingly entangled with our minds, bodies and, environments.
-
-So, what is there to do?
-
-- Let’s try to make a self-publishing and networking tool which gives everyone autonomous ownership over their data and basic building blocks with great defaults to help them along.
-
-- Let’s place an emphasis on archivability, longevity, and portability—you shouldn’t be locked into a service, or require them to be maintained for your work to exist.
+- Let’s place an emphasis on archivability and portability. You shouldn’t be locked into a service for your work to exist.
 
 - Let’s build the tool on top of existing [open](https://github.com/choojs/choo) [source](https://beakerbrowser.com) [projects](http://hashbase.io) created by strong and growing communities.
 
-- Let’s use it to make websites and pages today, while considering the implements and environments of tomorrow.
-
 - Let’s make it easy for the novice, enjoyable for the pro, and perfect for personal use or client comissions.
 
-- Let’s try to be fun and light while addressing important issues and doing it right.
+- Let’s try to be fun and light while addressing [important issues](https://www.are.na/jon-kyle-mohr/tech-ethnography) and doing it right.
 
 - Let’s call it **[Enoki](https://en.wikipedia.org/wiki/Enokitake)**.
 
 ----
 preview: ## Programmer Preview
 
-Know some javascript? The **[Starter Kit](https://github.com/jondashkyle/enoki-starterkit)**, which glues together some of the tools, is in pre-alpha today.
+Know some javascript? The **[Starter Kit](https://github.com/jondashkyle/enoki-starterkit)** glues early versions of some tools together, and is in pre-alpha today.
 
 ```
 git clone https://github.com/jondashkyle/enoki-starterkit.git
@@ -37,7 +29,8 @@ You will run into bugs and limitations, but it’d be great if you could [report
 ----
 email: ## Stay in the loop
 
-If the project continues to grow, there will be a stream of updates over the next few months. This is also a beta reservation (you know how it goes.)
+Monthly updates and a beta reservation.
+
 ----
 contact:
 
