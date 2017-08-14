@@ -15,10 +15,6 @@ function home (state, emit) {
         ${text(state.page.text)}
       </div>
       <div class="p1 mt4">
-        ${text(state.page.email)}
-      </div>
-      ${mailinglist()}
-      <div class="p1 mt4">
         ${text(state.page.contact)}
       </div>
       <div class="mh25vh sm-dn"></div>

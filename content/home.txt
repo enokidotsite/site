@@ -2,28 +2,6 @@ title: Enoki
 ----
 text:
 
-## Some observations
-
-- The internet is becoming increasingly centralized.
-
-- You should own your data.
-
-- Entire communities are shutdown when they fail to generate revenue by the coperations that control them.
-
-## Some ideas
-
-- Let’s make a self-publishing tool for the open web.
-
-- Let’s build on top of existing [open](https://github.com/choojs/choo) [source](https://beakerbrowser.com) [projects](http://hashbase.io) created by strong and growing communities.
-
-- Let’s place an emphasis on archivability and portability. You shouldn’t be locked into a service for your work to exist.
-
-- Let’s make it easy for the novice, enjoyable for the pro, and perfect for personal use or client comissions.
-
-- Let’s try to be fun and light while addressing [important issues](https://www.are.na/jon-kyle-mohr/tech-ethnography) and doing it right.
-
-- Let’s call it **[Enoki](https://en.wikipedia.org/wiki/Enokitake)**.
-
 ## Steps
 
 - Create a foundational set of tools
