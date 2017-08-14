@@ -32,8 +32,7 @@ text:
 - —— —— ————
 - —————— ————
 
-----
-preview: ## Programmer Preview
+## Programmer Preview
 
 Know some javascript? The **[Starter Kit](https://github.com/jondashkyle/enoki-starterkit)** glues early versions of some tools together, and is in pre-alpha today.
 
@@ -41,7 +40,8 @@ Know some javascript? The **[Starter Kit](https://github.com/jondashkyle/enoki-s
 git clone https://github.com/jondashkyle/enoki-starterkit.git
 ```
 
-You will run into bugs and limitations, but it’d be great if you could [report them and contribute feedback](https://github.com/jondashkyle/enoki).
+You will run into bugs and limitations, but it’d be great if you could [report them and contribute feedback.
+
 ----
 email: ## Stay in the loop
 
