@@ -7,7 +7,7 @@ module.exports = wrapper(view)
 
 function view (state, emit) {
   return html`
-    <div class="x xw c12 p1">
+    <div class="x xw c12 px1" style="padding-top: 6.25vh; padding-bottom: 6.25vh">
       ${objectValues(state.page.children).map(entry)}
     </div>
   `
@@ -16,7 +16,7 @@ function view (state, emit) {
 function entry (props) {
   var image = props.files[props.thumbnail] || { }
   return html`
-    <a href="${props.url}" class="x xw c12" style="margin: 12.5vh 0">
+    <a href="${props.url}" class="x xw c12" style="margin: 6.25vh 0">
       <div class="c8 p1 mb2 fs4 ase wmxheading tid" sm="c12">
         ${props.title}
       </div>

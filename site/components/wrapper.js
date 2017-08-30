@@ -73,7 +73,7 @@ function footer (state, emit) {
           Enoki
         </div>
         <div class="c4 p1 tac">
-          <a href="https://github.com/jondashkyle/enoki-site${state.page.url}/${state.page.file}">Edit this page</a>
+          <a href="https://github.com/jondashkyle/enoki-site/blob/full/content/${state.page.url}/${state.page.file}">Edit this page</a>
         </div>
         <div class="c4 p1 tar">
           <a href="#">Back to Top</a>
