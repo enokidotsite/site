@@ -14,13 +14,30 @@ function view (state, emit) {
 }
 
 function entry (props) {
+  var image = props.files[props.thumbnail] || { }
   return html`
-    <a href="${props.url}" class="db p1">
-      <div>
-        <h2>${props.title}</h2>
+    <a href="${props.url}" class="x xw c12" style="margin: 12.5vh 0">
+      <div class="c8 p1 mb2 fs4 ase wmxheading tid" sm="c12">
+        ${props.title}
       </div>
-      <div>
-        ${props.excerpt}
+      <div class="c4 p1 ase mb2" sm="c12">
+        <div
+          class="psr bggreylight"
+          style="padding-bottom: ${image.ratioY * 100}%"
+        >
+          <img src="${image.url}" class="psa t0 l0 c12" />
+        </div>
+      </div>
+      <div class="c4 p1 tcgrey" sm="c12">
+        <ul>
+          <li>${props.date}</li>
+          <li>${props.tags.join(', ')}</li>
+        </ul>
+      </div>
+      <div class="c6 p1" sm="c12">
+        <div class="copy wmxcopy">
+          ${format(props.excerpt)}
+        </div>
       </div>
     </a>
   `

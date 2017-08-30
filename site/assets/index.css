@@ -70,12 +70,18 @@ img { display: block }
 .psr { position: relative }
 .l0 { left: 0 }
 .t0 { top: 0 }
+.b0 { bottom: 0 }
 .h100 { height: 100% }
 .w100 { width: 100% }
+.z2 { z-index: 2 }
+.z3 { z-index: 3 }
 
+.c2 { width: 16.666667% }
 .c4 { width: 33.3% }
 .c6 { width: 50% }
-.c8 { width: 66.6% }
+.c8 { width: 66.6666667% }
+.c9 { width: 75% }
+.c10 { width: 83.3333333% }
 .c12 { width: 100% }
 .xdc { flex-direction: column }
 
@@ -112,6 +118,8 @@ img { display: block }
 .m0 { margin: 0 }
 .my4 { margin: 3rem 0 }
 .mt4 { margin-top: 3rem }
+.mb2 { margin-bottom: 1.5rem }
+.mb4 { margin-bottom: 3rem }
 .mt8 { margin-top: 4rem }
 .pt2 { padding-top: 2rem }
 .pb4 { padding-bottom: 4rem }
@@ -129,12 +137,18 @@ h3, .fs1-5 { font-size: 1em; color: #999; }
 .serif { font-family: times; }
 .lh1 { line-height: 1 }
 .tac { text-align: center }
+.tar { text-align: right }
 .ttu { text-transform: uppercase }
+.sup { font-size: 0.5em; line-height: 2; vertical-align: top; }
+.ti1 { text-indent: 1em }
 
 ul { padding-left: 1.5rem }
 ul { list-style: none }
 li { position: relative }
 
+.nav-active { position: relative; }
+
+.nav-active:before,
 ul li:before {
   content: '→';
   position: absolute;
@@ -152,6 +166,9 @@ ul li:before {
 .tcwhite, .tcwhite a { color: #fff }
 .tcgrey, .tcgrey a { color: #999 }
 .tcgreydark, .tcgreydark a { color: #333 }
+
+.op0 { opacity: 0 }
+.ophc:hover .oph100 { opacity: 1 }
 
 code, pre {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;

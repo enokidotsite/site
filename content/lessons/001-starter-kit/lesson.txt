@@ -1,6 +1,18 @@
-title: Starting with the Starter-kit
+title: Getting Started with the Pre-Alpha Starter-kit
 ----
-excerpt: Testing or whatever
+date: September 1st, 2017
+----
+tags:
+  - pre-alpha
+  - beginner
+----
+thumbnail: starterkit-thumb.png
+----
+excerpt:
+
+What’s the easiest way to begin creating an Enoki site during the pre-alpha? With the Starter-kit! It includes an example content structure and site design covering some common patterns.
+
+In this guide we will walk-through installing the starter-kit, explain how to work with and against the defaults, and introduce new ways of putting your site online.
 ----
 text:
 

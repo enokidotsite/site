@@ -1,0 +1,18 @@
+title: Neo-Identy and Self-Design
+----
+date: September 1st, 2017
+----
+tags:
+  - pre-alpha
+  - beginner
+----
+thumbnail: auto.jpg
+----
+excerpt: What’s the easiest way to begin creating an Enoki site during the pre-alpha? With the Starter-kit! It includes an example content structure and site design covering some common patterns.
+----
+text:
+
+- what happens when everyone is a designer
+- self branding as autoprogettazione
+- consumerism and self expression
+- identity and the branded self

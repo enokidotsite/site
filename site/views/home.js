@@ -10,7 +10,7 @@ module.exports = wrapper(home)
 function home (state, emit) {
   return html`
     <div class="c12 fs1 x xw">
-      <div class="c12 fs4 p2 wmxheading">
+      <div class="c12 fs4 p2 psr z2 wmxheading">
         ${state.page.heading}
       </div>
       <div class="c6 p1" sm="c12">
@@ -21,12 +21,15 @@ function home (state, emit) {
           ${text(state.page.contact)}
         </div>
       </div>
-      <div class="c6 p2" sm="c12">
+      <div class="c6 p2 ophc" sm="c12">
         <div
           class="psr bggreylight"
-          style="padding-bottom: 100%"
+          style="padding-bottom: 100%; margin-top: -11rem"
         >
           <img src="/circle.jpg" class="psa t0 l0 b0 c12">
+          <div class="psa b0 l0 p1 copy op0 oph100 lh1">
+            Photo via <a href="http://informationalaffairs.com/" target="_blank">Informational Affairs</a>
+          </div>
         </div>
       </div>
     </div>

@@ -30,7 +30,7 @@ function wrapper (view) {
 function title (state, emit) {
   return html` 
     <div class="c6 p1" sm="c12">
-      <a href="/" class="nbb tcblack ttu">${state.title}</a> <span class="tcgrey">(pre-alpha)</span>
+      <a href="/" class="nbb tcblack ttu">${state.title}</a> <span class="sup ttu tcgrey">(pre-alpha)</span>
     </div>
   `
 }
@@ -47,10 +47,12 @@ function navigation (state, emit) {
   `
 
   function link (link) {
-    var activeClass = isActive(link.dirname) ? 'tcgrey' : ''
+    var activeClass = isActive(link.dirname) ? 'nav-active' : ''
     return html`
-      <div class="p1 c4 ${activeClass}">
-        <a href="${link.url}">${link.title || link.dirname}</a>
+      <div class="p1 c4">
+        <div class="${activeClass}">
+          <a href="${link.url}">${link.title || link.dirname}</a>
+        </div>
       </div>
     `
   }
@@ -65,12 +67,15 @@ function navigation (state, emit) {
 
 function footer (state, emit) {
   return html`
-    <div class="c12 p2 tcgrey">
+    <div class="c12 p1 tcgrey">
       <div class="c12 x xjb">
-        <div class="ttu">
+        <div class="ttu p1 c4">
           Enoki
         </div>
-        <div>
+        <div class="c4 p1 tac">
+          <a href="https://github.com/jondashkyle/enoki-site${state.page.url}/${state.page.file}">Edit this page</a>
+        </div>
+        <div class="c4 p1 tar">
           <a href="#">Back to Top</a>
         </div>
       </div>

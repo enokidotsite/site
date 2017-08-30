@@ -1,21 +1,13 @@
 title: Enoki
 ----
 order:
-  - log
   - lessons
   - docs
+  - log
 ----
-heading: a set of tools and methods for publishing on the existing open web, and the evolving future web.
+heading: A set of tools and methods for publishing on the existing open and future web.
 ----
 text:
-
-### Steps
-
-- Create a foundational set of tools
-- Release a programmer preview
-- ×××××× ××× ×××××××
-- ×××××× × ××××
-- ××××××××× ××××××
 
 ### Programmer Preview
 

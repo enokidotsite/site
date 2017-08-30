@@ -30,6 +30,9 @@ function getFormat (format) {
 function blocks (props) {
   return html`
     <div class="x xw psr">
+      <div class="c8 x xw" sm="c12">
+        ${props.blocks.map(block)}
+      </div>
       <div class="c4 psr" sm="c12">
         <div class="psst" style="top: 1rem">
           <div class="p1 copy">
@@ -40,14 +43,11 @@ function blocks (props) {
           </div>
         </div>
       </div>
-      <div class="x xw c8" sm="c12">
-        ${props.blocks.map(block)}
-      </div>
     </div>
   `
 
   function block (props) {
-    var image = getImage(props.image)
+    var image = getImage(props.image) || { }
     return html`
       <div class="${props.style} p1">
         <div
