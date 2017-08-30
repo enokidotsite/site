@@ -1,0 +1,7 @@
+title: Starting with the Starter-kit
+----
+excerpt: Testing or whatever
+----
+text:
+
+hey whats good

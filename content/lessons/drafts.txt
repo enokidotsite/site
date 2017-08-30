@@ -1,0 +1,3 @@
+# ideas
+- publishing to hashbase
+- enoki for ar/vr (webgl)

@@ -1,5 +1,5 @@
 var html = require('choo/html')
-var ov = require('object-values')
+var objectValues = require('object-values')
 var path = require('path')
 
 module.exports = wrapper
@@ -8,16 +8,17 @@ function wrapper (view) {
   return function (state, emit) {
     return html`
       <main class="x xdc c12 vhmn100">
-        <div class="c12 p1">
-          <div class="x">
+        <div class="c12 p1 usn">
+          <div class="x xw">
             ${title(state.content)}
             ${navigation({
+              order: state.content.order ? state.content.order : [ ],
               active: state.page ? state.page.path : '',
               links: state.content ? state.content.children : { }
             })}
           </div>
         </div>
-        <div class="c12 x1">
+        <div class="c12 x1 x xdc">
           ${view(state, emit)}
         </div>
         ${footer(state, emit)}
@@ -28,26 +29,27 @@ function wrapper (view) {
 
 function title (state, emit) {
   return html` 
-    <div class="c6 p1 ttu">
-      <a href="/" class="nbb">${state.title}</a>
+    <div class="c6 p1" sm="c12">
+      <a href="/" class="nbb tcblack ttu">${state.title}</a> <span class="tcgrey">(pre-alpha)</span>
     </div>
   `
 }
 
 function navigation (state, emit) {
   var active = state.active || ''
-  var links = ov(state.links) || [ ]
+  var order = state.order || [ ]
+  var links = state.links || { }
 
   return html`
-    <div class="x xjc c6">
-      ${links.map(link)}
+    <div class="x c6" sm="c12">
+      ${order.map(key => link(links[key]))}
     </div>
   `
 
   function link (link) {
     var activeClass = isActive(link.dirname) ? 'tcgrey' : ''
     return html`
-      <div class="p0-5 xx ${activeClass}">
+      <div class="p1 c4 ${activeClass}">
         <a href="${link.url}">${link.title || link.dirname}</a>
       </div>
     `
@@ -63,7 +65,7 @@ function navigation (state, emit) {
 
 function footer (state, emit) {
   return html`
-    <div class="c12 p2 tcgrey bggreylight">
+    <div class="c12 p2 tcgrey">
       <div class="c12 x xjb">
         <div class="ttu">
           Enoki

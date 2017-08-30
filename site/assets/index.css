@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'UntitledSansTest-Regular', -apple-system, sans-serif;
+  font-family: 'Untitled Sans', -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -27,7 +27,12 @@ body {
   font-weight: normal;
   font-style: normal;
   letter-spacing: 0em;
-  line-height: 1.5;
+  line-height: 1.4;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 a {
@@ -35,11 +40,16 @@ a {
   text-decoration: none;
 }
 
+.copy a {
+  text-decoration: underline;
+}
+
 .copy { display: block }
 .copy > * { margin-top: 1.5rem; margin-bottom: 1.5rem; }
 .copy > *:first-child { margin-top: 0 }
 .copy > *:last-child { margin-bottom: 0 }
 .copy img { max-width: 100% }
+img { display: block }
 
 .fwb, b, strong { font-weight: 600 }
 .strk { text-decoration: line-through }
@@ -48,14 +58,20 @@ a {
 .xw { flex-wrap: wrap }
 .xas { align-items: flex-start }
 .xje { justify-content: flex-end }
-.xjc { justify-content: center }
+.ase { align-self: flex-end }
 .x1 { flex: 1 }
 .xx { flex: 1; width: 100% }
 .xjb { justify-content: space-between }
+.xac { align-items: center }
 .xjc { justify-content: center }
 .db { display: block }
 .psst { position: sticky; position: -webkit-sticky; }
+.psa { position: absolute }
+.psr { position: relative }
+.l0 { left: 0 }
 .t0 { top: 0 }
+.h100 { height: 100% }
+.w100 { width: 100% }
 
 .c4 { width: 33.3% }
 .c6 { width: 50% }
@@ -67,7 +83,25 @@ a {
 .mh50vh { min-height: 50vh }
 .mh25vh { min-height: 25vh }
 .wmxcopy { max-width: 30rem }
+.wmxheading { max-width: 55rem }
 .br1 { border-radius: 3px }
+.usn { user-select: none }
+
+.arrow-top { position: relative; }
+.arrow-top:before {
+  top: -1rem;
+  left: 50%;
+  border: solid transparent;
+  content: '';
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #000;
+  border-width: 0.5rem;
+  margin-left: -0.5rem;
+}
 
 .p0-5 { padding: 0.5rem }
 .p1 { padding: 0.75rem }
@@ -84,12 +118,12 @@ a {
 
 h1, h2, h3 { font-weight: normal }
 h1, .fs3 { font-size: 4rem }
-h2 { font-size: 1em; color: #999; }
-h3, .fs1-5 { font-size: 1rem }
+h2 { font-size: 2em; }
+h3, .fs1-5 { font-size: 1em; color: #999; }
 
 .fs2 { font-size: 2rem }
 .fs3 { font-size: 3rem }
-.fs4 { font-size: 4rem; letter-spacing: -0.025em }
+.fs4 { font-size: 4rem; letter-spacing: -0.025em; line-height: 1; }
 .fs6 { font-size: 6rem }
 
 .serif { font-family: times; }
@@ -97,14 +131,11 @@ h3, .fs1-5 { font-size: 1rem }
 .tac { text-align: center }
 .ttu { text-transform: uppercase }
 
-ul {
-  padding-left: 1.5rem;
-  list-style: none;
-}
-
+ul { padding-left: 1.5rem }
+ul { list-style: none }
 li { position: relative }
 
-li:before {
+ul li:before {
   content: '→';
   position: absolute;
   top: 0.1em;
@@ -112,11 +143,12 @@ li:before {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
-.ffsans { font-family: 'UntitledSansTest-Regular', -apple-system, sans-serif }
+.ffsans { font-family: 'Untitled Sans', -apple-system, sans-serif }
 .ffmono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace }
 
 .bggreylight { background: #eee }
 .bgblack { background: #000 }
+.tcblack, .tcblack a { color: #000 }
 .tcwhite, .tcwhite a { color: #fff }
 .tcgrey, .tcgrey a { color: #999 }
 .tcgreydark, .tcgreydark a { color: #333 }
@@ -128,8 +160,8 @@ code, pre {
 
 pre {
   background: #eee;
-  padding: 1rem;
   border-radius: 3px;
+  padding: 1rem;
   overflow-x: auto;
 }
 
@@ -154,26 +186,24 @@ input {
   border: 1px solid #000;
 }
 
+@font-face{
+  font-family: 'Untitled Sans';
+  font-weight: normal;
+  src: url('/assets/webfonts/UntitledSansWeb-Regular.eot'),
+       url('/assets/webfonts/UntitledSansWeb-Regular.woff2') format('woff2'),
+       url('/assets/webfonts/UntitledSansWeb-Regular.woff') format('woff');
+}
+
 @media (max-width: 760px) {
   html { font-size: 1.9vw }
   body, .fwn { font-weight: 400 }
-  .fwb, b, strong { font-weight: 700 }
+  body, .fs1 { font-size: 2rem }
+  .fs4 { line-height: 1.2 }
+  code, pre { font-size: 1.8rem }
+  ul { padding-left: 3rem; }
+  ul li:before { left: -3rem; }
+  .wmxcopy { max-width: 60rem }
+  .wmxheading { max-width: 120rem }
 
-  .p1 { padding: 0.75rem }
-  .p2 { padding: 1.5rem }
-  .pt1 { padding-top: 0.75rem }
-  .px1 { padding-left: 0.5rem; padding-right: 0.5rem; }
-  .m0 { margin: 0 }
-  .my4 { margin: 1.5rem 0 }
-  .mt4 { margin-top: 3rem }
-  .mt8 { margin-top: 2rem }
-  .pt2 { padding-top: 2rem }
-  .pb4 { padding-bottom: 4rem }
-
-
-  .sm-dn { display: none }
-  .sm-c12 { width: 100% }
-  .sm-mxp { max-width: 30em }
-  .sm-mt4 { margin-top: 3rem }
-  .sm-p2 { padding: 1.5rem }
+  [sm~="c12"] { width: 100% }
 }

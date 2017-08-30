@@ -1,0 +1,45 @@
+title: Mood PTI
+----
+tags:
+  - mood
+----
+format: blocks
+----
+blocks:
+
+  - image: glass.jpg
+    style: c6
+    url: https://www.are.na/block/570412
+
+  - image: livestream.jpg
+    style: c6 ase
+    url: https://www.are.na/block/738831
+
+  - image: tree.png
+    style: c6
+    url: https://www.are.na/block/963277
+
+  - image: glass2.jpg
+    style: c6
+    url: https://www.are.na/block/321704
+
+  - image: in-the-absence.jpg
+    url: https://archive.org/stream/pdfy-cu83upS6ruaVx7pF/In%20the%20Absence%20of%20the%20Sacred%20-%20Jerry%20Mander_djvu.txt
+    style: c4 ase
+
+  - image: internet-exist.jpg
+    url: http://www.sternberg-press.com/?pageId=1580
+    style: c4 ase
+
+  - image: extrastatecraft.jpg
+    url: https://www.versobooks.com/books/2163-extrastatecraft
+    style: c4 ase
+
+----
+text:
+
+## FUNctional
+
+“There is often more power in ‘knowing how’ rather than ‘knowing that.’ The markers used to navigate a river are indeterminate in order to be practical… The aim is to offer not solutions, but rather mechanisms for generating solutions.”
+
+— Keller Easterling, Extra-statecraft

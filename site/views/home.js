@@ -10,19 +10,24 @@ module.exports = wrapper(home)
 function home (state, emit) {
   return html`
     <div class="c12 fs1 x xw">
-      <div class="c12 fs4 p2 lh1">
-        a set of tools and methods for publishing on both the existing open web, and the emerging future web
+      <div class="c12 fs4 p2 wmxheading">
+        ${state.page.heading}
       </div>
-      <div class="c6 p2">
-        ${text(state.page.text)}
+      <div class="c6 p1" sm="c12">
+        <div class="p1">
+          ${text(state.page.text)}
+        </div>
+        <div class="p1">
+          ${text(state.page.contact)}
+        </div>
       </div>
-      <div class="c6 pt2">
-        <img src="/circle.jpg" class="c12">
-      </div>
-      <div class="p2">
-      </div>
-      <div class="p2">
-        ${text(state.page.contact)}
+      <div class="c6 p2" sm="c12">
+        <div
+          class="psr bggreylight"
+          style="padding-bottom: 100%"
+        >
+          <img src="/circle.jpg" class="psa t0 l0 b0 c12">
+        </div>
       </div>
     </div>
   `
