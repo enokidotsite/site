@@ -9,15 +9,21 @@ module.exports = wrapper(home)
 
 function home (state, emit) {
   return html`
-    <div class="c12 p1 fs2">
-      <div class="mh50vh sm-dn"></div>
-      <div class="p1">
+    <div class="c12 fs1 x xw">
+      <div class="c12 fs4 p2 lh1">
+        a set of tools and methods for publishing on both the existing open web, and the emerging future web
+      </div>
+      <div class="c6 p2">
         ${text(state.page.text)}
       </div>
-      <div class="p1 mt4">
+      <div class="c6 pt2">
+        <img src="/circle.jpg" class="c12">
+      </div>
+      <div class="p2">
+      </div>
+      <div class="p2">
         ${text(state.page.contact)}
       </div>
-      <div class="mh25vh sm-dn"></div>
     </div>
   `
 

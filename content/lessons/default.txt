@@ -1,4 +1,4 @@
-title: Whatever
+title: Lessons
 ----
 text:
 
