@@ -17,7 +17,7 @@ function log (state, emit) {
 
 function entry (props) {
   var format = getFormat(props.format)
-  return format(props)
+  return format ? format(props) : ''
 }
 
 function getFormat (format) {

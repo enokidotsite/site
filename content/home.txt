@@ -3,9 +3,8 @@ title: Enoki
 order:
   - guides
   - docs
-  - log
 ----
-heading: A set of tools and methods for publishing on the existing open and future web.
+heading: A set of tools for publishing on the open web of today and future web of tomorrow.
 ----
 text:
 

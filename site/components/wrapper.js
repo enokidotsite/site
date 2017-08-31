@@ -43,6 +43,7 @@ function navigation (state, emit) {
   return html`
     <div class="x c6" sm="c12">
       ${order.map(key => link(links[key]))}
+      ${link({ title: 'Github', url: 'https://github.com/jondashkyle/enoki' })}
     </div>
   `
 
@@ -73,7 +74,7 @@ function footer (state, emit) {
           Enoki
         </div>
         <div class="c4 p1 tac">
-          <a href="https://github.com/jondashkyle/enoki-site/blob/full/content/${state.page.url}/${state.page.file}">Edit this page</a>
+          <a href="https://github.com/jondashkyle/enoki-site/blob/master/content/${state.page.url}/${state.page.file}">Edit this page</a>
         </div>
         <div class="c4 p1 tar">
           <a href="#">Back to Top</a>
