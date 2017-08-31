@@ -1,8 +1,8 @@
 title: Enoki
 ----
 order:
-  - guides
-  - docs
+----
+navigation: true
 ----
 heading: A set of tools for publishing on the open web of today and future web of tomorrow.
 ----

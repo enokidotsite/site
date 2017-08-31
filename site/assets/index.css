@@ -115,6 +115,7 @@ img { display: block }
 .px1 { padding-left: 0.75; padding-right: 0.75; }
 .py1 { padding-top: 0.75; padding-left: 0.75; }
 .pt1 { padding-top: 1.5rem }
+.mr1 { margin-right: 0.75rem }
 .m0 { margin: 0 }
 .my4 { margin: 3rem 0 }
 .mt4 { margin-top: 3rem }

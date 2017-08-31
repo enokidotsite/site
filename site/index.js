@@ -1,4 +1,3 @@
-var html = require('choo/html')
 var choo = require('choo')
 var config = require('./app')
 

@@ -5,10 +5,9 @@
   "main": "site/index.js",
   "scripts": {
     "serve": "cd public && python -m SimpleHTTPServer 8080",
-    "build": "enoki build -o public/ && browserify site/ -o public/bundle.js -t require-globify -t enoki/transform",
+    "build": "enoki build -o public/ && browserify site/ -t require-globify -t enoki/transform  -g yo-yoify -g es2040 -g uglifyify > public/bundle.js",
     "start": "enoki dev",
-    "panel": "enoki panel",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish": "dat sync public --no-ignoreHidden"
   },
   "keywords": [],
   "author": "Jon-Kyle <contact@jon-kyle.com> (http://jon-kyle.com)",
@@ -29,6 +28,8 @@
   },
   "devDependencies": {
     "browserify": "^14.4.0",
-    "es2040": "^1.2.6"
+    "es2040": "^1.2.6",
+    "uglifyify": "^4.0.3",
+    "yo-yoify": "^3.7.3"
   }
 }
