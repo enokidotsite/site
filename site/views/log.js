@@ -7,41 +7,67 @@ module.exports = wrapper(log)
 
 function log (state, emit) {
   return html`
-    <div class="x xw p1">
+    <div class="x xw p1" style="margin-bottom: -1.6rem">
       <div class="c12">
-        ${objectValues(state.page.children).map(entry)}
+        ${objectValues(state.page.children).reverse().map(entry)}
       </div>
     </div>
   `
 }
 
 function entry (props) {
-  var format = getFormat(props.format)
-  return format ? format(props) : ''
+  var entryFormat = getFormat(props.format)
+  if (!entryFormat) return ''
+
+  return html`
+    <div class="c12">
+      <div class="c12 py2">
+        ${entryFormat(props)}
+      </div>
+      <div class="c12 p1"><div class="bb1"></div></div>
+    </div>
+  `
 }
 
-function getFormat (format) {
-  switch (format) {
+function getFormat (entryFormat) {
+  switch (entryFormat) {
     case 'blocks': return blocks
-    return basic
+    case 'longform': return longform
   }
+  return basic
+}
+
+function longform (props) {
+  return html`
+    <div class="c12 x xw">
+      <div class="c12 p1">
+        <div class="wmxheading mb2">
+          <h2>${props.title}</h2>
+        </div>
+      </div>
+      <div class="c4 p1 tcgrey">
+        ${props.date}<br>
+        ${props.tags.join(', ')}
+      </div>
+      <div class="c8 p1">
+        <div class="copy wmxcopy">
+          ${props.text ? format(props.text) : ''}
+        </div>
+      </div>
+    </div>
+  `
 }
 
 function blocks (props) {
   return html`
     <div class="x xw psr">
-      <div class="c8 x xw" sm="c12">
-        ${props.blocks.map(block)}
-      </div>
-      <div class="c4 psr" sm="c12">
-        <div class="psst" style="top: 1rem">
-          <div class="p1 copy">
-            ${props.text ? format(props.text) : ''}
-          </div>
-          <div class="p1 tcgrey">
-            <a href="${props.url}">Permalink</a>
-          </div>
+      <div class="c12 p1" sm="c12">
+        <div class="wmxcopy copy">
+          ${props.text ? format(props.text) : ''}
         </div>
+      </div>
+      <div class="c12 x xw" sm="c12">
+        ${props.blocks.map(block)}
       </div>
     </div>
   `
@@ -68,6 +94,6 @@ function blocks (props) {
 
 function basic (props) {
   return html`
-    <div>default</div>
+    <div class="p1">default</div>
   `
 }

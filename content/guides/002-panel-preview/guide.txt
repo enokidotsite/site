@@ -1,0 +1,22 @@
+title: A Pre-Emptive Overview of the Panel
+----
+date: September 1st, 2017
+----
+tags:
+  - pre-alpha
+  - beginner
+----
+thumbnail: panel.png
+----
+thumbnailborder: true
+----
+excerpt:
+
+The Enoki Panel provides a web interface to manage your project’s content. It is fully extendable with custom fields, and even input types.
+
+The most interesting part about the Panel? It’s just an Enoki site, which means you can hack at it same as the Starter-Kit.
+
+----
+text:
+
+hey whats good

@@ -30,7 +30,7 @@ body {
   line-height: 1.4;
 }
 
-main {
+.wcontent {
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -68,6 +68,7 @@ img { display: block }
 .psst { position: sticky; position: -webkit-sticky; }
 .psa { position: absolute }
 .psr { position: relative }
+.psf { position: fixed }
 .l0 { left: 0 }
 .t0 { top: 0 }
 .b0 { bottom: 0 }
@@ -76,7 +77,9 @@ img { display: block }
 .z2 { z-index: 2 }
 .z3 { z-index: 3 }
 
+.c1 { width: 8.3333333% }
 .c2 { width: 16.666667% }
+.c3 { width: 25% }
 .c4 { width: 33.3% }
 .c6 { width: 50% }
 .c8 { width: 66.6666667% }
@@ -88,10 +91,13 @@ img { display: block }
 .vhmn100 { min-height: 100vh }
 .mh50vh { min-height: 50vh }
 .mh25vh { min-height: 25vh }
-.wmxcopy { max-width: 30rem }
 .wmxheading { max-width: 55rem }
 .br1 { border-radius: 3px }
 .usn { user-select: none }
+
+.wmxcopy h2 { max-width: 55rem }
+.wmxcopy h3 { max-width: 40rem }
+.wmxcopy p { max-width: 35rem }
 
 .arrow-top { position: relative; }
 .arrow-top:before {
@@ -112,27 +118,30 @@ img { display: block }
 .p0-5 { padding: 0.5rem }
 .p1 { padding: 0.75rem }
 .p2 { padding: 1.5rem }
-.px1 { padding-left: 0.75; padding-right: 0.75; }
-.py1 { padding-top: 0.75; padding-left: 0.75; }
+.px1 { padding-left: 0.75rem; padding-right: 0.75rem; }
+.px2 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.py1 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.py2 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
 .pt1 { padding-top: 1.5rem }
 .mr1 { margin-right: 0.75rem }
 .m0 { margin: 0 }
 .my4 { margin: 3rem 0 }
+.mt2 { margin-top: 1.5rem }
 .mt4 { margin-top: 3rem }
 .mb2 { margin-bottom: 1.5rem }
 .mb4 { margin-bottom: 3rem }
 .mt8 { margin-top: 4rem }
 .pt2 { padding-top: 2rem }
 .pb4 { padding-bottom: 4rem }
+.ptheader { padding-top: 4rem }
 
-h1, h2, h3 { font-weight: normal }
-h1, .fs3 { font-size: 4rem }
-h2 { font-size: 2em; }
-h3, .fs1-5 { font-size: 1em; color: #999; }
+h1, h2, h3, h4 { font-weight: normal }
+h2, .fs4 { font-size: 4rem; letter-spacing: -0.025em; line-height: 1; }
+h3 { font-size: 2em; letter-spacing: -0.0125em; line-height: 1.25; }
+h4 { font-size: 1em; color: #999; }
 
 .fs2 { font-size: 2rem }
 .fs3 { font-size: 3rem }
-.fs4 { font-size: 4rem; letter-spacing: -0.025em; line-height: 1; }
 .fs6 { font-size: 6rem }
 
 .serif { font-family: times; }
@@ -146,6 +155,9 @@ h3, .fs1-5 { font-size: 1em; color: #999; }
 ul { padding-left: 1.5rem }
 ul { list-style: none }
 li { position: relative }
+
+.ol1 { outline: 1px solid rgba(127, 127, 127, 0.3) }
+.dev * { outline: 1px solid rgba(255, 0, 0, 0.1) }
 
 .nav-active { position: relative; }
 
@@ -161,6 +173,7 @@ ul li:before {
 .ffsans { font-family: 'Untitled Sans', -apple-system, sans-serif }
 .ffmono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace }
 
+.bgwhite { background: #fff }
 .bggreylight { background: #eee }
 .bgblack { background: #000 }
 .tcblack, .tcblack a { color: #000 }
@@ -183,7 +196,18 @@ pre {
   overflow-x: auto;
 }
 
-.bt1 { border-top: 1px solid #ddd }
+.bt1 { border-top: 1px solid rgba(0, 0, 0, 0.15) }
+.bb1 { border-bottom: 1px solid rgba(0, 0, 0, 0.15) }
+
+.bheader:after {
+  content: '';
+  height: 1px;
+  position: absolute;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: -1px;
+  background: rgba(0, 0, 0, 0.15);
+}
 
 a.button {
   border-bottom: 0;
@@ -220,8 +244,10 @@ input {
   code, pre { font-size: 1.8rem }
   ul { padding-left: 3rem; }
   ul li:before { left: -3rem; }
-  .wmxcopy { max-width: 60rem }
+  .wmxcopy p, .wmxcopy h2, .wmxcopy h3 { max-width: 120rem }
   .wmxheading { max-width: 120rem }
 
   [sm~="c12"] { width: 100% }
+  [sm~="psr"] { position: relative }
+  [sm~="pt0"] { padding-top: 0 }
 }

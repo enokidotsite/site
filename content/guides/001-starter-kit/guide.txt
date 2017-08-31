@@ -8,6 +8,8 @@ tags:
 ----
 thumbnail: starterkit-thumb.png
 ----
+thumbnailborder: true
+----
 excerpt:
 
 What’s the easiest way to begin creating an Enoki site during the pre-alpha? With the Starter-kit! It includes an example content structure and site design covering some common patterns.

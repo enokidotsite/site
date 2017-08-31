@@ -9,11 +9,11 @@ module.exports = wrapper(home)
 
 function home (state, emit) {
   return html`
-    <div class="c12 fs1 x xw">
-      <div class="c12 fs4 p2 psr z2 wmxheading">
+    <div class="c12 fs1 x xw p1">
+      <div class="c12 fs4 p1 mt2 psr z2 wmxheading">
         ${state.page.heading}
       </div>
-      <div class="c6 p1" sm="c12">
+      <div class="c6" sm="c12">
         <div class="p1">
           ${text(state.page.text)}
         </div>
@@ -21,7 +21,7 @@ function home (state, emit) {
           ${text(state.page.contact)}
         </div>
       </div>
-      <div class="c6 p2 ophc" sm="c12">
+      <div class="c6 p1 ophc" sm="c12">
         <div
           class="psr bggreylight"
           style="padding-bottom: 100%; margin-top: -11rem"

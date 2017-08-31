@@ -1,4 +1,4 @@
-title: Neo-Networking; Self Design / Design of Self
+title: Neo-Networking; Self Design and the Design of Self
 ----
 date: September 1st, 2017
 ----
@@ -6,11 +6,21 @@ tags:
   - pre-alpha
   - beginner
 ----
+format: longform
+----
 thumbnail: self.png
 ----
 excerpt: What’s the easiest way to begin creating an Enoki site during the pre-alpha? With the Starter-kit! It includes an example content structure and site design covering some common patterns.
 ----
 text:
+
+![](/log/002-self-design/auto.jpg)
+
+#### Example paragraph
+
+“There is often more power in ‘knowing how’ rather than ‘knowing that.’ The markers used to navigate a river are indeterminate in order to be practical… The aim is to offer not solutions, but rather mechanisms for generating solutions.”
+
+#### Ideas
 
 - what happens when everyone is a designer
 - self branding as autoprogettazione
