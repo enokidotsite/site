@@ -3,37 +3,61 @@ var ov = require('object-values')
 
 var wrapper = require('../components/wrapper')
 var format = require('../components/format')
-var thumbnail = require('../components/thumbnail')
+var unorphan = require('../components/unorphan')
 
 module.exports = wrapper(home)
 
 function home (state, emit) {
   return html`
     <div class="c12 fs1 x xw p1">
-      <div class="c12 fs4 p1 mt2 psr z2 wmxheading">
-        ${state.page.heading}
+      <div class="c12 fs4 p1 py2 psr z2 wmxheading">
+        ${unorphan(state.page.heading)}
       </div>
       <div class="c6" sm="c12">
         <div class="p1">
           ${text(state.page.text)}
         </div>
-        <div class="p1">
-          ${text(state.page.contact)}
-        </div>
       </div>
       <div class="c6 p1 ophc" sm="c12">
-        <div
-          class="psr bggreylight"
-          style="padding-bottom: 100%; margin-top: -11rem"
-        >
-          <img src="/circle.jpg" class="psa t0 l0 b0 c12">
-          <div class="psa b0 l0 p1 copy op0 oph100 lh1">
-            Photo via <a href="http://informationalaffairs.com/" target="_blank">Informational Affairs</a>
-          </div>
+        ${photo()}
+      </div>
+      <div class="c12 p1"><div class="bb1"></div></div>
+      <div class="c4 p1 x" sm="c12">
+        <a href="/guides" class="bgblack tcwhite p2 copy c12">
+          ${format(state.page.started)}
+        </a>
+      </div>
+      <a href="/docs" class="c4 p1 x" sm="c12">
+        <div class="bgblack tcwhite p2 copy c12">
+          ${format(state.page.docs)}
         </div>
+      </a>
+      <div class="c4 p1 x" sm="c12">
+        <div class="bgblack tcwhite p2 copy c12">
+          ${format(state.page.email)}
+        </div>
+      </div>
+      <div class="c12 p1"><div class="bb1"></div></div>
+      <div class="c4 p1">
+        <h3>From the Log</h3>
       </div>
     </div>
   `
+
+  function photo () {
+    return html`
+      <div
+        class="psr bggreylight mthome"
+        sm="mt0"
+        style="padding-bottom: 100%;"
+      >
+        <img src="/circle.jpg" class="psa t0 l0 b0 c12">
+        <div class="psa b0 l0 p1 copy op0 oph100 lh1">
+          Photo via <a href="http://informationalaffairs.com/" target="_blank">Informational Affairs</a>
+        </div>
+      </div>
+    `
+  }
 
   function text (text) {
     return html`

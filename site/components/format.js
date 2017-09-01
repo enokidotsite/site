@@ -1,17 +1,21 @@
 var html = require('bel')
-var md = require('marked')
+var MarkdownIt = require('markdown-it')
+var implicitFigures = require('markdown-it-implicit-figures')
+var video = require('markdown-it-video')
+var raw = require('./raw')
+
+var md = new MarkdownIt({
+  html: true,
+  linkify: true,
+  typographer: true
+})
+
+md.use(implicitFigures)
+md.use(video)
 
 module.exports = format
 
 function format (str) {
-  var output = md(str || '')
-  if (typeof window === 'undefined') {
-    var wrapper = new String(output)
-    wrapper.__encoded = true
-    return wrapper
-  } else {
-    var el = html`<div></div>`
-    el.innerHTML = output
-    return [...el.childNodes]
-  }
+  str = str || ''
+  return raw(md.render(str))
 }

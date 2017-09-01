@@ -11,21 +11,30 @@ heading: A set of tools for publishing on the open web of today and future web o
 ----
 text:
 
-#### Programmer Preview
-
-Know some javascript? The [Starter Kit](https://github.com/jondashkyle/enoki-starterkit) glues early versions of some tools together, and is in pre-alpha today. You will run into bugs and limitations, but it’d be great if you could report them and contribute feedback.
+Know some javascript? The [Starter Kit](https://github.com/jondashkyle/enoki-starterkit) glues early versions of some tools together, and is in pre-alpha today. Not everything is in place, there are bugs, and it’d be great if you could contribute feedback.
 
 ```
 git clone https://github.com/jondashkyle/enoki-starterkit.git
 ```
 
+This page is [built](https://github.com/jondashkyle/enoki-site) with [Enoki](http://enoki.site) and published to the (distributed) web with [Dat](http://datproject.org) and [Hashbase](https://hashbase.io/jkm/hashbase-site).
+----
+started:
+
+### Getting Started
+
+Looking for a place to begin, or tips on common patterns? A quick browse through the guides will have you pointed in the right direction.
 
 ----
-email: #### Stay in the loop
+docs:
 
-Monthly updates and a beta reservation.
+### Documentation
+
+Building a project and need to reference specific parts of the API, or looking to impliment Enoki in an existing project?
 
 ----
-contact:
+email:
 
-This page is [built](https://github.com/jondashkyle/enoki-site) with [Enoki](http://enoki.site) and published to the (distributed) web with [Dat](http://datproject.org) and [Hashbase](https://hashbase.io/jkm/hashbase-site). [Get in touch](mailto:enodotki@gmail.com).
+### Say Hello
+
+Monthly updates, etc…

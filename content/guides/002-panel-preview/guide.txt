@@ -1,4 +1,4 @@
-title: A Pre-Emptive Overview of the Panel
+title: An (Early) Overview of the Panel
 ----
 date: September 1st, 2017
 ----
@@ -19,4 +19,4 @@ The most interesting part about the Panel? It’s just an Enoki site, which mean
 ----
 text:
 
-hey whats good
+This is a test of that thing for the thing, you know?

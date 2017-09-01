@@ -97,7 +97,10 @@ img { display: block }
 
 .wmxcopy h2 { max-width: 55rem }
 .wmxcopy h3 { max-width: 40rem }
-.wmxcopy p { max-width: 35rem }
+.wmxcopy p, .wmxcopy table { max-width: 35rem }
+
+.site-header { transition: transform 500ms ease }
+.site-header.hidden { transform: translate3d(0, -100%, 0) }
 
 .arrow-top { position: relative; }
 .arrow-top:before {
@@ -134,10 +137,11 @@ img { display: block }
 .pt2 { padding-top: 2rem }
 .pb4 { padding-bottom: 4rem }
 .ptheader { padding-top: 4rem }
+.mthome { margin-top: -12rem }
 
 h1, h2, h3, h4 { font-weight: normal }
 h2, .fs4 { font-size: 4rem; letter-spacing: -0.025em; line-height: 1; }
-h3 { font-size: 2em; letter-spacing: -0.0125em; line-height: 1.25; }
+h3 { font-size: 2em; letter-spacing: -0.0125em; line-height: 1.15; }
 h4 { font-size: 1em; color: #999; }
 
 .fs2 { font-size: 2rem }
@@ -149,19 +153,26 @@ h4 { font-size: 1em; color: #999; }
 .tac { text-align: center }
 .tar { text-align: right }
 .ttu { text-transform: uppercase }
-.sup { font-size: 0.5em; line-height: 2; vertical-align: top; }
+.sup { font-size: 0.5em; line-height: 1.5; vertical-align: top; }
 .ti1 { text-indent: 1em }
 
 ul { padding-left: 1.5rem }
 ul { list-style: none }
 li { position: relative }
 
-.ol1 { outline: 1px solid rgba(127, 127, 127, 0.3) }
+.ol1 { outline: 1px solid #000 }
 .dev * { outline: 1px solid rgba(255, 0, 0, 0.1) }
 
 .nav-active { position: relative; }
 
-.nav-active:before,
+.nav-active:before {
+  content: '→';
+  position: absolute;
+  top: 0.8em;
+  left: -1rem;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
 ul li:before {
   content: '→';
   position: absolute;
@@ -189,6 +200,7 @@ code, pre {
   font-size: 0.9rem;
 }
 
+blockquote, 
 pre {
   background: #eee;
   border-radius: 3px;
@@ -196,17 +208,17 @@ pre {
   overflow-x: auto;
 }
 
-.bt1 { border-top: 1px solid rgba(0, 0, 0, 0.15) }
-.bb1 { border-bottom: 1px solid rgba(0, 0, 0, 0.15) }
+.bt1 { border-top: 1px solid #000 }
+.bb1 { border-bottom: 1px solid #000 }
 
 .bheader:after {
   content: '';
   height: 1px;
   position: absolute;
+  bottom: 0;
   left: 1.5rem;
   right: 1.5rem;
-  bottom: -1px;
-  background: rgba(0, 0, 0, 0.15);
+  background: #000;
 }
 
 a.button {
@@ -244,10 +256,47 @@ input {
   code, pre { font-size: 1.8rem }
   ul { padding-left: 3rem; }
   ul li:before { left: -3rem; }
-  .wmxcopy p, .wmxcopy h2, .wmxcopy h3 { max-width: 120rem }
+  .wmxcopy p, .wmxcopy h2, .wmxcopy h3, .wmxcopy table { max-width: 120rem }
   .wmxheading { max-width: 120rem }
 
+  [sm~="dn"] { display: none }
   [sm~="c12"] { width: 100% }
   [sm~="psr"] { position: relative }
   [sm~="pt0"] { padding-top: 0 }
+  [sm~="fs2"] { font-size: 4rem; }
+  [sm~="mt0"] { margin-top: 0 }
 }
+
+table {
+  padding: 0;
+  margin: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+  table tr {
+    border-top: 1px solid #000;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f5f5f5; }
+    table tr th {
+      background: #f5f5f5;
+      border: 1px solid #000;
+      font-weight: normal;
+      color: #000;
+      text-transform: uppercase;
+      text-align: left;
+      margin: 0;
+      padding: 0.5rem; }
+    table tr td {
+      border: 1px solid #000;
+      text-align: left;
+      margin: 0;
+      padding: 0.5rem; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }

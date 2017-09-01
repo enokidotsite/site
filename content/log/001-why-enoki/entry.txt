@@ -1,0 +1,24 @@
+title: Why Enoki?
+----
+date: September 1st, 2017
+----
+tags:
+  - pre-alpha
+  - beginner
+----
+format: longform
+----
+thumbnail: self.png
+----
+text:
+
+### Technical
+
+- appropriate technology
+- better/simpler tooling
+
+### Ethics
+
+- data ownership
+- data identity
+- virtual landscapes (living inside a walmart)

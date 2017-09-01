@@ -1,0 +1,55 @@
+title: Choo and Fun Functional JS
+----
+draft: true
+----
+date: September 1st, 2017
+----
+tags:
+  - pre-alpha
+  - beginner
+----
+thumbnail: choo.png
+----
+thumbnailborder: true
+----
+excerpt: Making a website doesn’t have to be hard, and programming doesn’t have to be complex.
+----
+text:
+
+Websites today don’t look or work like yesterday’s websites. The tools and methods for making them don’t either. For one, most of them are much more complex. There are some good ideas in the complexity, though, and those can be focused to be simple.
+
+Some of those best ideas are in [Choo](https://github.com/choojs/choo), which is a philosophy of building sites as much as it is a (tiny) front-end framework: 
+
+> We believe programming should be fun and light, not stern and stressful. It's cool to be cute; using serious words without explaining them doesn't make for better results - if anything it scares people off. We don't want to be scary, we want to be nice and fun, and then casually be the best choice around. Real casually.
+
+### Future
+
+> We believe frameworks should be disposable, and components recyclable. We don't want a web where walled gardens jealously compete with one another. Choo is modest in its design; we don't believe it will be top of the class forever, so we've made it as easy to toss out as it is to pick up.
+
+- Using JS for webapp shiz
+- Use that JS for Static Output
+- Longevity of raw HTML, interactivity of JS
+
+@[youtube](https://www.youtube.com/watch?v=qUZVv0nr2rc)
+
+### For Beginners
+- 
+
+### 
+
+### For Pros
+
+- Use cases for Enoki/Choo/Bankai
+
+### For Skeptics
+
+### Ideas
+
+- Facebook/Apache license drama
+- Sane tooling (appropriate technology)
+- VDOM and Dom
+- Basic API
+- Comparisons
+- Preact
+
+- Glitch examples

@@ -18,4 +18,7 @@ In this guide we will walk-through installing the starter-kit, explain how to wo
 ----
 text:
 
-hey whats good
+### Data Manipulation
+
+- A comparrison between Kirby’s jQuery inspired API, and the prevelence of Javascript’s array methods, with links and examples to similar things.<br><br>
+- Also touch on a library like Lodash, which you can load and use like Kirby’s API.

@@ -1,4 +1,4 @@
-title: Neo-Networking; Self Design and the Design of Self
+title: Self Design, Then and Now
 ----
 date: September 1st, 2017
 ----
@@ -16,15 +16,15 @@ text:
 
 ![](/log/002-self-design/auto.jpg)
 
-#### Example paragraph
+An Introduction to Autoprogettazione and Enzo Mari
 
-“There is often more power in ‘knowing how’ rather than ‘knowing that.’ The markers used to navigate a river are indeterminate in order to be practical… The aim is to offer not solutions, but rather mechanisms for generating solutions.”
+- A brief history of Mari
+- Autoprogettazione
+- Critique of production
+- Promoting an understanding of one’s environment
 
-#### Ideas
+Ideas
 
-- what happens when everyone is a designer
-- self branding as autoprogettazione
-- consumerism and self expression
-- identity and the branded self
-- self objectification
+- what happens when everyone is a designer, design of self
+- the difference between self branding (design of self) and autoprogettazione (self design)
 - economy of attention
