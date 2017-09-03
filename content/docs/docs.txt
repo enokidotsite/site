@@ -1,3 +1,5 @@
 title: Docs
 ----
-text: Soon!
+text:
+
+## [Full documentation coming soon; head over to the Github repositories for now](https://github.com/jondashkyle/enoki/blob/master/readme.md) <span class="ffmono">→</span>

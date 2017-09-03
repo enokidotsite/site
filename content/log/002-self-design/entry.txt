@@ -1,4 +1,4 @@
-title: Self Design, Then and Now
+title: Self Design; Then, Now, and Tomorrow
 ----
 date: September 1st, 2017
 ----
@@ -8,7 +8,7 @@ tags:
 ----
 format: longform
 ----
-thumbnail: self.png
+thumbnail: auto.jpg
 ----
 excerpt: What’s the easiest way to begin creating an Enoki site during the pre-alpha? With the Starter-kit! It includes an example content structure and site design covering some common patterns.
 ----

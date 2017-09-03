@@ -191,6 +191,7 @@ ul li:before {
 .tcwhite, .tcwhite a { color: #fff }
 .tcgrey, .tcgrey a { color: #999 }
 .tcgreydark, .tcgreydark a { color: #333 }
+.tdn, .tdn a { text-decoration: none }
 
 .op0 { opacity: 0 }
 .ophc:hover .oph100 { opacity: 1 }
@@ -200,10 +201,16 @@ code, pre {
   font-size: 0.9rem;
 }
 
+code, 
 blockquote, 
 pre {
   background: #eee;
   border-radius: 3px;
+}
+
+code { padding: 0.1em 0.2em }
+
+pre {
   padding: 1rem;
   overflow-x: auto;
 }

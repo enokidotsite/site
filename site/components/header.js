@@ -77,7 +77,7 @@ function navigation (state, emit) {
   if (!display) return ''
 
   return html`
-    <div class="x c6 ttu" sm="c12">
+    <div class="x c6" sm="c12">
       ${order.map(key => link(links[key]))}
     </div>
   `
@@ -86,6 +86,7 @@ function navigation (state, emit) {
     var activeClass = link.dirname
       ? isActive(link.dirname) ? 'nav-active' : ''
       : ''
+
     return html`
       <a
         href="${link.url}"

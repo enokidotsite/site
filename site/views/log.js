@@ -8,7 +8,11 @@ module.exports = wrapper(log)
 function log (state, emit) {
   return html`
     <div class="x xw p1" style="margin-bottom: -1.6rem">
-      ${objectValues(state.page.children).reverse().map(entry)}
+      ${objectValues(state.page.children)
+        .filter(page => !page.draft)
+        .reverse()
+        .map(entry)
+      }
     </div>
   `
 }

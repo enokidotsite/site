@@ -1,5 +1,7 @@
 var html = require('choo/html')
-var ov = require('object-values')
+var xtend = require('xtend')
+var path = require('path')
+var objectValues = require('object-values')
 
 var wrapper = require('../components/wrapper')
 var format = require('../components/format')
@@ -8,6 +10,9 @@ var unorphan = require('../components/unorphan')
 module.exports = wrapper(home)
 
 function home (state, emit) {
+  var logLatest = getLatestChild(state.content.children.log.children)
+  var guideLatest = getLatestChild(state.content.children.guides.children)
+
   return html`
     <div class="c12 fs1 x xw p1">
       <div class="c12 fs4 p1 py2 psr z2 wmxheading">
@@ -38,11 +43,37 @@ function home (state, emit) {
         </div>
       </div>
       <div class="c12 p1"><div class="bb1"></div></div>
-      <div class="c4 p1">
-        <h3>From the Log</h3>
+      <div class="c12 p1 tac">
+        The Latest
       </div>
+      ${thumbnailEntry(xtend(logLatest, { subtitle: 'From the Log' }))}
+      ${thumbnailEntry(xtend(guideLatest, { subtitle: 'Learning Guide' }))}
+      <div class="py2 c12"></div>
     </div>
   `
+
+  function getLatestChild (children) {
+    var children = objectValues(children).filter(child => !child.draft).reverse()
+    if (children.length >= 0) {
+      return children[0]
+    } else {
+      return undefined
+    }
+  }
+
+  function thumbnailEntry (props) {
+    var thumb = props.files[props.thumbnail]
+    var border = props.thumbnailborder ? 'ol1' : ''
+    return html`
+      <a href="${props.url}" class="x c6" sm="c12">
+        <div class="c2"></div>
+        <div class="c8 p1 py2 tac">
+          <h4>${props.subtitle}</h4><br>
+          <h3>${props.title}</h3>
+        </div>
+      </a>
+    `
+  }
 
   function photo () {
     return html`

@@ -8,7 +8,7 @@ module.exports = wrapper(view)
 
 function view (state, emit) {
   return html`
-    <div class="x xw c12 px1" style="margin-bottom: -0.8rem">
+    <div class="x xw c12 px1" style="margin-bottom: -1rem">
       ${objectValues(state.page.children).reverse().map(entry)}
     </div>
   `

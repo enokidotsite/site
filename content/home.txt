@@ -7,7 +7,7 @@ order:
 ----
 navigation: true
 ----
-heading: A set of tools for publishing on the open web of today and future web of tomorrow.
+heading: An ultralight set of tools for publishing on the open and distributed web.
 ----
 text:
 
@@ -37,4 +37,4 @@ email:
 
 ### Say Hello
 
-Monthly updates, etc…
+During the programmer preview feel free to send feedback through the [Github](https://github.com/jondashkyle/enoki) repository.

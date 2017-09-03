@@ -1,10 +1,9 @@
-title: An (Early) Overview of the Panel
+title: An (Early) Preview of the Enoki Panel
 ----
 date: September 1st, 2017
 ----
 tags:
   - pre-alpha
-  - beginner
 ----
 thumbnail: panel.png
 ----
@@ -12,11 +11,77 @@ thumbnailborder: true
 ----
 excerpt:
 
-The Enoki Panel provides a web interface to manage your project’s content. It is fully extendable with custom fields, and even input types.
+The Enoki Panel provides a web interface to manage your project’s content. It is fully extendable with custom fields and input types.
 
-The most interesting part about the Panel? It’s just an Enoki site, which means you can hack at it same as the Starter-Kit.
+The most interesting part about the Panel? It’s just an Enoki site, which means you can hack at it same as the [Starter-Kit](/guides/001-starter-kit/).
 
 ----
 text:
 
-This is a test of that thing for the thing, you know?
+![](panel-desktop.png)
+
+The Enoki Panel provides a web interface to manage your project’s content. It is fully extendable with custom fields and input types. There is no database—only files and folders.
+
+The most interesting part about the Panel? It’s just an Enoki site, which means you can hack at it same as the [Starter-Kit](/guides/001-starter-kit/).
+
+### Getting Started
+
+While Enoki and the Panel are in pre-alpha everything is bundled together in the Starter-Kit. To use the panel, go grab the most recent Starter-Kit.
+
+```
+git clone https://github.com/jondashkyle/enoki-starterkit.git
+```
+
+Run `npm install` there, and then `npm run panel`. This will create an Enoki development server (just like `enoki dev`), and also exposes the API on the same port (`/api/v1/*`).
+
+### Just Files and Folders
+
+Instead of storing your data in a database, Enoki uses a series of plain `.txt` files with a simple key/value formatting convention:
+
+```
+title: Prosthetic Memory
+––––
+tags:
+  - design
+  - networks
+––––
+text:
+
+## The Indigenous and The Barbarians
+
+Prosthetic memory is a concept put forth by Alison Landsberg in her article “Prosthetic Memory: Total Recall and Blade Runner.” This concept is particularly relevant in terms of examining the ways that different forms of media have contributed to the era of the posthuman. As Landsberg explains, “By prosthetic memories I mean memories which do not come from a person’s lived experience in any strict sense.”
+```
+
+The Panel uses Blueprints to define the structure of the data in the text file. For example, a basic setup for the previous view looks like:
+
+```
+title: Page
+
+fields:
+  title:
+    label: Title
+    type:  text
+
+  tags:
+    label: tags
+    type: tags
+
+  text:
+    label: Text
+    type:  textarea
+
+```
+
+This provides you with a field of inputs which when saved writes the data back to the text file. Because of this, you can use the Panel with any other tool that reads files and folders. This also makes it extremely simple to archive your content separately from Enoki.
+
+The best way of seeing how to use the Panel is by taking a look through the [Starter-Kit](/guides/001-starter-kit).
+
+### The Panel is an Enoki Site
+
+The same tools used in the Starter-Kit are used to create the Panel. You can easily see how this can lead to an extremely customizable environment. The Panel can output a Site which can output a Panel which can output a Site, and so on…
+
+### Some Notes
+
+- It’s not possible to self host the Panel, but will be soon.
+- It’s fully extendable—just drop some custom fields in `/site/fields`
+- The panel is built with an emphasis on data ownership and portability.
