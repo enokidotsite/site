@@ -17,6 +17,7 @@
     "brfs": "^1.4.3",
     "choo": "^6.0.0-4",
     "markdown-it": "^8.4.0",
+    "markdown-it-html5-embed": "^0.4.0",
     "markdown-it-implicit-figures": "^0.6.0",
     "markdown-it-video": "^0.4.0",
     "nano-markdown": "^1.2.0",

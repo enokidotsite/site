@@ -48,8 +48,9 @@ a {
 .copy > * { margin-top: 1.5rem; margin-bottom: 1.5rem; }
 .copy > *:first-child { margin-top: 0 }
 .copy > *:last-child { margin-bottom: 0 }
-.copy img { max-width: 100% }
+.copy img, .copy video { max-width: 100% }
 img { display: block }
+
 
 .fwb, b, strong { font-weight: 600 }
 .strk { text-decoration: line-through }
@@ -195,6 +196,21 @@ ul li:before {
 
 .op0 { opacity: 0 }
 .ophc:hover .oph100 { opacity: 1 }
+
+figure {
+  position: relative;
+}
+
+figure video+img{
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 
 code, pre {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;

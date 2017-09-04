@@ -43,11 +43,8 @@ function home (state, emit) {
         </div>
       </div>
       <div class="c12 p1"><div class="bb1"></div></div>
-      <div class="c12 p1 tac">
-        The Latest
-      </div>
-      ${thumbnailEntry(xtend(logLatest, { subtitle: 'From the Log' }))}
-      ${thumbnailEntry(xtend(guideLatest, { subtitle: 'Learning Guide' }))}
+      ${thumbnailEntry(xtend(logLatest, { subtitle: 'Latest From the Log' }))}
+      ${thumbnailEntry(xtend(guideLatest, { subtitle: 'Recent Learning Guide' }))}
       <div class="py2 c12"></div>
     </div>
   `

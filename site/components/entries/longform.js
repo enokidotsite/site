@@ -1,11 +1,16 @@
 var html = require('choo/html')
-var format = require('../format')
 var raw = require('../raw')
 var unorphan = require('../unorphan')
+
+var Content = require('../content')
+var content = Content()
 
 module.exports = longform
 
 function longform (props) {
+  var text = content.render({
+    text: props.text
+  })
   return html`
     <div class="c12 x xw">
       <div class="c12 p1">
@@ -20,9 +25,7 @@ function longform (props) {
         </ul>
       </div>
       <div class="c8 p1" sm="c12">
-        <div class="copy wmxcopy">
-          ${props.text ? format(props.text) : ''}
-        </div>
+        ${text}
       </div>
     </div>
   `
