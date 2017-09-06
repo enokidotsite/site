@@ -18,6 +18,8 @@ In this guide we will walk-through installing the starter-kit, explain how to wo
 ----
 text:
 
+![](starter-kit.png)
+
 ### The Starter-Kit is the glue
 
 Enoki is an ultralight set of tools and methods for publishing online. Right now, the focus is on creating a foundation of great tools for the fast and light programmer. These tools are progressively glued together, each time [abstracting parts](http://substack.net/how_I_write_modules) away into modules.

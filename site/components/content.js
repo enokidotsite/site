@@ -23,22 +23,22 @@ class Content extends Nanocomponent {
     `
   }
 
+  update (props) {
+    var diff = props.text !== this.props.text
+    this.props = props
+    return diff
+  }
+
   load () {
     this.refresh()
   }
 
-  update (props) {
-    // new text
-    if (props.text !== this.props.text) {
-      this.props = props
-      this.refresh()
-      return true
-    }
-
-    return false
+  afterupdate(el) {
+    this.refresh(el)
   }
 
-  refresh () {
+  refresh (el) {
+    el = el || this.element
     var videos = [...this.element.querySelectorAll('video')]
     videos.forEach(this.createVideo)
   }
@@ -46,10 +46,15 @@ class Content extends Nanocomponent {
   createVideo (element) {
     var sourceVideo = element.querySelector('source').getAttribute('src')
     var sourceImg = sourceVideo.replace('.mp4', '.png')
-    var image = html`<img
-      src="${sourceImg}"
-      onclick=${handleImageClick}
-    >`
+    var image = html`
+      <div
+        class="psa t0 l0 r0 b0 bggreylight h100 w100 curp"
+        onclick=${handleImageClick}
+      >
+        <div class="play pen"></div>
+        <img src="${sourceImg}">
+      </div>
+    `
 
     // dom manipulation
     element.parentNode.appendChild(image)
@@ -72,7 +77,7 @@ class Content extends Nanocomponent {
     })
 
     function handleImageClick (event) {
-      event.target.style.display = 'none'
+      image.style.display = 'none'
       element.play()
     }
 

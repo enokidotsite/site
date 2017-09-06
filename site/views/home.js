@@ -43,9 +43,12 @@ function home (state, emit) {
         </div>
       </div>
       <div class="c12 p1"><div class="bb1"></div></div>
+      <div class="c12 p1">
+        ${screenshot()}
+      </div>
+      <div class="c12 p1"><div class="bb1"></div></div>
       ${thumbnailEntry(xtend(logLatest, { subtitle: 'Latest From the Log' }))}
       ${thumbnailEntry(xtend(guideLatest, { subtitle: 'Recent Learning Guide' }))}
-      <div class="py2 c12"></div>
     </div>
   `
 
@@ -63,10 +66,10 @@ function home (state, emit) {
     var border = props.thumbnailborder ? 'ol1' : ''
     return html`
       <a href="${props.url}" class="x c6" sm="c12">
-        <div class="c2"></div>
-        <div class="c8 p1 py2 tac">
+        <div class="c12 p1 py2 tac">
           <h4>${props.subtitle}</h4><br>
-          <h3>${props.title}</h3>
+          <h3 class="px2">${unorphan(props.title)}</h3>
+          <div class="py2 c12"></div>
         </div>
       </a>
     `
@@ -83,6 +86,16 @@ function home (state, emit) {
         <div class="psa b0 l0 p1 copy op0 oph100 lh1">
           Photo via <a href="http://informationalaffairs.com/" target="_blank">Informational Affairs</a>
         </div>
+      </div>
+    `
+  }
+
+  function screenshot () {
+    return html`
+      <div class="psr c12" style="padding-bottom: 49.9752107%">
+        <a href="/guides/002-panel-preview/">
+          <img src="/assets/starterkit-thumb.png" class="psa t0 l0 h100 w100">
+        </a>
       </div>
     `
   }

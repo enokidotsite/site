@@ -4,6 +4,7 @@ date: September 1st, 2017
 ----
 tags:
   - pre-alpha
+  - panel
 ----
 thumbnail: panel.png
 ----
@@ -11,7 +12,7 @@ thumbnailborder: true
 ----
 excerpt:
 
-The Enoki Panel is an ultralight web interface to manage your project’s content. It is fully extendable with custom fields and input types.
+The Enoki Panel is an ultralight web interface for managing your site’s content. It is fully extendable with custom fields and input types. There is no database—only files and folders.
 
 The most interesting part about the Panel? It’s just an Enoki site, which means you can hack at it same as the [Starter-Kit](/guides/001-starter-kit/).
 
@@ -20,7 +21,7 @@ text:
 
 ![panel-preview.jpg](panel-preview.mp4)
 
-The Enoki Panel is an ultralight a web interface to manage your project’s content. It is fully extendable with custom fields and input types. There is no database—only files and folders.
+The Enoki Panel is an ultralight web interface for managing your site’s content. It is fully extendable with custom fields and input types. There is no database—only files and folders.
 
 The most interesting part about the Panel? It’s just an Enoki site, which means you can hack at it same as the [Starter-Kit](/guides/001-starter-kit/).
 
@@ -47,7 +48,7 @@ tags:
 ––––
 text:
 
-## The Indigenous and The Barbarians
+## Prosthetic Memory
 
 Prosthetic memory is a concept put forth by Alison Landsberg in her article “Prosthetic Memory: Total Recall and Blade Runner.” This concept is particularly relevant in terms of examining the ways that different forms of media have contributed to the era of the posthuman. As Landsberg explains, “By prosthetic memories I mean memories which do not come from a person’s lived experience in any strict sense.”
 ```
@@ -84,5 +85,5 @@ The same tools used in the Starter-Kit are used to create the Panel. You can eas
 - It’s not yet possible to self host the Panel, but will be soon.
 - Same goes for the hosted version.
 - For now, run locally by downloading through Github.
-- It’s fully extendable—just drop some custom fields in `/site/fields`
+- It’s fully extendable—just drop some custom fields in `/site/fields`.
 - The panel is built with an emphasis on data ownership and portability.

@@ -46,6 +46,7 @@ a {
 
 .copy { display: block }
 .copy > * { margin-top: 1.5rem; margin-bottom: 1.5rem; }
+.copy h3 { margin-top: 3rem }
 .copy > *:first-child { margin-top: 0 }
 .copy > *:last-child { margin-bottom: 0 }
 .copy img, .copy video { max-width: 100% }
@@ -218,7 +219,6 @@ code, pre {
 }
 
 code, 
-blockquote, 
 pre {
   background: #eee;
   border-radius: 3px;
@@ -229,6 +229,54 @@ code { padding: 0.1em 0.2em }
 pre {
   padding: 1rem;
   overflow-x: auto;
+}
+
+blockquote {
+  position: relative;
+  font-family: Times, serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding-left: 2rem;
+  letter-spacing: -0.015em;
+  width: 100%;
+}
+
+blockquote:before {
+  display: block;
+  content: '“ ';
+  position: absolute;
+  width: 1.85rem;
+  top: 0;
+  left: 0;
+  text-align: right;
+}
+
+blockquote > :last-child:after {
+  content: '”';
+}
+
+.wmxcopy blockquote p {
+  max-width: 100%;
+}
+
+.play {
+  background: rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+}
+
+.play:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 12px solid #fff;
+  border-bottom: 8px solid transparent; 
 }
 
 .bt1 { border-top: 1px solid #000 }
