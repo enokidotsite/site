@@ -7,7 +7,7 @@ module.exports = wrapper(view)
 function view (state, emit) {
   return html`
     <div class="x x1 xjc xac c12 p1">
-      <div class="copy wmxcopy tac tdn">
+      <div class="copy wmxcopy tac tdn px2">
         ${format(state.page.text)} 
       </div>
     </div>

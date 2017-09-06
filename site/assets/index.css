@@ -323,8 +323,11 @@ input {
   html { font-size: 1.9vw }
   body, .fwn { font-weight: 400 }
   body, .fs1 { font-size: 2rem }
+  h2 { line-height: 1.2 }
   .fs4 { line-height: 1.2 }
   code, pre { font-size: 1.8rem }
+  .nav-active { padding-left: 3rem }
+  .nav-active:before { left: 1rem; line-height: 0.25 }
   ul { padding-left: 3rem; }
   ul li:before { left: -3rem; }
   .wmxcopy p, .wmxcopy h2, .wmxcopy h3, .wmxcopy table { max-width: 120rem }
