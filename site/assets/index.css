@@ -171,19 +171,19 @@ li { position: relative }
   content: '→';
   position: absolute;
   left: -0.75rem;
-  font-family: "Source Code Pro", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "SFMono-Regular", "Source Code Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 ul li:before {
   content: '→';
   position: absolute;
   left: -1.5rem;
-  font-family: "Source Code Pro", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "SFMono-Regular", "Source Code Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 .ffsans { font-family: 'Untitled Sans', -apple-system, sans-serif }
 .ffmono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace }
-.ffui { font-family: "Source Code Pro", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace }
+.ffui { font-family: "SFMono-Regular", "Source Code Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace }
 
 .bgwhite { background: #fff }
 .bggreylight { background: #eee }
