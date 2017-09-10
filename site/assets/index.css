@@ -340,6 +340,7 @@ input {
   ul li:before { left: -3rem; }
   .wmxcopy p, .wmxcopy h2, .wmxcopy h3, .wmxcopy table { max-width: 120rem }
   .wmxheading { max-width: 120rem }
+  blockquote { font-size: 4rem }
 
   [sm~="dn"] { display: none }
   [sm~="c12"] { width: 100% }
