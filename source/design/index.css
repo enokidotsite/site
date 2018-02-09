@@ -29,6 +29,9 @@ header {
   height: 100vh;
   overflow: hidden;
   transform-style: preserve-3d;
+}
+
+.fadein { 
   animation: 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0s 1 titleIn;
 }
 

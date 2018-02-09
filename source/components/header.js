@@ -11,7 +11,11 @@ module.exports = class Header extends Nanocomponent {
     this.state = {
       title: '',
       target: [1, 0, -0.5],
-      unit: [1, 0, -0.5]
+      unit: [1, 0, -0.5],
+      img: {
+        loaded: false,
+        src: '/assets/ui.svg'
+      }
     }
 
     this.handleIntersection = this.handleIntersection.bind(this)
@@ -20,8 +24,21 @@ module.exports = class Header extends Nanocomponent {
   }
 
   load (element) {
+    var self = this
+
+    // track position
     this.observer = new IntersectionObserver(this.handleIntersection)
     this.observer.observe(element)
+
+    // load image
+    var img = new Image()
+    img.addEventListener('load', handleLoad)
+    img.setAttribute('src', this.state.img.src)
+
+    function handleLoad () {
+      self.state.img.loaded = true
+      self.rerender()
+    }
   }
 
   unload (element) {
@@ -39,12 +56,12 @@ module.exports = class Header extends Nanocomponent {
           --unity: ${this.state.unit[2]};
         "
       >
-        <div class="masthead">
+        <div class="masthead fadein">
           <h1>${this.state.title}</h1>
           <h2>${raw(breakText(this.state.subtitle))}</h2>
         </div>
-        <div class="screenshot">
-          <img src="/assets/ui.svg">
+        <div class="screenshot ${this.state.img.loaded ? 'fadein' : ''}">
+          ${this.state.img.loaded ? html`<img src="${this.state.img.src}">` : ''}
         </div>
       </header>
     `
