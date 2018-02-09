@@ -1,11 +1,6 @@
 .DS_Store
 .dat
 node_modules/
-
-.log
+bundles/bundle.js
+bundles/bundle.css
 dat.json
-bundles/
-public/
-dist/
-config.defaults.yml
-config.yml
