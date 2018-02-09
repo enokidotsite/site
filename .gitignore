@@ -4,6 +4,7 @@ node_modules/
 
 .log
 dat.json
+bundles/
 public/
 dist/
 config.defaults.yml

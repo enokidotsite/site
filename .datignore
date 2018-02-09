@@ -2,4 +2,4 @@
 .git
 .dat
 .log
-node_modules/**
+source/node_modules/**
