@@ -1,0 +1,25 @@
+{
+  "title": "Home",
+  "fields": {
+    "title": {
+      "label": "Title",
+      "type": "text"
+    },
+    "subtitle": {
+      "label": "Subtitle",
+      "type": "textarea"
+    },
+    "started": {
+      "label": "Get started button",
+      "type": "text"
+    },
+    "credit": {
+      "label": "Credit",
+      "type": "text"
+    },
+    "quote": {
+      "label": "Quote",
+      "type": "text"
+    }
+  }
+}

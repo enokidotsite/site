@@ -1,0 +1,5 @@
+title: Extendable
+----
+view: feature
+----
+text: Easily create custom field types for project specific interfaces.

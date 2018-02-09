@@ -1,0 +1,14 @@
+title: Enoki
+----
+view: home
+----
+subtitle: An experimental tool for self-publishing
+on the peer-to-peer web
+----
+text: Super wow
+----
+started: Beta coming soon
+----
+credit: 2018 — Los Angles, Calif.
+----
+quote: It unfolds as you make it

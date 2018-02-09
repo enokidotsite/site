@@ -1,0 +1,5 @@
+title: Infinite history
+----
+view: feature
+----
+text: Gone and biffed it? Revert to previous verisons of your site anytime.

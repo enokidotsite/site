@@ -1,0 +1,17 @@
+{
+  "title": "Features",
+  "pages": {
+    "view": "feature"
+  },
+  "fields": {
+    "title": {
+      "label": "Title",
+      "type": "text"
+    },
+    "order": {
+      "label": "Hacky order solution until there is a field for this",
+      "type": "textarea",
+      "toolbar": false
+    }
+  }
+}

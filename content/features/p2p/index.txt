@@ -1,0 +1,5 @@
+title: Peer-to-Peer
+----
+view: feature
+----
+text: Instead of being confined to a centralized platform, publish directly with [Dat](https://datproject.org).

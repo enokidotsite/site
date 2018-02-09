@@ -1,0 +1,5 @@
+title: Beginner friendly
+----
+view: feature
+----
+text: [Choo](https://choo.io) is the friendliest front-end framework, and is the basis for the Designs and Panel.

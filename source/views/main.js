@@ -11,7 +11,9 @@ module.exports = view
 
 function view (state, emit) {
   if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
-  var page = state.content[state.href || '/'] || { }
+  var page = state.content[state.href || '/']
+
+  if (!page) return html`<body></body>`
 
   return html`
     <body>
@@ -20,10 +22,11 @@ function view (state, emit) {
         subtitle: page.subtitle
       })}
       <nav class="action-bar">
-        <a href="https://panel.enoki.site" class="button get-started">${page.started}</a>
+        <div class="button get-started">${page.started}</div>
       </nav>
       ${renderFeatures({
-        features: state.content['/features']
+        features: state.content['/features'],
+        content: state.content
       })}
       <footer>
         <span>${page.credit}</span>
@@ -34,7 +37,10 @@ function view (state, emit) {
 }
 
 function renderFeatures (props) {
-  var features = Object.values(props.features)
+  var features = props.features.order
+    .split('\n')
+    .map(feature => feature.replace('- ', ''))
+    .map(feature => props.content[props.features.pages[feature].url])
   return html`
     <ul class="features">
       ${features.map(renderFeature)}

@@ -1,0 +1,5 @@
+title: Own your data
+----
+view: feature
+----
+text: This is a tool, not a platform. Your data stays with you.

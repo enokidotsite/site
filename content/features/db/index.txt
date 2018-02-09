@@ -1,0 +1,5 @@
+title: No database
+----
+view: feature
+----
+text: Only static files and folders, meaning your work is easily portable and archivable.

@@ -1,0 +1,5 @@
+title: Offline first
+----
+view: feature
+----
+text: No internet connection? No problem. Sync changes automatically when reconnecting.

@@ -1,34 +1,37 @@
 {
   "name": "enoki-site",
   "version": "2.0.0",
-  "description": "",
+  "description": "A simple place to start",
   "main": "index.js",
+  "scripts": {
+    "start": "watchify index.js -o ../bundles/bundle.js -t brfs -t sheetify -p [ css-extract -o ../bundles/bundle.css ] index.js",
+    "build": "browserify index.js -o ../bundles/bundle.js -t brfs -t yo-yoify -t  [ sheetify -u sheetify-cssnext ] -g es2040 -p [ css-extract -o ../bundles/bundle.css ] -p tinyify"
+  },
   "keywords": [],
   "author": "Jon-Kyle <contact@jon-kyle.com> (http://jon-kyle.com)",
-  "license": "Apache-2.0",
-  "scripts": {
-    "build": "bankai build index.js",
-    "create": "choo-scaffold",
-    "inspect": "bankai inspect index.js",
-    "start": "bankai start index.js",
-    "test": "standard && npm run test-deps",
-    "publish": "dat sync dist  --no-ignoreHidden",
-    "test-deps": "dependency-check . && dependency-check . --extra --no-dev -i tachyons"
-  },
+  "license": "ISC",
   "dependencies": {
-    "choo": "^6.7.0",
-    "choo-devtools": "^2.2.0",
-    "choo-service-worker": "^2.3.1",
+    "brfs": "^1.4.3",
+    "choo": "^6.0.0",
+    "choo-dat-hypha": "^0.4.1",
     "nano-markdown": "^1.2.0",
-    "nanocomponent": "^6.5.0",
+    "nanocomponent": "^6.4.0",
     "nanoreset": "^1.2.0",
-    "sheetify": "^7.1.0",
-    "tachyons": "^4.9.0"
+    "object-keys": "^1.0.11",
+    "object-values": "^1.0.0",
+    "query-string": "^5.0.0",
+    "xhr": "^2.4.0",
+    "xtend": "^4.0.1",
+    "yo-yoify": "^3.7.3"
   },
   "devDependencies": {
-    "bankai": "^9.3.1",
-    "choo-scaffold": "^1.1.2",
-    "dependency-check": "^2.9.1",
-    "standard": "^10.0.3"
+    "brfs": "^1.4.3",
+    "browserify": "^15.2.0",
+    "css-extract": "^1.2.0",
+    "es2040": "^1.2.6",
+    "sheetify": "^7.0.0",
+    "sheetify-cssnext": "^1.0.7",
+    "tinyify": "^2.4.0",
+    "watchify": "^3.10.0"
   }
 }

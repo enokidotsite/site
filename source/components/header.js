@@ -45,7 +45,6 @@ module.exports = class Header extends Nanocomponent {
         </div>
         <div class="screenshot">
           <img src="/assets/ui.svg">
-          <img src="/assets/ui.svg">
         </div>
       </header>
     `

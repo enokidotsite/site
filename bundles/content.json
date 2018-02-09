@@ -1,0 +1,178 @@
+{
+  "/features": {
+    "title": "Features",
+    "view": "features",
+    "order": "- free\n- p2p\n- offline\n- data\n- history\n- simple\n- db\n- extendable\n- opensource",
+    "name": "features",
+    "path": "/content/features",
+    "url": "/features",
+    "files": {},
+    "pages": {
+      "data": {
+        "name": "data",
+        "path": "/content/features/data",
+        "url": "/features/data",
+        "source": "/content/features/data"
+      },
+      "db": {
+        "name": "db",
+        "path": "/content/features/db",
+        "url": "/features/db",
+        "source": "/content/features/db"
+      },
+      "extendable": {
+        "name": "extendable",
+        "path": "/content/features/extendable",
+        "url": "/features/extendable",
+        "source": "/content/features/extendable"
+      },
+      "free": {
+        "name": "free",
+        "path": "/content/features/free",
+        "url": "/features/free",
+        "source": "/content/features/free"
+      },
+      "history": {
+        "name": "history",
+        "path": "/content/features/history",
+        "url": "/features/history",
+        "source": "/content/features/history"
+      },
+      "offline": {
+        "name": "offline",
+        "path": "/content/features/offline",
+        "url": "/features/offline",
+        "source": "/content/features/offline"
+      },
+      "opensource": {
+        "name": "opensource",
+        "path": "/content/features/opensource",
+        "url": "/features/opensource",
+        "source": "/content/features/opensource"
+      },
+      "p2p": {
+        "name": "p2p",
+        "path": "/content/features/p2p",
+        "url": "/features/p2p",
+        "source": "/content/features/p2p"
+      },
+      "simple": {
+        "name": "simple",
+        "path": "/content/features/simple",
+        "url": "/features/simple",
+        "source": "/content/features/simple"
+      }
+    }
+  },
+  "/features/data": {
+    "title": "Own your data",
+    "view": "feature",
+    "text": "This is a tool, not a platform. Your data stays with you.",
+    "name": "data",
+    "path": "/content/features/data",
+    "url": "/features/data",
+    "files": {},
+    "pages": {}
+  },
+  "/features/db": {
+    "title": "No database",
+    "view": "feature",
+    "text": "Only static files and folders, meaning your work is easily portable and archivable.",
+    "name": "db",
+    "path": "/content/features/db",
+    "url": "/features/db",
+    "files": {},
+    "pages": {}
+  },
+  "/features/extendable": {
+    "title": "Extendable",
+    "view": "feature",
+    "text": "Easily create custom field types for project specific interfaces.",
+    "name": "extendable",
+    "path": "/content/features/extendable",
+    "url": "/features/extendable",
+    "files": {},
+    "pages": {}
+  },
+  "/features/free": {
+    "title": "Free",
+    "view": "feature",
+    "text": "Culture wants to be free. No monthly hosting fees or billing to keep up with.",
+    "name": "free",
+    "path": "/content/features/free",
+    "url": "/features/free",
+    "files": {},
+    "pages": {}
+  },
+  "/features/history": {
+    "title": "Infinite history",
+    "view": "feature",
+    "text": "Gone and biffed it? Revert to previous verisons of your site anytime.",
+    "name": "history",
+    "path": "/content/features/history",
+    "url": "/features/history",
+    "files": {},
+    "pages": {}
+  },
+  "/features/offline": {
+    "title": "Offline first",
+    "view": "feature",
+    "text": "No internet connection? No problem. Sync changes automatically when reconnecting.",
+    "name": "offline",
+    "path": "/content/features/offline",
+    "url": "/features/offline",
+    "files": {},
+    "pages": {}
+  },
+  "/features/opensource": {
+    "title": "Open source",
+    "view": "feature",
+    "text": "Developed using some of the best open source projects, and released as open source.",
+    "name": "opensource",
+    "path": "/content/features/opensource",
+    "url": "/features/opensource",
+    "files": {},
+    "pages": {}
+  },
+  "/features/p2p": {
+    "title": "Peer-to-Peer",
+    "view": "feature",
+    "text": "Instead of being confined to a centralized platform, publish directly with [Dat](https://datproject.org).",
+    "name": "p2p",
+    "path": "/content/features/p2p",
+    "url": "/features/p2p",
+    "files": {},
+    "pages": {}
+  },
+  "/features/simple": {
+    "title": "Beginner friendly",
+    "view": "feature",
+    "text": "[Choo](https://choo.io) is the friendliest front-end framework, and is the basis for the Designs and Panel.",
+    "name": "simple",
+    "path": "/content/features/simple",
+    "url": "/features/simple",
+    "files": {},
+    "pages": {}
+  },
+  "/": {
+    "title": "Enoki",
+    "view": "home",
+    "subtitle": "An experimental tool for self-publishing\non the peer-to-peer web",
+    "text": "Super wow",
+    "started": "Beta coming soon",
+    "credit": "2018 — Los Angles, Calif.",
+    "quote": "It unfolds as you make it",
+    "name": "content",
+    "path": "/content",
+    "url": "/",
+    "files": {},
+    "pages": {
+      "features": {
+        "name": "features",
+        "path": "/content/features",
+        "url": "/features",
+        "source": "/content/features"
+      }
+    }
+  }
+}

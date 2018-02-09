@@ -3,7 +3,7 @@ require('./design')
 
 var app = choo()
 
-app.use(require('./stores/content'))
+app.use(require('choo-dat-hypha')())
 app.use(require('./stores/clicks'))
 
 app.route('/', require('./views/main'))
