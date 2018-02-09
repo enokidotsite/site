@@ -1,9 +1,0 @@
-# ideas
-
-- reading list
-  - extrastatecraft
-  - in the absense of the sacred
-- open source stacks
-- the art of the readme, documentation
-- image collections / moods
-- choo and sane front end tooling

@@ -1,0 +1,34 @@
+{
+  "name": "enoki-site",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Jon-Kyle <contact@jon-kyle.com> (http://jon-kyle.com)",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "bankai build index.js",
+    "create": "choo-scaffold",
+    "inspect": "bankai inspect index.js",
+    "start": "bankai start index.js",
+    "test": "standard && npm run test-deps",
+    "publish": "dat sync dist  --no-ignoreHidden",
+    "test-deps": "dependency-check . && dependency-check . --extra --no-dev -i tachyons"
+  },
+  "dependencies": {
+    "choo": "^6.7.0",
+    "choo-devtools": "^2.2.0",
+    "choo-service-worker": "^2.3.1",
+    "nano-markdown": "^1.2.0",
+    "nanocomponent": "^6.5.0",
+    "nanoreset": "^1.2.0",
+    "sheetify": "^7.1.0",
+    "tachyons": "^4.9.0"
+  },
+  "devDependencies": {
+    "bankai": "^9.3.1",
+    "choo-scaffold": "^1.1.2",
+    "dependency-check": "^2.9.1",
+    "standard": "^10.0.3"
+  }
+}

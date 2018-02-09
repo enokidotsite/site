@@ -1,5 +1,0 @@
-title: Docs
-----
-text:
-
-## [Full documentation coming soon; head over to the Github repositories for now](https://github.com/jondashkyle/enoki-starterkit/blob/master/readme.md) <span class="ffui">→</span>

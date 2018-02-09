@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000px" height="800px" viewBox="0 0 1000 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Typography</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1000" height="800" rx="20"></rect>
+        <rect id="path-3" x="0" y="0" width="595" height="40" rx="20"></rect>
+        <rect id="path-4" x="0" y="0" width="715" height="51" rx="3"></rect>
+        <rect id="path-6" x="0" y="0" width="595" height="300" rx="20"></rect>
+        <rect id="path-7" x="0" y="0" width="715" height="51" rx="3"></rect>
+    </defs>
+    <g id="Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Typography">
+            <g id="Group">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#DDDDDD" stroke-width="1" x="0.5" y="0.5" width="999" height="799" rx="20"></rect>
+                </g>
+                <g mask="url(#mask-2)">
+                    <g id="Fields" transform="translate(40.000000, 180.000000)">
+                        <g id="Pages" transform="translate(0.000000, 2.000000)">
+                            <g id="List" transform="translate(0.000000, 36.000000)">
+                                <text id="About" font-family="SFUIText-Regular, SF UI Text" font-size="18" font-weight="normal" fill="#000000">
+                                    <tspan x="0" y="67">About</tspan>
+                                </text>
+                                <text id="Blog" font-family="SFUIText-Regular, SF UI Text" font-size="18" font-weight="normal" fill="#000000">
+                                    <tspan x="0" y="107">Blog</tspan>
+                                </text>
+                                <text id="Projects" font-family="SFUIText-Regular, SF UI Text" font-size="18" font-weight="normal" fill="#000000">
+                                    <tspan x="0" y="27">Projects</tspan>
+                                </text>
+                                <path d="M0.5,41.5 L285.5,41.5" id="Line-3" stroke="#DDDDDD" stroke-linecap="square"></path>
+                                <path d="M0.5,81.5 L285.5,81.5" id="Line-3" stroke="#DDDDDD" stroke-linecap="square"></path>
+                                <path d="M0.5,121.5 L285.5,121.5" id="Line-3" stroke="#DDDDDD" stroke-linecap="square"></path>
+                                <path d="M0.5,1.5 L285.5,1.5" id="Line-3" stroke="#DDDDDD" stroke-linecap="square"></path>
+                            </g>
+                            <g id="Title"></g>
+                            <g id="New" transform="translate(178.000000, 8.000000)">
+                                <rect id="Rectangle-4" stroke="#999999" x="0" y="0" width="52" height="20" rx="10"></rect>
+                                <text id="NEW" font-family="SFUIText-Regular, SF UI Text" font-size="14" font-weight="normal" fill="#999999">
+                                    <tspan x="10" y="15">NEW</tspan>
+                                </text>
+                            </g>
+                            <g id="All" transform="translate(241.000000, 8.000000)">
+                                <rect id="Rectangle-4" stroke="#999999" x="0" y="0" width="44" height="20" rx="10"></rect>
+                                <text id="ALL" font-family="SFUIText-Regular, SF UI Text" font-size="14" font-weight="normal" fill="#999999">
+                                    <tspan x="10" y="15">ALL</tspan>
+                                </text>
+                            </g>
+                            <text id="PAGES" font-family="SFUIText-Semibold, SF UI Text" font-size="14" font-weight="500" fill="#999999">
+                                <tspan x="0" y="23">PAGES</tspan>
+                            </text>
+                        </g>
+                        <g id="Pages" transform="translate(0.000000, 200.000000)">
+                            <g id="List" transform="translate(0.000000, 36.000000)">
+                                <text id="moerenuma.jpg" font-family="SFUIText-Regular, SF UI Text" font-size="18" font-weight="normal" fill="#000000">
+                                    <tspan x="0" y="27">moerenuma.jpg</tspan>
+                                </text>
+                                <path d="M0.5,41.5 L285.5,41.5" id="Line-3" stroke="#DDDDDD" stroke-linecap="square"></path>
+                                <path d="M0.5,1.5 L285.5,1.5" id="Line-3" stroke="#DDDDDD" stroke-linecap="square"></path>
+                            </g>
+                            <g id="Title"></g>
+                            <g id="New" transform="translate(154.000000, 8.000000)">
+                                <rect id="Rectangle-4" stroke="#999999" x="0" y="0" width="76" height="20" rx="10"></rect>
+                                <text id="UPLOAD" font-family="SFUIText-Regular, SF UI Text" font-size="14" font-weight="normal" fill="#999999">
+                                    <tspan x="10" y="15">UPLOAD</tspan>
+                                </text>
+                            </g>
+                            <g id="All" transform="translate(241.000000, 8.000000)">
+                                <rect id="Rectangle-4" stroke="#999999" x="0" y="0" width="44" height="20" rx="10"></rect>
+                                <text id="ALL" font-family="SFUIText-Regular, SF UI Text" font-size="14" font-weight="normal" fill="#999999">
+                                    <tspan x="10" y="15">ALL</tspan>
+                                </text>
+                            </g>
+                            <text id="FILES" font-family="SFUIText-Semibold, SF UI Text" font-size="14" font-weight="500" fill="#999999">
+                                <tspan x="0" y="23">FILES</tspan>
+                            </text>
+                        </g>
+                        <g id="Text" transform="translate(325.000000, 0.000000)">
+                            <g id="Input" transform="translate(0.000000, 40.000000)">
+                                <g id="Background">
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                    <rect stroke="#DDDDDD" stroke-width="1" x="0.5" y="0.5" width="594" height="39" rx="19.5"></rect>
+                                </g>
+                                <text id="On-Networks-and-Park" font-family="SFUIText-Regular, SF UI Text" font-size="18" font-weight="normal" fill="#000000">
+                                    <tspan x="20" y="27">On Networks and Parks</tspan>
+                                </text>
+                            </g>
+                            <g id="Title">
+                                <g id="Background">
+                                    <mask id="mask-5" fill="white">
+                                        <use xlink:href="#path-4"></use>
+                                    </mask>
+                                    <g id="Rectangle-3"></g>
+                                </g>
+                                <text id="TITLE" font-family="SFUIText-Semibold, SF UI Text" font-size="14" font-weight="500" fill="#999999">
+                                    <tspan x="0" y="25">TITLE</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="Text" transform="translate(325.000000, 100.000000)">
+                            <g id="Input" transform="translate(0.000000, 40.000000)">
+                                <g id="Background">
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                    <rect stroke="#DDDDDD" stroke-width="1" x="0.5" y="0.5" width="594" height="299" rx="20"></rect>
+                                </g>
+                                <text id="I-started-to-notice" font-family="SFUIText-Regular, SF UI Text" font-size="18" font-weight="normal" line-spacing="27" fill="#000000">
+                                    <tspan x="20" y="32">I started to notice that successful objects, that is, objects </tspan>
+                                    <tspan x="20" y="59">which are good to live with, seemed to share certain </tspan>
+                                    <tspan x="20" y="86">characteristics. They were never the result of aesthetic </tspan>
+                                    <tspan x="20" y="113">decisions alone, nor were they purely functional.</tspan>
+                                    <tspan x="20" y="140"></tspan>
+                                    <tspan x="20" y="167">They always balanced these two extremes with the </tspan>
+                                    <tspan x="20" y="194">additional consideration of the appropriateness of </tspan>
+                                    <tspan x="20" y="221">materials and their combination, of the human experience </tspan>
+                                    <tspan x="20" y="248">of using and living with the object, of the object’s effect on </tspan>
+                                    <tspan x="20" y="275">its surroundings and of the communication of its purpose.</tspan>
+                                </text>
+                            </g>
+                            <g id="Title">
+                                <g id="Background">
+                                    <mask id="mask-8" fill="white">
+                                        <use xlink:href="#path-7"></use>
+                                    </mask>
+                                    <g id="Rectangle-3"></g>
+                                </g>
+                                <text id="TEXT" font-family="SFUIText-Semibold, SF UI Text" font-size="14" font-weight="500" fill="#999999">
+                                    <tspan x="0" y="25">TEXT</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                    <text id="On-Networks-and-Park" font-family="SFUIText-Medium, SF UI Text" font-size="38" font-weight="400" letter-spacing="-1.10000002" fill="#000000">
+                        <tspan x="40" y="115">On Networks and Parks</tspan>
+                    </text>
+                    <path d="M41,140 L966,140" id="Line-3" stroke="#DDDDDD" stroke-linecap="square"></path>
+                    <g id="Top-Nav">
+                        <g id="Items" transform="translate(40.000000, 0.000000)">
+                            <g id="Breadcrumbs" transform="translate(0.000000, 12.000000)">
+                                <text id="home" font-family="SFUIText-Regular, SF UI Text" font-size="18" font-weight="normal" fill="#999999">
+                                    <tspan x="0" y="24">home</tspan>
+                                </text>
+                                <text id="projects" font-family="SFUIText-Regular, SF UI Text" font-size="18" font-weight="normal" fill="#999999">
+                                    <tspan x="68" y="24">projects</tspan>
+                                </text>
+                                <text id="on-networks-and-park" font-family="SFUIText-Regular, SF UI Text" font-size="18" font-weight="normal" fill="#000000">
+                                    <tspan x="157" y="24">on-networks-and-parks</tspan>
+                                </text>
+                                <path d="M58.1423067,-0.422664429 L58.1423067,39.5773356" id="Line-2" stroke="#DDDDDD" stroke-linecap="square" transform="translate(58.142307, 19.577336) rotate(15.000000) translate(-58.142307, -19.577336) "></path>
+                                <path d="M147.142307,-0.422664429 L147.142307,39.5773356" id="Line-2" stroke="#DDDDDD" stroke-linecap="square" transform="translate(147.142307, 19.577336) rotate(15.000000) translate(-147.142307, -19.577336) "></path>
+                            </g>
+                            <g id="Status" transform="translate(899.000000, 0.000000)">
+                                <rect id="Rectangle" x="1" y="0" width="60" height="60"></rect>
+                                <text id="→" transform="translate(31.000000, 30.500000) rotate(-90.000000) translate(-31.000000, -30.500000) " font-family="SFUIText-Bold, SF UI Text" font-size="18" font-weight="bold" fill="#FFFFFF">
+                                    <tspan x="23" y="37">→</tspan>
+                                </text>
+                                <path d="M1,0 L1,60" id="Line" stroke="#DDDDDD" stroke-linecap="square"></path>
+                            </g>
+                            <g id="Sites" transform="translate(827.000000, 0.000000)">
+                                <text id="Hub" font-family="SFUIText-Regular, SF UI Text" font-size="18" font-weight="normal" fill="#999999">
+                                    <tspan x="19.5361328" y="37">Hub</tspan>
+                                </text>
+                                <path d="M1,0 L1,60" id="Line" stroke="#DDDDDD" stroke-linecap="square"></path>
+                            </g>
+                            <g id="Editor" transform="translate(657.000000, 0.000000)">
+                                <text id="Sites" font-family="SFUIText-Regular, SF UI Text" font-size="18" font-weight="normal" fill="#999999">
+                                    <tspan x="110" y="37">Sites</tspan>
+                                </text>
+                                <text font-family="SFUIText-Regular, SF UI Text" font-size="18" font-weight="normal" fill="#000000">
+                                    <tspan x="20.4467773" y="37">Editor</tspan>
+                                </text>
+                                <path d="M91,0 L91,60" id="Line" stroke="#DDDDDD" stroke-linecap="square"></path>
+                                <path d="M1,0 L1,60" id="Line" stroke="#DDDDDD" stroke-linecap="square"></path>
+                            </g>
+                        </g>
+                        <path d="M0,60 L697.5,60" id="Border" stroke="#DDDDDD" stroke-linecap="square"></path>
+                        <path d="M789,60 L2375,60" id="Border" stroke="#DDDDDD" stroke-linecap="square"></path>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-2" transform="translate(857.000000, 80.000000)">
+                <rect id="Rectangle-2" fill="#999999" x="0" y="0" width="109" height="40" rx="20"></rect>
+                <text id="Settings" font-family="SFUIText-Regular, SF UI Text" font-size="18" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="20" y="27">Settings</tspan>
+                </text>
+            </g>
+            <g id="Group-2" transform="translate(736.000000, 80.000000)">
+                <rect id="Rectangle-2" fill="#999999" x="0" y="0" width="101" height="40" rx="20"></rect>
+                <text id="Open" font-family="SFUIText-Regular, SF UI Text" font-size="18" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="20" y="27">Open</tspan>
+                </text>
+                <text id="→" transform="translate(76.081475, 22.081475) rotate(-45.000000) translate(-76.081475, -22.081475) " font-family="SFUIText-Regular, SF UI Text" font-size="18" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="68.0814755" y="28.5814755">→</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
