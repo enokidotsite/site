@@ -13,7 +13,7 @@
   "dependencies": {
     "brfs": "^1.4.3",
     "choo": "^6.0.0",
-    "choo-dat-hypha": "^0.4.1",
+    "enoki": "^2.0.0",
     "nano-markdown": "^1.2.0",
     "nanocomponent": "^6.4.0",
     "nanoreset": "^1.2.0",
