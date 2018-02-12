@@ -1,6 +1,9 @@
 var Nanocomponent = require('nanocomponent')
+var Moire = require('./moire')
 var raw = require('choo/html/raw')
 var html = require('choo/html')
+
+var moire = new Moire()
 
 module.exports = class Header extends Nanocomponent {
   constructor () {
@@ -56,6 +59,9 @@ module.exports = class Header extends Nanocomponent {
           --unity: ${this.state.unit[2]};
         "
       >
+        ${moire.render({
+          unit: this.state.unit
+        })}
         <div class="masthead fadein">
           <h1>${this.state.title}</h1>
           <h2>${raw(breakText(this.state.subtitle))}</h2>
@@ -81,6 +87,7 @@ module.exports = class Header extends Nanocomponent {
     this.element.style.setProperty('--unit', this.state.unit[0])
     this.element.style.setProperty('--unitx', this.state.unit[1])
     this.element.style.setProperty('--unity', this.state.unit[2])
+    moire.refresh({ unit: this.state.unit })
     this.frame = window.requestAnimationFrame(this.createFrame)
   }
 

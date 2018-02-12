@@ -1,6 +1,7 @@
 :root {
   --foreground: #000; 
   --background: #fff;
+  --highlight: #50f;
   --grey25: #ddd;
   --grey50: #999;
   --fs1: 1.8rem;
@@ -24,11 +25,23 @@ header {
   display: flex;
   flex-direction: column;
   padding: 2rem 2rem 5rem;
+  position: relative;
   text-align: center;
   justify-content: space-between;
   height: 100vh;
   overflow: hidden;
   transform-style: preserve-3d;
+}
+
+header canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 .fadein { 
@@ -76,6 +89,7 @@ p a {
   margin: 2rem 0 0;
   flex: 1;
   position: relative;
+  z-index: 2; 
 }
 
 .screenshot > img {
@@ -114,12 +128,14 @@ button {
   display: inline-block;
   text-decoration: none;
   user-select: none;
+  -moz-user-select: none;
   transition: transform 200ms ease-in-out;
   transform: translateY(0);
   animation: button_in;
   animation: 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0s 1 buttonIn;
 }
 
+/*
 .button:hover,
 button:hover {
   transform: translateY(-0.2rem);
@@ -130,8 +146,12 @@ button:active {
   transform: translateY(0.2rem);
   transition: transform 50ms ease-in-out;
 }
+*/
 
-.button.get-started { cursor: default; }
+.button.get-started {
+  background: var(--highlight);
+  cursor: default;
+}
 
 .features {
   display: grid;
@@ -178,6 +198,7 @@ button:active {
 
   .screenshot > img {
     opacity: calc(var(--unit) * -0.75  + 1);
+    opacity: 1;
     transform: perspective(100vmin) rotate(0.0001deg) rotate3d(calc(-1 * var(--unity)), var(--unitx), 0, calc(-5deg * var(--unit) * -1)) translate3d(0, 0, calc(25vmin * var(--unit) * -1));
   }
 }
