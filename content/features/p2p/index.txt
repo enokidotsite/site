@@ -1,4 +1,4 @@
-title: Peer-to-Peer
+title: Decentralized
 ----
 view: feature
 ----

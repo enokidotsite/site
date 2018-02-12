@@ -7,7 +7,7 @@ module.exports = class Moire extends Nanocomponent {
     super()
     this.state = {
       unit: [0, 0, 0],
-      color: '#f6f6f6',
+      color: '#fff',
       gridSize: 100,
       spacing: 1.1,
       bounds: 10
@@ -26,7 +26,6 @@ module.exports = class Moire extends Nanocomponent {
     // create our groups
     this.group1 = this.createGroup()
     this.group2 = this.createGroup()
-    this.screen = new paper.Path.Rectangle(this.getScreenProps())
     this.fade = new paper.Path.Rectangle(this.getFadeProps())
 
     // setup
@@ -63,7 +62,8 @@ module.exports = class Moire extends Nanocomponent {
   }
 
   resize (event) {
-    this.screen.set(this.getScreenProps())
+    if (this.screen) this.screen.remove()
+    this.screen = this.createScreen()
     this.group1.position = paper.view.center
     this.group2.position = paper.view.center
     this.screen.position = paper.view.center
@@ -75,14 +75,15 @@ module.exports = class Moire extends Nanocomponent {
     this.state.unit = props.unit
 
     if (paper.project) {
-      this.group1.rotate(Math.abs(props.unit[1]) * 0.25, paper.view.center)
-      this.group2.rotate(Math.abs(props.unit[2]) * 0.25 * -1, paper.view.center)
+      this.group1.rotate(Math.abs(props.unit[1]) * 0.15, paper.view.center)
+      this.group2.rotate(Math.abs(props.unit[2]) * 0.15 * -1, paper.view.center)
 
       if (this.fade.opacity > 0.01 && this.fade.visible) {
         this.fade.opacity -= 0.01
       } else if (this.fade.visible) {
         this.fade.opacity = 0
         this.fade.visible = false
+        this.fade.remove()
       }
     }
   }
@@ -90,15 +91,15 @@ module.exports = class Moire extends Nanocomponent {
   getFadeProps () {
     return {
       topLeft: [0, 0],
-      bottomRight: [paper.view.size.width, paper.view.size.height],
+      bottomRight: paper.view.size,
       fillColor: '#ffffff'
     }
   }
 
-  getScreenProps () {
-    return {
+  createScreen () {
+    return new paper.Path.Rectangle({
       topLeft: [0, 0],
-      bottomRight: [paper.view.size.width, paper.view.size.height],
+      bottomRight: paper.view.size,
       fillColor: {
         gradient: {
           stops: [
@@ -110,7 +111,7 @@ module.exports = class Moire extends Nanocomponent {
         origin: [0, 0],
         destination: [0, paper.view.size.height]
       }
-    }
+    })
   }
 
   update (props) {

@@ -1,12 +1,13 @@
 :root {
   --foreground: #000; 
   --background: #fff;
-  --highlight: #60f;
+  --highlight: #40f;
   --grey25: #ddd;
   --grey50: #999;
   --fs1: 1.8rem;
   --fs2: 2.7rem;
   --fs3: 3.6rem;
+  --fs4: 5.4rem;
   --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
@@ -22,6 +23,7 @@ body {
 }
 
 header {
+  background: #f6f6f6;
   display: flex;
   flex-direction: column;
   padding: 2rem 2rem 5rem;
@@ -64,14 +66,15 @@ footer {
 }
 
 h1 {
+  color: var(--highlight);
   font-size: var(--fs3);
   line-height: 6rem;
   font-weight: 500;
 }
 
 h2 {
-  color: var(--grey50);
-  line-height: 1.25;
+  color: var(--highlight);
+  font-size: var(--fs3);
 }
 
 h3 {
@@ -177,8 +180,8 @@ button:active {
  */
 
 @keyframes fadeIn {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0%   { transform: scale(1.1); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
 }
 
 @keyframes slideIn {

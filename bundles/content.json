@@ -64,6 +64,16 @@
       }
     }
   },
+  "/todo": {
+    "title": "Todo",
+    "view": "default",
+    "text": "## Homepage\n\n- Add a reference to Peer-to-Peer Web for more information, community, events, etc…\n- Start with basic features, dive into developer features.",
+    "name": "todo",
+    "path": "/content/todo",
+    "url": "/todo",
+    "files": {},
+    "pages": {}
+  },
   "/features/data": {
     "title": "Own your data",
     "view": "feature",
@@ -94,13 +104,13 @@
     "files": {},
     "pages": {}
   },
-  "/features/free": {
-    "title": "Free",
+  "/features/history": {
+    "title": "Infinite history",
     "view": "feature",
-    "text": "Culture wants to be free. No monthly hosting fees or billing to keep up with.",
-    "name": "free",
-    "path": "/content/features/free",
-    "url": "/features/free",
+    "text": "Gone and biffed it? Revert to previous verisons of your site anytime.",
+    "name": "history",
+    "path": "/content/features/history",
+    "url": "/features/history",
     "files": {},
     "pages": {}
   },
@@ -117,30 +127,10 @@
   "/features/opensource": {
     "title": "Open source",
     "view": "feature",
-    "text": "Built with the best open source projects; released as open source.",
+    "text": "Built with open source projects; released as an open source project.",
     "name": "opensource",
     "path": "/content/features/opensource",
     "url": "/features/opensource",
-    "files": {},
-    "pages": {}
-  },
-  "/features/history": {
-    "title": "Infinite history",
-    "view": "feature",
-    "text": "Gone and biffed it? Revert to previous verisons of your site anytime.",
-    "name": "history",
-    "path": "/content/features/history",
-    "url": "/features/history",
-    "files": {},
-    "pages": {}
-  },
-  "/features/p2p": {
-    "title": "Peer-to-Peer",
-    "view": "feature",
-    "text": "Instead of being confined to a centralized platform, publish directly with [Dat](https://datproject.org).",
-    "name": "p2p",
-    "path": "/content/features/p2p",
-    "url": "/features/p2p",
     "files": {},
     "pages": {}
   },
@@ -154,13 +144,33 @@
     "files": {},
     "pages": {}
   },
+  "/features/p2p": {
+    "title": "Decentralized",
+    "view": "feature",
+    "text": "Instead of being confined to a centralized platform, publish directly with [Dat](https://datproject.org).",
+    "name": "p2p",
+    "path": "/content/features/p2p",
+    "url": "/features/p2p",
+    "files": {},
+    "pages": {}
+  },
+  "/features/free": {
+    "title": "Free",
+    "view": "feature",
+    "text": "Culture wants to be free. No monthly hosting fees or billing to keep up with.",
+    "name": "free",
+    "path": "/content/features/free",
+    "url": "/features/free",
+    "files": {},
+    "pages": {}
+  },
   "/": {
-    "title": "Enoki",
+    "title": "enoki",
     "view": "home",
     "subtitle": "An experimental tool for self-publishing\non the peer-to-peer web",
     "text": "Super wow",
     "started": "Beta coming soon",
-    "credit": "2018 — Los Angles, Calif.",
+    "credit": "2018 — Los Angles, CA",
     "quote": "It unfolds as you make it",
     "name": "content",
     "path": "/content",
@@ -172,6 +182,12 @@
         "path": "/content/features",
         "url": "/features",
         "source": "/content/features"
+      },
+      "todo": {
+        "name": "todo",
+        "path": "/content/todo",
+        "url": "/todo",
+        "source": "/content/todo"
       }
     }
   }

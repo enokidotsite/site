@@ -64,7 +64,7 @@ module.exports = class Header extends Nanocomponent {
         })}
         <div class="masthead slidein">
           <h1>${this.state.title}</h1>
-          <h2>${raw(breakText(this.state.subtitle))}</h2>
+          <p>${raw(breakText(this.state.subtitle))}</p>
         </div>
         <div class="screenshot ${this.state.img.loaded ? 'fadein' : ''}">
           ${this.state.img.loaded ? html`<img src="${this.state.img.src}">` : ''}
