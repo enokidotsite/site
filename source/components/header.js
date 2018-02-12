@@ -1,6 +1,7 @@
 var Nanocomponent = require('nanocomponent')
 var Moire = require('./moire')
 var raw = require('choo/html/raw')
+var md = require('nano-markdown')
 var html = require('choo/html')
 
 var moire = new Moire()
@@ -64,7 +65,7 @@ module.exports = class Header extends Nanocomponent {
         })}
         <div class="masthead slidein">
           <h1>${this.state.title}</h1>
-          <p>${raw(breakText(this.state.subtitle))}</p>
+          ${raw(md(breakText(this.state.subtitle)))}
         </div>
         <div class="screenshot ${this.state.img.loaded ? 'fadein' : ''}">
           ${this.state.img.loaded ? html`<img src="${this.state.img.src}">` : ''}
