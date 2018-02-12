@@ -45,7 +45,11 @@ header canvas {
 }
 
 .fadein { 
-  animation: 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0s 1 titleIn;
+  animation: 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0s 1 fadeIn;
+}
+
+.slidein { 
+  animation: 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0s 1 slideIn;
 }
 
 footer {
@@ -172,9 +176,14 @@ button:active {
  * animate
  */
 
-@keyframes titleIn {
+@keyframes fadeIn {
   0%   { opacity: 0; }
   100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+  0%   { transform: translateY(3rem); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
 }
 
 @keyframes buttonIn {
@@ -204,6 +213,6 @@ button:active {
   .screenshot > img {
     opacity: calc(var(--unit) * -0.75  + 1);
     opacity: 1;
-    transform: perspective(100vmin) rotate(0.0001deg) rotate3d(calc(var(--unity)), calc(-1 * var(--unitx)), 0, calc(10deg * var(--unit))) translate3d(0, 0, calc(25vmin * var(--unit) * -1));
+    transform: perspective(100vmin) rotate(0.0001deg) rotate3d(calc(var(--unity)), calc(-1 * var(--unitx)), 0, calc(7.5deg * var(--unit))) translate3d(0, 0, calc(25vmin * var(--unit) * -1));
   }
 }

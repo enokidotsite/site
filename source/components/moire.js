@@ -7,9 +7,9 @@ module.exports = class Moire extends Nanocomponent {
     super()
     this.state = {
       unit: [0, 0, 0],
-      color: '#f9f9f9',
+      color: '#f6f6f6',
       gridSize: 100,
-      spacing: 5,
+      spacing: 1.1,
       bounds: 10
     }
 
