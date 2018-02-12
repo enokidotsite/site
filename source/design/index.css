@@ -1,7 +1,7 @@
 :root {
   --foreground: #000; 
   --background: #fff;
-  --highlight: #50f;
+  --highlight: #60f;
   --grey25: #ddd;
   --grey50: #999;
   --fs1: 1.8rem;
@@ -82,7 +82,8 @@ p {
 }
 
 p a {
-  color: #000;
+  color: var(--highlight);
+  text-decoration: none;
 }
 
 .screenshot {
@@ -192,6 +193,10 @@ button:active {
     line-height: 1;
   }
 
+  p a:hover {
+    text-decoration: underline;
+  }
+
   .features {
     padding: 0 4rem 4rem;
   }
@@ -199,6 +204,6 @@ button:active {
   .screenshot > img {
     opacity: calc(var(--unit) * -0.75  + 1);
     opacity: 1;
-    transform: perspective(100vmin) rotate(0.0001deg) rotate3d(calc(-1 * var(--unity)), var(--unitx), 0, calc(-5deg * var(--unit) * -1)) translate3d(0, 0, calc(25vmin * var(--unit) * -1));
+    transform: perspective(100vmin) rotate(0.0001deg) rotate3d(calc(var(--unity)), calc(-1 * var(--unitx)), 0, calc(10deg * var(--unit))) translate3d(0, 0, calc(25vmin * var(--unit) * -1));
   }
 }
