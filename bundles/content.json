@@ -64,6 +64,16 @@
       }
     }
   },
+  "/features/data": {
+    "title": "Own your data",
+    "view": "feature",
+    "text": "This is a tool, not a platform. Your data stays with you.",
+    "name": "data",
+    "path": "/content/features/data",
+    "url": "/features/data",
+    "files": {},
+    "pages": {}
+  },
   "/features/db": {
     "title": "No database",
     "view": "feature",
@@ -84,16 +94,6 @@
     "files": {},
     "pages": {}
   },
-  "/features/data": {
-    "title": "Own your data",
-    "view": "feature",
-    "text": "This is a tool, not a platform. Your data stays with you.",
-    "name": "data",
-    "path": "/content/features/data",
-    "url": "/features/data",
-    "files": {},
-    "pages": {}
-  },
   "/features/free": {
     "title": "Free",
     "view": "feature",
@@ -104,20 +104,10 @@
     "files": {},
     "pages": {}
   },
-  "/features/history": {
-    "title": "Infinite history",
-    "view": "feature",
-    "text": "Gone and biffed it? Revert to previous verisons of your site anytime.",
-    "name": "history",
-    "path": "/content/features/history",
-    "url": "/features/history",
-    "files": {},
-    "pages": {}
-  },
   "/features/offline": {
     "title": "Offline first",
     "view": "feature",
-    "text": "No internet connection? No problem. Sync changes automatically when reconnecting.",
+    "text": "No internet? No problem. Sync changes automatically when reconnecting.",
     "name": "offline",
     "path": "/content/features/offline",
     "url": "/features/offline",
@@ -127,10 +117,20 @@
   "/features/opensource": {
     "title": "Open source",
     "view": "feature",
-    "text": "Developed using some of the best open source projects, and released as open source.",
+    "text": "Built with the best open source projects; released as open source.",
     "name": "opensource",
     "path": "/content/features/opensource",
     "url": "/features/opensource",
+    "files": {},
+    "pages": {}
+  },
+  "/features/history": {
+    "title": "Infinite history",
+    "view": "feature",
+    "text": "Gone and biffed it? Revert to previous verisons of your site anytime.",
+    "name": "history",
+    "path": "/content/features/history",
+    "url": "/features/history",
     "files": {},
     "pages": {}
   },
@@ -147,7 +147,7 @@
   "/features/simple": {
     "title": "Beginner friendly",
     "view": "feature",
-    "text": "[Choo](https://choo.io) is the friendliest front-end framework, and is the basis for the Designs and Panel.",
+    "text": "[Choo](https://choo.io) is the foundation for every Design, and even the Panel.",
     "name": "simple",
     "path": "/content/features/simple",
     "url": "/features/simple",
