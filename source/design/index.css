@@ -35,6 +35,10 @@ header {
   transform-style: preserve-3d;
 }
 
+.masthead > p {
+  color: var(--grey50);
+}
+
 header canvas {
   position: absolute;
   width: 100%;

@@ -1,5 +1,5 @@
-title: Own your data
+title: Own your content
 ----
 view: feature
 ----
-text: This is a tool, not a platform. Your data stays with you.
+text: This is a tool! Your content stays with you, not a greedy platform.

@@ -75,9 +75,9 @@
     "pages": {}
   },
   "/features/data": {
-    "title": "Own your data",
+    "title": "Own your content",
     "view": "feature",
-    "text": "This is a tool, not a platform. Your data stays with you.",
+    "text": "This is a tool! Your content stays with you, not a greedy platform.",
     "name": "data",
     "path": "/content/features/data",
     "url": "/features/data",
@@ -104,10 +104,20 @@
     "files": {},
     "pages": {}
   },
+  "/features/free": {
+    "title": "Free",
+    "view": "feature",
+    "text": "Culture wants to be free. No monthly hosting fees or billing to keep up with.",
+    "name": "free",
+    "path": "/content/features/free",
+    "url": "/features/free",
+    "files": {},
+    "pages": {}
+  },
   "/features/history": {
     "title": "Infinite history",
     "view": "feature",
-    "text": "Gone and biffed it? Revert to previous verisons of your site anytime.",
+    "text": "Gone and biffed it? Revert to previous verisons of your content anytime.",
     "name": "history",
     "path": "/content/features/history",
     "url": "/features/history",
@@ -134,16 +144,6 @@
     "files": {},
     "pages": {}
   },
-  "/features/simple": {
-    "title": "Beginner friendly",
-    "view": "feature",
-    "text": "[Choo](https://choo.io) is the foundation for every Design, and even the Panel.",
-    "name": "simple",
-    "path": "/content/features/simple",
-    "url": "/features/simple",
-    "files": {},
-    "pages": {}
-  },
   "/features/p2p": {
     "title": "Decentralized",
     "view": "feature",
@@ -154,20 +154,20 @@
     "files": {},
     "pages": {}
   },
-  "/features/free": {
-    "title": "Free",
+  "/features/simple": {
+    "title": "Beginner friendly",
     "view": "feature",
-    "text": "Culture wants to be free. No monthly hosting fees or billing to keep up with.",
-    "name": "free",
-    "path": "/content/features/free",
-    "url": "/features/free",
+    "text": "[Choo](https://choo.io) is the foundation for every Design, and even the Panel.",
+    "name": "simple",
+    "path": "/content/features/simple",
+    "url": "/features/simple",
     "files": {},
     "pages": {}
   },
   "/": {
     "title": "enoki",
     "view": "home",
-    "subtitle": "An experimental tool for self-publishing\non the peer-to-peer web",
+    "subtitle": "An experimental tool for free \nself-expression without ads or platforms",
     "text": "Super wow",
     "started": "Beta coming soon",
     "credit": "2018 — Los Angles, CA",

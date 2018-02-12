@@ -2,4 +2,4 @@ title: Infinite history
 ----
 view: feature
 ----
-text: Gone and biffed it? Revert to previous verisons of your site anytime.
+text: Gone and biffed it? Revert to previous verisons of your content anytime.

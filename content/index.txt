@@ -2,8 +2,8 @@ title: enoki
 ----
 view: home
 ----
-subtitle: An experimental tool for self-publishing
-on the peer-to-peer web
+subtitle: An experimental tool for free 
+self-expression without ads or platforms
 ----
 text: Super wow
 ----
