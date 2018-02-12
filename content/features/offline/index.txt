@@ -2,4 +2,4 @@ title: Offline first
 ----
 view: feature
 ----
-text: No internet connection? No problem. Sync changes automatically when reconnecting.
+text: No internet? No problem. Sync changes automatically when reconnecting.
