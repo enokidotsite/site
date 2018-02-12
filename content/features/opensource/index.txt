@@ -2,4 +2,4 @@ title: Open source
 ----
 view: feature
 ----
-text: Built with the best open source projects; released as open source.
+text: Built with open source projects; released as an open source project.
