@@ -1,4 +1,4 @@
-# Enoki Site
+<h1 align="center">Enoki / Site</h1>
 
 ![](assets/screenshot.png)
 
