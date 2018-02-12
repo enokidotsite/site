@@ -187,8 +187,8 @@ button:active {
 }
 
 @keyframes buttonIn {
-  0%   { transform: translateY(3rem) rotate(0.0001deg); opacity: 0; }
-  50%   { transform: translateY(3rem) rotate(0.0001deg); opacity: 0; }
+  0%   { transform: translateY(-3rem) rotate(0.0001deg); opacity: 0; }
+  50%   { transform: translateY(-3rem) rotate(0.0001deg); opacity: 0; }
   100% { transform: translateY(0) rotate(0.0001deg); opacity: 1; }
 }
 
