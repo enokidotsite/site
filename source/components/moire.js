@@ -8,8 +8,8 @@ module.exports = class Moire extends Nanocomponent {
     this.state = {
       unit: [0, 0, 0],
       color: '#f9f9f9',
-      gridSize: 50,
-      spacing: 3,
+      gridSize: 100,
+      spacing: 5,
       bounds: 10
     }
 
@@ -46,7 +46,7 @@ module.exports = class Moire extends Nanocomponent {
       for (var x = 0; x < this.state.bounds; x++) {
         // define our shape
         var path = new paper.Path.Circle({
-          radius: this.state.gridSize / 2 / this.state.spacing * ((Math.random() * 0.5) + 0.5),
+          radius: this.state.gridSize / 2 / this.state.spacing,
           fillColor: this.state.color,
           center: new paper.Point(x * this.state.gridSize, y * this.state.gridSize)
         })
