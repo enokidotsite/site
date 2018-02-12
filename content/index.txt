@@ -2,8 +2,8 @@ title: enoki
 ----
 view: home
 ----
-subtitle: An experimental tool for free 
-self-expression without ads or platforms
+subtitle: An experimental ~~platform~~ tool 
+for free self-expression
 ----
 text: Super wow
 ----
