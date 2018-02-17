@@ -67,9 +67,6 @@ module.exports = class Header extends Nanocomponent {
           <h1>${this.state.title}</h1>
           ${raw(md(breakText(this.state.subtitle)))}
         </div>
-        <div class="screenshot ${this.state.img.loaded ? 'fadein' : ''}">
-          ${this.state.img.loaded ? html`<img src="${this.state.img.src}">` : ''}
-        </div>
       </header>
     `
   }
@@ -82,9 +79,9 @@ module.exports = class Header extends Nanocomponent {
     var diff = this.state.target[0] - this.state.unit[0]
     var diffx = this.state.target[1] - this.state.unit[1]
     var diffy = this.state.target[2] - this.state.unit[2]
-    this.state.unit[0] += diff * 0.025
-    this.state.unit[1] += (diffx * 0.025) / 2
-    this.state.unit[2] += (diffy * 0.025) / 2
+    this.state.unit[0] += diff * 0.1
+    this.state.unit[1] += (diffx * 0.1) / 2
+    this.state.unit[2] += (diffy * 0.1) / 2
     this.element.style.setProperty('--unit', this.state.unit[0])
     this.element.style.setProperty('--unitx', this.state.unit[1])
     this.element.style.setProperty('--unity', this.state.unit[2])
@@ -94,7 +91,7 @@ module.exports = class Header extends Nanocomponent {
 
   handleMove (event) {
     var width = window.innerWidth / 2
-    var height = window.innerHeight * 0.95
+    var height = window.innerHeight / 2
     var x = (event.clientX - width) / width
     var y = (event.clientY - height) / height
     var unit = [Math.sqrt(x * x + y * y), x, y]

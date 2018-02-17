@@ -25,14 +25,18 @@ body {
 header {
   background: #f6f6f6;
   display: flex;
-  flex-direction: column;
   padding: 2rem 2rem 5rem;
   position: relative;
   text-align: center;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   overflow: hidden;
-  transform-style: preserve-3d;
+}
+
+.masthead {
+  position: relative;
+  z-index: 1;
 }
 
 .masthead > p {
@@ -47,7 +51,6 @@ header canvas {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
 }
 
 .fadein { 
@@ -71,9 +74,10 @@ footer {
 
 h1 {
   color: var(--highlight);
-  font-size: var(--fs3);
+  font-size: var(--fs4);
   line-height: 6rem;
   font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -95,22 +99,6 @@ p {
 p a {
   color: var(--highlight);
   text-decoration: none;
-}
-
-.screenshot {
-  margin: 2rem 0 0;
-  flex: 1;
-  position: relative;
-  z-index: 2; 
-}
-
-.screenshot > img {
-  left: 0;
-  top: 0;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
 }
 
 nav.action-bar {

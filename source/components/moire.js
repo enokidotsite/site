@@ -21,7 +21,7 @@ module.exports = class Moire extends Nanocomponent {
     paper.setup(element)
 
     // some state
-    this.state.bounds = Math.max(window.innerHeight, window.innerWidth) * 1.25 / this.state.gridSize
+    this.state.bounds = Math.max(window.innerHeight, window.innerWidth) / this.state.gridSize
 
     // create our groups
     this.group1 = this.createGroup()
@@ -29,7 +29,7 @@ module.exports = class Moire extends Nanocomponent {
     this.fade = new paper.Path.Rectangle(this.getFadeProps())
 
     // setup
-    this.group1.rotate(Math.random() * 360, paper.view.center)
+    this.group1.rotate(32, paper.view.center)
 
     // init
     this.resize()
@@ -97,19 +97,21 @@ module.exports = class Moire extends Nanocomponent {
   }
 
   createScreen () {
+    var min = Math.min(paper.view.size.width, paper.view.size.height)
     return new paper.Path.Rectangle({
       topLeft: [0, 0],
       bottomRight: paper.view.size,
       fillColor: {
         gradient: {
+          radial: true,
           stops: [
             new paper.Color(255, 255, 255, 0),
             new paper.Color(255, 255, 255, 0),
             new paper.Color(255, 255, 255, 1)
           ]
         },
-        origin: [0, 0],
-        destination: [0, paper.view.size.height]
+        origin:  [paper.view.size.width / 2, paper.view.size.height / 2],
+        destination: [min, min]
       }
     })
   }
