@@ -61,7 +61,7 @@ header canvas {
 
 footer {
   background: #fff;
-  color: var(--green);
+  color: var(--grey25);
   font-family: var(--mono);
   display: flex;
   padding: 2rem 2rem 10rem;

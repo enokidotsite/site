@@ -1,9 +1,11 @@
+var Subscribe = require('../components/subscribe')
 var Header = require('../components/header')
 var raw = require('choo/html/raw')
 var html = require('choo/html')
 var md = require('nano-markdown')
 
 var header = new Header()
+var subscribe = new Subscribe()
 
 var TITLE = 'Enoki'
 
@@ -23,6 +25,8 @@ function view (state, emit) {
       })}
       <nav class="action-bar">
         <div class="button get-started">${page.started}</div>
+        hi
+        ${subscribe.render()}
       </nav>
       <section class="features">
         ${renderFeatures({
