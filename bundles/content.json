@@ -104,20 +104,10 @@
     "files": {},
     "pages": {}
   },
-  "/features/free": {
-    "title": "Free",
-    "view": "feature",
-    "text": "Culture wants to be free. No monthly hosting fees or billing to keep up with.",
-    "name": "free",
-    "path": "/content/features/free",
-    "url": "/features/free",
-    "files": {},
-    "pages": {}
-  },
   "/features/history": {
-    "title": "Infinite history",
+    "title": "Version Control",
     "view": "feature",
-    "text": "Gone and biffed it? Revert to previous verisons of your content anytime.",
+    "text": "Easily go back in time and revert to previous verisons of your content.",
     "name": "history",
     "path": "/content/features/history",
     "url": "/features/history",
@@ -190,5 +180,15 @@
         "source": "/content/todo"
       }
     }
+  },
+  "/features/free": {
+    "title": "Free",
+    "view": "feature",
+    "text": "Culture wants to be free. No monthly hosting fees or billing to keep up with.",
+    "name": "free",
+    "path": "/content/features/free",
+    "url": "/features/free",
+    "files": {},
+    "pages": {}
   }
 }

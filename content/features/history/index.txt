@@ -1,5 +1,5 @@
-title: Infinite history
+title: Version Control
 ----
 view: feature
 ----
-text: Gone and biffed it? Revert to previous verisons of your content anytime.
+text: Easily go back in time and revert to previous verisons of your content.
