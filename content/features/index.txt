@@ -7,7 +7,4 @@ order: - free
 - offline
 - data
 - history
-- simple
-- db
-- extendable
 - opensource

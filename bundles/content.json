@@ -2,7 +2,7 @@
   "/features": {
     "title": "Features",
     "view": "features",
-    "order": "- free\n- p2p\n- offline\n- data\n- history\n- simple\n- db\n- extendable\n- opensource",
+    "order": "- free\n- p2p\n- offline\n- data\n- history\n- opensource",
     "name": "features",
     "path": "/content/features",
     "url": "/features",
@@ -64,6 +64,16 @@
       }
     }
   },
+  "/todo": {
+    "title": "Todo",
+    "view": "default",
+    "text": "## Homepage\n\n- Add a reference to Peer-to-Peer Web for more information, community, events, etc…\n- Start with basic features, dive into developer features.",
+    "name": "todo",
+    "path": "/content/todo",
+    "url": "/todo",
+    "files": {},
+    "pages": {}
+  },
   "/features/data": {
     "title": "Own your content",
     "view": "feature",
@@ -74,6 +84,26 @@
     "files": {},
     "pages": {}
   },
+  "/features/db": {
+    "title": "No database",
+    "view": "feature",
+    "text": "Only static files and folders, meaning your work is easily portable and archivable.",
+    "name": "db",
+    "path": "/content/features/db",
+    "url": "/features/db",
+    "files": {},
+    "pages": {}
+  },
+  "/features/extendable": {
+    "title": "Extensibile",
+    "view": "feature",
+    "text": "Easily create custom field types for project specific interfaces.",
+    "name": "extendable",
+    "path": "/content/features/extendable",
+    "url": "/features/extendable",
+    "files": {},
+    "pages": {}
+  },
   "/features/free": {
     "title": "Free",
     "view": "feature",
@@ -81,6 +111,16 @@
     "name": "free",
     "path": "/content/features/free",
     "url": "/features/free",
+    "files": {},
+    "pages": {}
+  },
+  "/features/history": {
+    "title": "Infinite history",
+    "view": "feature",
+    "text": "Gone and biffed it? Revert to previous verisons of your content anytime.",
+    "name": "history",
+    "path": "/content/features/history",
+    "url": "/features/history",
     "files": {},
     "pages": {}
   },
@@ -150,45 +190,5 @@
         "source": "/content/todo"
       }
     }
-  },
-  "/features/history": {
-    "title": "Infinite history",
-    "view": "feature",
-    "text": "Gone and biffed it? Revert to previous verisons of your content anytime.",
-    "name": "history",
-    "path": "/content/features/history",
-    "url": "/features/history",
-    "files": {},
-    "pages": {}
-  },
-  "/todo": {
-    "title": "Todo",
-    "view": "default",
-    "text": "## Homepage\n\n- Add a reference to Peer-to-Peer Web for more information, community, events, etc…\n- Start with basic features, dive into developer features.",
-    "name": "todo",
-    "path": "/content/todo",
-    "url": "/todo",
-    "files": {},
-    "pages": {}
-  },
-  "/features/db": {
-    "title": "No database",
-    "view": "feature",
-    "text": "Only static files and folders, meaning your work is easily portable and archivable.",
-    "name": "db",
-    "path": "/content/features/db",
-    "url": "/features/db",
-    "files": {},
-    "pages": {}
-  },
-  "/features/extendable": {
-    "title": "Extensibile",
-    "view": "feature",
-    "text": "Easily create custom field types for project specific interfaces.",
-    "name": "extendable",
-    "path": "/content/features/extendable",
-    "url": "/features/extendable",
-    "files": {},
-    "pages": {}
   }
 }
