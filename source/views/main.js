@@ -24,10 +24,12 @@ function view (state, emit) {
       <nav class="action-bar">
         <div class="button get-started">${page.started}</div>
       </nav>
-      ${renderFeatures({
-        features: state.content['/features'],
-        content: state.content
-      })}
+      <section class="features">
+        ${renderFeatures({
+          features: state.content['/features'],
+          content: state.content
+        })}
+      </section>
       <footer>
         <span>${page.credit}</span>
         <span>${page.quote}</span>

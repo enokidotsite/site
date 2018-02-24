@@ -7,9 +7,9 @@ module.exports = class Moire extends Nanocomponent {
     super()
     this.state = {
       unit: [0, 0, 0],
-      color: '#fff',
-      gridSize: 100,
-      spacing: 1.1,
+      color: '#E5E5E5',
+      gridSize: 60,
+      spacing: 1.5,
       bounds: 10
     }
 
@@ -21,12 +21,12 @@ module.exports = class Moire extends Nanocomponent {
     paper.setup(element)
 
     // some state
-    this.state.bounds = Math.max(window.innerHeight, window.innerWidth) / this.state.gridSize
+    this.state.bounds = Math.max(window.innerHeight, window.innerWidth) * 1.25 / this.state.gridSize
 
     // create our groups
     this.group1 = this.createGroup()
     this.group2 = this.createGroup()
-    this.fade = new paper.Path.Rectangle(this.getFadeProps())
+    // this.fade = new paper.Path.Rectangle(this.getFadeProps())
 
     // setup
     this.group1.rotate(32, paper.view.center)
@@ -63,11 +63,11 @@ module.exports = class Moire extends Nanocomponent {
 
   resize (event) {
     if (this.screen) this.screen.remove()
-    this.screen = this.createScreen()
+    // this.screen = this.createScreen()
     this.group1.position = paper.view.center
     this.group2.position = paper.view.center
-    this.screen.position = paper.view.center
-    this.fade.position = paper.view.center
+    // this.screen.position = paper.view.center
+    // this.fade.position = paper.view.center
     paper.view.draw()
   }
 
@@ -78,23 +78,23 @@ module.exports = class Moire extends Nanocomponent {
       this.group1.rotate(Math.abs(props.unit[1]) * 0.15, paper.view.center)
       this.group2.rotate(Math.abs(props.unit[2]) * 0.15 * -1, paper.view.center)
 
-      if (this.fade.opacity > 0.01 && this.fade.visible) {
-        this.fade.opacity -= 0.01
-      } else if (this.fade.visible) {
-        this.fade.opacity = 0
-        this.fade.visible = false
-        this.fade.remove()
-      }
+      // if (this.fade.opacity > 0.01 && this.fade.visible) {
+      //   this.fade.opacity -= 0.01
+      // } else if (this.fade.visible) {
+      //   this.fade.opacity = 0
+      //   this.fade.visible = false
+      //   this.fade.remove()
+      // }
     }
   }
 
-  getFadeProps () {
-    return {
-      topLeft: [0, 0],
-      bottomRight: paper.view.size,
-      fillColor: '#ffffff'
-    }
-  }
+  // getFadeProps () {
+  //   return {
+  //     topLeft: [0, 0],
+  //     bottomRight: paper.view.size,
+  //     fillColor: '#1a1a1a'
+  //   }
+  // }
 
   createScreen () {
     var min = Math.min(paper.view.size.width, paper.view.size.height)

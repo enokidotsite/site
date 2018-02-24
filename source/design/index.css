@@ -1,9 +1,12 @@
 :root {
-  --foreground: #000; 
-  --background: #fff;
-  --highlight: #40f;
+  --foreground: #e5e5e5; 
+  --background: #1a1a1a;
   --grey25: #ddd;
   --grey50: #999;
+  --blue: #005FD2;
+  --yellow: #F8BE15;
+  --green: #00907A;
+  --red: #F21307;
   --fs1: 1.8rem;
   --fs2: 2.7rem;
   --fs3: 3.6rem;
@@ -20,10 +23,11 @@ body {
   background-color: var(--background);
   font-size: var(--fs1);
   height: auto;
+  color: var(--foreground);
 }
 
 header {
-  background: #f6f6f6;
+  background: #1a1a1a;
   display: flex;
   padding: 2rem 2rem 5rem;
   position: relative;
@@ -32,15 +36,6 @@ header {
   align-items: center;
   height: 100vh;
   overflow: hidden;
-}
-
-.masthead {
-  position: relative;
-  z-index: 1;
-}
-
-.masthead > p {
-  color: var(--grey50);
 }
 
 header canvas {
@@ -62,6 +57,7 @@ header canvas {
 }
 
 footer {
+  background: #fff;
   color: var(--grey50);
   font-family: var(--mono);
   display: flex;
@@ -73,22 +69,23 @@ footer {
 }
 
 h1 {
-  color: var(--highlight);
-  font-size: var(--fs4);
-  line-height: 6rem;
+  color: #fff;
+  font-size: 35vw;
+  line-height: 1;
   font-weight: 500;
   margin-bottom: 1rem;
+  mix-blend-mode: exclusion;
 }
 
 h2 {
-  color: var(--highlight);
+  color: var(--blue);
   font-size: var(--fs3);
 }
 
 h3 {
   font-size: var(--fs2);
-  color: var(--grey50);
-  font-weight: 400;
+  color: #fff;
+  font-weight: 600;
   margin-bottom: 2rem;
 }
 
@@ -97,12 +94,13 @@ p {
 }
 
 p a {
-  color: var(--highlight);
+  color: #fff;
+  font-weight: 600;
   text-decoration: none;
 }
 
 nav.action-bar {
-  margin: 2rem;
+  margin: 1.5rem;
   text-align: center;
   position: fixed;
   bottom: 0;
@@ -117,8 +115,9 @@ nav.action-bar > * {
 
 .button,
 button {
-  background: var(--foreground);
+  background: var(--background);
   color: var(--background);
+  font-weight: 600;
   padding: 0 6rem;
   line-height: 6rem;
   font-size: var(--fs1);
@@ -131,8 +130,6 @@ button {
   -moz-user-select: none;
   transition: transform 200ms ease-in-out;
   transform: translateY(0);
-  animation: button_in;
-  animation: 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) 0s 1 buttonIn;
 }
 
 /*
@@ -149,21 +146,26 @@ button:active {
 */
 
 .button.get-started {
-  background: var(--highlight);
+  background: var(--yellow);
   cursor: default;
 }
 
-.features {
+section.features {
+  background: var(--blue);
+}
+
+ul.features {
+  color: #fff;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
-  padding: 0 2rem 4rem;
+  padding: 4rem 2rem;
   margin: 0 auto;
   max-width: 120rem;
 }
 
-.features > li {
+ul.features > li {
   margin: 1rem 0;
 }
 
@@ -201,8 +203,8 @@ button:active {
     text-decoration: underline;
   }
 
-  .features {
-    padding: 0 4rem 4rem;
+  ul.features {
+    padding: 4rem;
   }
 
   .screenshot > img {

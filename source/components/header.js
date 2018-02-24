@@ -63,10 +63,7 @@ module.exports = class Header extends Nanocomponent {
         ${moire.render({
           unit: this.state.unit
         })}
-        <div class="masthead slidein">
-          <h1>${this.state.title}</h1>
-          ${raw(md(breakText(this.state.subtitle)))}
-        </div>
+        <h1>${this.state.title}</h1>
       </header>
     `
   }
