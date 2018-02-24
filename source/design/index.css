@@ -28,6 +28,7 @@ body {
 
 header {
   background: #1a1a1a;
+  cursor: default;
   display: flex;
   padding: 2rem 2rem 5rem;
   position: relative;
@@ -36,6 +37,8 @@ header {
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  user-select: none;
+  -moz-user-select: -moz-none;
 }
 
 header canvas {
@@ -58,7 +61,7 @@ header canvas {
 
 footer {
   background: #fff;
-  color: var(--grey50);
+  color: var(--green);
   font-family: var(--mono);
   display: flex;
   padding: 2rem 2rem 10rem;
