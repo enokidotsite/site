@@ -13,6 +13,7 @@
   --fs3: 3.6rem;
   --fs4: 5.4rem;
   --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  --expanded: 'lunchtype24expanded_regular',  -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 html {
@@ -23,6 +24,7 @@ html {
 body {
   background-color: var(--background);
   font-size: var(--fs1);
+  font-family: "lunchtype22regular", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   height: auto;
   color: var(--foreground);
 }
@@ -81,7 +83,7 @@ h1 {
   color: #fff;
   font-size: 35vw;
   line-height: 1;
-  font-weight: 500;
+  font-weight: normal;
   margin-bottom: 1rem;
 }
 
@@ -97,23 +99,37 @@ h2 {
 
 h3 {
   font-size: var(--fs2);
+  font-family: var(--expanded);
   color: #fff;
-  font-weight: 600;
+  font-weight: normal;
   margin-bottom: 2rem;
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.35;
 }
 
 p a {
   color: #fff;
-  font-weight: 600;
+  font-weight: normal;
   text-decoration: none;
 }
 
 p del {
   color: var(--grey50);
+  position: relative;
+  text-decoration: none;
+}
+
+p del:after {
+  background: var(--red);
+  content: '';
+  display: block;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  height: 0.6rem;
+  width: 100%;
 }
 
 nav.action-bar {
@@ -134,8 +150,9 @@ nav.action-bar > * {
 button {
   background: var(--background);
   color: var(--background);
+  font-family: var(--expanded);
   overflow: hidden;
-  font-weight: 600;
+  font-weight: normal;
   padding: 0 6rem;
   position: relative;
   line-height: 6rem;
@@ -156,12 +173,14 @@ button {
 input {
   font-size: var(--fs1);
   background: var(--background);
+  font-family: var(--expanded);
   color: var(--foreground);
   height: 6rem;
   line-height: 6rem;
   border-radius: 3rem;
   text-align: center;
   border: 3px solid var(--yellow);
+  transition: 100ms ease-out border;
 }
 
 input[type="email"] {
@@ -307,4 +326,20 @@ ul.features > li {
     opacity: 1;
     transform: perspective(100vmin) rotate(0.0001deg) rotate3d(calc(var(--unity)), calc(-1 * var(--unitx)), 0, calc(7.5deg * var(--unit))) translate3d(0, 0, calc(25vmin * var(--unit) * -1));
   }
+}
+
+@font-face {
+  font-family: 'lunchtype22regular';
+  src: url('/assets/lunchtype22-regular-webfont.woff2') format('woff2'),
+       url('/assets/lunchtype22-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lunchtype24expanded_regular';
+  src: url('/assets/lunchtype22-medium-webfont.woff2') format('woff2'),
+       url('/assets/lunchtype22-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
