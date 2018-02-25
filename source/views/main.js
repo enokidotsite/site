@@ -40,7 +40,7 @@ function view (state, emit) {
       </section>
       <footer>
         <span>${page.credit}</span>
-        <span>${page.quote}</span>
+        <a href="mailto:yo@enoki.site">yo@enoki.site</a>
       </footer>
     </body>
   `

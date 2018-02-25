@@ -72,6 +72,11 @@ footer {
   justify-content: space-between;
 }
 
+footer a {
+  color: var(--grey75);
+  text-decoration: none;
+}
+
 h1 {
   color: #fff;
   font-size: 35vw;
