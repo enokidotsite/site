@@ -140,6 +140,7 @@ nav.action-bar {
   left: 0;
   right: 0;
   pointer-events: none;
+  z-index: 3;
 }
 
 nav.action-bar > * {
