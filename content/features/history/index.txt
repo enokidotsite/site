@@ -1,5 +1,5 @@
-title: Version Control
+title: Archival
 ----
 view: feature
 ----
-text: Easily go back in time and revert to previous verisons of your content.
+text: Easily go back in time and revert to previous verisons of your site whenever!

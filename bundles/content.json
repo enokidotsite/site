@@ -74,16 +74,6 @@
     "files": {},
     "pages": {}
   },
-  "/features/data": {
-    "title": "Own your content",
-    "view": "feature",
-    "text": "This is a tool! Your content stays with you, not a greedy platform.",
-    "name": "data",
-    "path": "/content/features/data",
-    "url": "/features/data",
-    "files": {},
-    "pages": {}
-  },
   "/features/db": {
     "title": "No database",
     "view": "feature",
@@ -104,10 +94,30 @@
     "files": {},
     "pages": {}
   },
-  "/features/history": {
-    "title": "Version Control",
+  "/features/free": {
+    "title": "Free",
     "view": "feature",
-    "text": "Easily go back in time and revert to previous verisons of your content.",
+    "text": "Culture wants to be free. No monthly hosting fees or billing to keep up with.",
+    "name": "free",
+    "path": "/content/features/free",
+    "url": "/features/free",
+    "files": {},
+    "pages": {}
+  },
+  "/features/data": {
+    "title": "Own your content",
+    "view": "feature",
+    "text": "This is a tool! Your content stays with you, not a greedy platform.",
+    "name": "data",
+    "path": "/content/features/data",
+    "url": "/features/data",
+    "files": {},
+    "pages": {}
+  },
+  "/features/history": {
+    "title": "Archival",
+    "view": "feature",
+    "text": "Easily go back in time and revert to previous verisons of your site whenever!",
     "name": "history",
     "path": "/content/features/history",
     "url": "/features/history",
@@ -160,7 +170,7 @@
     "subtitle": "An experimental ~~platform~~ tool \nfor free self-expression",
     "text": "Super wow",
     "started": "Beta coming soon",
-    "credit": "2018 — Los Angles, CA",
+    "credit": "2018 — Los Angeles, CA",
     "quote": "It unfolds as you make it",
     "name": "content",
     "path": "/content",
@@ -180,15 +190,5 @@
         "source": "/content/todo"
       }
     }
-  },
-  "/features/free": {
-    "title": "Free",
-    "view": "feature",
-    "text": "Culture wants to be free. No monthly hosting fees or billing to keep up with.",
-    "name": "free",
-    "path": "/content/features/free",
-    "url": "/features/free",
-    "files": {},
-    "pages": {}
   }
 }
