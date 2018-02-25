@@ -30,7 +30,7 @@ module.exports = class Header extends Nanocomponent {
   load (element) {
     var self = this
 
-    if (!IntersectionObserver) return
+    if (typeof IntersectionObserver === 'undefined') return
 
     // track position
     this.observer = new IntersectionObserver(this.handleIntersection)
