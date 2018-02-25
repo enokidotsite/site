@@ -30,19 +30,11 @@ module.exports = class Header extends Nanocomponent {
   load (element) {
     var self = this
 
+    if (!IntersectionObserver) return
+
     // track position
     this.observer = new IntersectionObserver(this.handleIntersection)
     this.observer.observe(element)
-
-    // load image
-    var img = new Image()
-    img.addEventListener('load', handleLoad)
-    img.setAttribute('src', this.state.img.src)
-
-    function handleLoad () {
-      self.state.img.loaded = true
-      self.rerender()
-    }
   }
 
   unload (element) {
