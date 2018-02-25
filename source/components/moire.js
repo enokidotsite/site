@@ -9,7 +9,7 @@ module.exports = class Moire extends Nanocomponent {
       unit: [0, 0, 0],
       color: '#E5E5E5',
       gridSize: 80,
-      spacing: 1.2,
+      spacing: 1.1,
       bounds: 10
     }
 

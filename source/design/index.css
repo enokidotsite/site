@@ -83,7 +83,11 @@ h1 {
   line-height: 1;
   font-weight: 500;
   margin-bottom: 1rem;
-  mix-blend-mode: exclusion;
+}
+
+header svg {
+  position: relative;
+  z-index: 2;
 }
 
 h2 {
