@@ -29,6 +29,9 @@ function view (state, emit) {
           ${subscribe.render()}
         </div>
       </nav>
+      <section class="subtitle">
+        <h2>${raw(md(page.subtitle))}</h2>
+      </section>
       <section class="features">
         ${renderFeatures({
           features: state.content['/features'],

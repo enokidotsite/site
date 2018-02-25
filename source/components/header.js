@@ -88,7 +88,7 @@ module.exports = class Header extends Nanocomponent {
 
   handleMove (event) {
     var width = window.innerWidth / 2
-    var height = window.innerHeight / 2
+    var height = window.innerHeight * 0.9
     var x = (event.clientX - width) / width
     var y = (event.clientY - height) / height
     var unit = [Math.sqrt(x * x + y * y), x, y]
