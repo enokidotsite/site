@@ -24,9 +24,10 @@ function view (state, emit) {
         subtitle: page.subtitle
       })}
       <nav class="action-bar">
-        <div class="button get-started">${page.started}</div>
-        hi
-        ${subscribe.render()}
+        <div class="button get-started">
+          ${page.started}
+          ${subscribe.render()}
+        </div>
       </nav>
       <section class="features">
         ${renderFeatures({
