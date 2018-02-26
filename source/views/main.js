@@ -1,8 +1,8 @@
 var Subscribe = require('../components/subscribe')
 var Header = require('../components/header')
 var raw = require('choo/html/raw')
-var html = require('choo/html')
 var md = require('nano-markdown')
+var html = require('choo/html')
 
 var header = new Header()
 var subscribe = new Subscribe()
@@ -39,8 +39,14 @@ function view (state, emit) {
         })}
       </section>
       <footer>
-        <span>${page.credit}</span>
-        <a href="mailto:yo@enoki.site">yo@enoki.site</a>
+        <div>
+          ${raw(md(page.credit))}
+          <span>${page.quote}</span>
+        </div>
+        <div>
+          <a href="mailto:${page.email}">${page.email}</a><br>
+          <span>${page.location}</span>
+        </div>
       </footer>
     </body>
   `

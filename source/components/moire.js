@@ -75,8 +75,8 @@ module.exports = class Moire extends Nanocomponent {
     this.state.unit = props.unit
 
     if (paper.project) {
-      this.group1.rotate((1 - Math.abs(props.unit[1])) * 0.15, paper.view.center)
-      this.group2.rotate((1 - Math.abs(props.unit[2])) * 0.15 * -1, paper.view.center)
+      this.group1.rotate((1 - Math.abs(props.unit[1])) * 0.1, paper.view.center)
+      this.group2.rotate((1 - Math.abs(props.unit[2])) * 0.1 * -1, paper.view.center)
 
       // if (this.fade.opacity > 0.01 && this.fade.visible) {
       //   this.fade.opacity -= 0.01
