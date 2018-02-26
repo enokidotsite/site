@@ -3,7 +3,7 @@ title: enoki
 view: home
 ----
 subtitle: An experimental ~~platform~~ tool 
-for free self-expression
+for peer-to-peer publishing
 ----
 text: Super wow
 ----
