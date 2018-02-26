@@ -138,7 +138,7 @@ p a {
 }
 
 p del {
-  color: rgba(10, 10, 10, 0.5);
+  color: #F49800;
   position: relative;
   text-decoration: none;
 }
