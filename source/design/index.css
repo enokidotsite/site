@@ -64,7 +64,7 @@ header canvas {
 }
 
 footer {
-  background: #fff;
+  background: var(--foreground);
   color: var(--grey50);
   font-family: var(--mono);
   display: block;
