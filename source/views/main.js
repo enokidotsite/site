@@ -20,7 +20,7 @@ function view (state, emit) {
       ${header.render()}
       <nav class="action-bar">
         <div class="button get-started">
-          Beta Coming Soon
+          Beta coming soon
           ${subscribe.render()}
         </div>
       </nav>
