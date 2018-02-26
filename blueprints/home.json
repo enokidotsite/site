@@ -13,12 +13,20 @@
       "label": "Get started button",
       "type": "text"
     },
+    "location": {
+      "label": "Location",
+      "type": "text"
+    },
     "credit": {
       "label": "Credit",
-      "type": "text"
+      "type": "textarea"
     },
     "quote": {
       "label": "Quote",
+      "type": "text"
+    },
+    "email": {
+      "label": "Email",
       "type": "text"
     }
   }

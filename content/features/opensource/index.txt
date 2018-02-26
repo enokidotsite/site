@@ -2,4 +2,4 @@ title: Open source
 ----
 view: feature
 ----
-text: Built with open source projects; released as an open source project.
+text: Built with open source projects; released as an [open source](https://github.com/jondashkyle/enoki) project.

@@ -9,6 +9,12 @@ text: Super wow
 ----
 started: Beta coming soon
 ----
-credit: 2018 — Los Angeles, CA
+credit: Thanks [Lunchtype](http://lunchtype.com), [Choo](https://coo.io), [Beaker](https://beakerbrowser.com)
 ----
 quote: It unfolds as you make it
+----
+email: yo@enoki.site
+----
+location: 2018 — Los Angeles, CA
+----
+creditlink: http://lunchtype.com

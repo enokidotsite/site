@@ -64,6 +64,16 @@
       }
     }
   },
+  "/features/data": {
+    "title": "Own your content",
+    "view": "feature",
+    "text": "This is a tool! Your content stays with you, not a greedy platform.",
+    "name": "data",
+    "path": "/content/features/data",
+    "url": "/features/data",
+    "files": {},
+    "pages": {}
+  },
   "/todo": {
     "title": "Todo",
     "view": "default",
@@ -73,6 +83,86 @@
     "url": "/todo",
     "files": {},
     "pages": {}
+  },
+  "/features/history": {
+    "title": "Archival",
+    "view": "feature",
+    "text": "Easily go back in time and revert to previous verisons of your site whenever!",
+    "name": "history",
+    "path": "/content/features/history",
+    "url": "/features/history",
+    "files": {},
+    "pages": {}
+  },
+  "/features/opensource": {
+    "title": "Open source",
+    "view": "feature",
+    "text": "Built with open source projects; released as an [open source](https://github.com/jondashkyle/enoki) project.",
+    "name": "opensource",
+    "path": "/content/features/opensource",
+    "url": "/features/opensource",
+    "files": {},
+    "pages": {}
+  },
+  "/features/offline": {
+    "title": "Offline first",
+    "view": "feature",
+    "text": "No internet? No problem. Sync changes automatically when reconnecting.",
+    "name": "offline",
+    "path": "/content/features/offline",
+    "url": "/features/offline",
+    "files": {},
+    "pages": {}
+  },
+  "/features/p2p": {
+    "title": "Decentralized",
+    "view": "feature",
+    "text": "Instead of being confined to a centralized platform, publish directly with [Dat](https://datproject.org).",
+    "name": "p2p",
+    "path": "/content/features/p2p",
+    "url": "/features/p2p",
+    "files": {},
+    "pages": {}
+  },
+  "/features/simple": {
+    "title": "Beginner friendly",
+    "view": "feature",
+    "text": "[Choo](https://choo.io) is the foundation for every Design, and even the Panel.",
+    "name": "simple",
+    "path": "/content/features/simple",
+    "url": "/features/simple",
+    "files": {},
+    "pages": {}
+  },
+  "/": {
+    "title": "enoki",
+    "view": "home",
+    "subtitle": "An experimental ~~platform~~ tool \nfor free self-expression",
+    "text": "Super wow",
+    "started": "Beta coming soon",
+    "credit": "Thanks [Lunchtype](http://lunchtype.com), [Choo](https://coo.io), [Beaker](https://beakerbrowser.com)",
+    "quote": "It unfolds as you make it",
+    "email": "yo@enoki.site",
+    "location": "2018 — Los Angeles, CA",
+    "creditlink": "http://lunchtype.com",
+    "name": "content",
+    "path": "/content",
+    "url": "/",
+    "files": {},
+    "pages": {
+      "features": {
+        "name": "features",
+        "path": "/content/features",
+        "url": "/features",
+        "source": "/content/features"
+      },
+      "todo": {
+        "name": "todo",
+        "path": "/content/todo",
+        "url": "/todo",
+        "source": "/content/todo"
+      }
+    }
   },
   "/features/db": {
     "title": "No database",
@@ -103,92 +193,5 @@
     "url": "/features/free",
     "files": {},
     "pages": {}
-  },
-  "/features/data": {
-    "title": "Own your content",
-    "view": "feature",
-    "text": "This is a tool! Your content stays with you, not a greedy platform.",
-    "name": "data",
-    "path": "/content/features/data",
-    "url": "/features/data",
-    "files": {},
-    "pages": {}
-  },
-  "/features/history": {
-    "title": "Archival",
-    "view": "feature",
-    "text": "Easily go back in time and revert to previous verisons of your site whenever!",
-    "name": "history",
-    "path": "/content/features/history",
-    "url": "/features/history",
-    "files": {},
-    "pages": {}
-  },
-  "/features/offline": {
-    "title": "Offline first",
-    "view": "feature",
-    "text": "No internet? No problem. Sync changes automatically when reconnecting.",
-    "name": "offline",
-    "path": "/content/features/offline",
-    "url": "/features/offline",
-    "files": {},
-    "pages": {}
-  },
-  "/features/opensource": {
-    "title": "Open source",
-    "view": "feature",
-    "text": "Built with open source projects; released as an open source project.",
-    "name": "opensource",
-    "path": "/content/features/opensource",
-    "url": "/features/opensource",
-    "files": {},
-    "pages": {}
-  },
-  "/features/p2p": {
-    "title": "Decentralized",
-    "view": "feature",
-    "text": "Instead of being confined to a centralized platform, publish directly with [Dat](https://datproject.org).",
-    "name": "p2p",
-    "path": "/content/features/p2p",
-    "url": "/features/p2p",
-    "files": {},
-    "pages": {}
-  },
-  "/features/simple": {
-    "title": "Beginner friendly",
-    "view": "feature",
-    "text": "[Choo](https://choo.io) is the foundation for every Design, and even the Panel.",
-    "name": "simple",
-    "path": "/content/features/simple",
-    "url": "/features/simple",
-    "files": {},
-    "pages": {}
-  },
-  "/": {
-    "title": "enoki",
-    "view": "home",
-    "subtitle": "An experimental ~~platform~~ tool \nfor free self-expression",
-    "text": "Super wow",
-    "started": "Beta coming soon",
-    "credit": "2018 — Los Angeles, CA",
-    "quote": "It unfolds as you make it",
-    "name": "content",
-    "path": "/content",
-    "url": "/",
-    "files": {},
-    "pages": {
-      "features": {
-        "name": "features",
-        "path": "/content/features",
-        "url": "/features",
-        "source": "/content/features"
-      },
-      "todo": {
-        "name": "todo",
-        "path": "/content/todo",
-        "url": "/todo",
-        "source": "/content/todo"
-      }
-    }
   }
 }
