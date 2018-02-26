@@ -64,16 +64,6 @@
       }
     }
   },
-  "/todo": {
-    "title": "Todo",
-    "view": "default",
-    "text": "## Homepage\n\n- Add a reference to Peer-to-Peer Web for more information, community, events, etc…\n- Start with basic features, dive into developer features.",
-    "name": "todo",
-    "path": "/content/todo",
-    "url": "/todo",
-    "files": {},
-    "pages": {}
-  },
   "/features/data": {
     "title": "Own your content",
     "view": "feature",
@@ -81,6 +71,16 @@
     "name": "data",
     "path": "/content/features/data",
     "url": "/features/data",
+    "files": {},
+    "pages": {}
+  },
+  "/todo": {
+    "title": "Todo",
+    "view": "default",
+    "text": "## Homepage\n\n- Add a reference to Peer-to-Peer Web for more information, community, events, etc…\n- Start with basic features, dive into developer features.",
+    "name": "todo",
+    "path": "/content/todo",
+    "url": "/todo",
     "files": {},
     "pages": {}
   },
@@ -134,26 +134,6 @@
     "files": {},
     "pages": {}
   },
-  "/features/opensource": {
-    "title": "Open source",
-    "view": "feature",
-    "text": "Built with open source projects; released as an [open source](https://github.com/jondashkyle/enoki) project.",
-    "name": "opensource",
-    "path": "/content/features/opensource",
-    "url": "/features/opensource",
-    "files": {},
-    "pages": {}
-  },
-  "/features/p2p": {
-    "title": "Decentralized",
-    "view": "feature",
-    "text": "Instead of being confined to a centralized platform, publish directly with [Dat](https://datproject.org).",
-    "name": "p2p",
-    "path": "/content/features/p2p",
-    "url": "/features/p2p",
-    "files": {},
-    "pages": {}
-  },
   "/features/simple": {
     "title": "Beginner friendly",
     "view": "feature",
@@ -170,7 +150,7 @@
     "subtitle": "An experimental ~~platform~~ tool \nfor peer-to-peer publishing",
     "text": "Super wow",
     "started": "Beta coming soon",
-    "credit": "Thanks [Lunchtype](http://lunchtype.com), [Choo](https://coo.io), [Beaker](https://beakerbrowser.com)",
+    "credit": "Thanks [Lunchtype](http://lunchtype.com), [Choo](https://choo.io), [Beaker](https://beakerbrowser.com)",
     "quote": "It unfolds as you make it",
     "email": "yo@enoki.site",
     "location": "2018 — Los Angeles, CA",
@@ -193,5 +173,25 @@
         "source": "/content/todo"
       }
     }
+  },
+  "/features/opensource": {
+    "title": "Open source",
+    "view": "feature",
+    "text": "Built with open source projects; released as an [open source](https://github.com/jondashkyle/enoki) project.",
+    "name": "opensource",
+    "path": "/content/features/opensource",
+    "url": "/features/opensource",
+    "files": {},
+    "pages": {}
+  },
+  "/features/p2p": {
+    "title": "Decentralized",
+    "view": "feature",
+    "text": "Instead of being confined to a centralized platform, publish directly with [Dat](https://datproject.org).",
+    "name": "p2p",
+    "path": "/content/features/p2p",
+    "url": "/features/p2p",
+    "files": {},
+    "pages": {}
   }
 }

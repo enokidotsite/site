@@ -9,7 +9,7 @@ text: Super wow
 ----
 started: Beta coming soon
 ----
-credit: Thanks [Lunchtype](http://lunchtype.com), [Choo](https://coo.io), [Beaker](https://beakerbrowser.com)
+credit: Thanks [Lunchtype](http://lunchtype.com), [Choo](https://choo.io), [Beaker](https://beakerbrowser.com)
 ----
 quote: It unfolds as you make it
 ----
