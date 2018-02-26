@@ -64,7 +64,7 @@ header canvas {
 }
 
 footer {
-  background: var(--foreground);
+  background: #fff;
   color: var(--grey50);
   font-family: var(--mono);
   display: block;
@@ -172,7 +172,7 @@ nav.action-bar > * {
 .button,
 button {
   background: var(--background);
-  color: var(--background);
+  color: var(--foreground);
   font-family: var(--expanded);
   overflow: hidden;
   font-weight: normal;
@@ -202,10 +202,12 @@ input {
   line-height: 6rem;
   border-radius: 3rem;
   text-align: center;
-  border: 3px solid var(--yellow);
+  border: 3px solid var(--blue);
 }
 
 input[type="email"] {
+  background: var(--foreground);
+  color: var(--background);
   opacity: 0;
   position: absolute;
   top: 0;
@@ -241,7 +243,7 @@ button:active {
 */
 
 .button.get-started {
-  background: var(--yellow);
+  background: var(--blue);
   cursor: default;
 }
 
@@ -261,13 +263,13 @@ section.ps > div {
 }
 
 section.subtitle {
-  background: var(--blue);
+  background: var(--yellow);
   padding: 4rem;
   text-align: center;
 }
 
 section.subtitle h2 {
-  color: #fff;
+  color: var(--background);
   font-size: 6.5vw;
   line-height: 1;
   margin: 0 auto;

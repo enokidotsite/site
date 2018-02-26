@@ -1,13 +1,14 @@
 var Nanocomponent = require('nanocomponent')
 var html = require('choo/html')
 var paper = require('paper')
+var xtend = require('xtend')
 
 module.exports = class Moire extends Nanocomponent {
   constructor () {
     super()
     this.state = {
       unit: [0, 0, 0],
-      color: '#E5E5E5',
+      color: '#e5e5e5',
       gridSize: 80,
       spacing: 1.1,
       bounds: 10
@@ -17,11 +18,19 @@ module.exports = class Moire extends Nanocomponent {
   }
 
   load (element) {
+    var winMax = Math.max(window.innerHeight, window.innerWidth)
+
     // initialize
     paper.setup(element)
 
+    this.state = xtend(this.state, {
+      gridSize: winMax * 0.1,
+      spacing: 1.1,
+      bounds: 10
+    })
+
     // some state
-    this.state.bounds = Math.max(window.innerHeight, window.innerWidth) * 1.25 / this.state.gridSize
+    this.state.bounds = winMax * 1.25 / this.state.gridSize
 
     // create our groups
     this.group1 = this.createGroup()
