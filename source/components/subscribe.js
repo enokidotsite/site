@@ -5,13 +5,14 @@ var xhr = require('xhr')
 
 var styles = css`
   :host .subscribe-note {
-    background: var(--yellow);
+    background: var(--blue);
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     display: flex;
+    border-radius: 3rem;
     justify-content: center;
     align-items: center;
   }
@@ -73,6 +74,7 @@ module.exports = class Subscribe extends Nanocomponent {
           oninput=${this.handleInput}
           required
         >
+        <button type="submit">→</button>
         <input
           type="text"
           style="display: none"
@@ -81,7 +83,6 @@ module.exports = class Subscribe extends Nanocomponent {
           aria-hidden="true"
           autocomplete="nope"
         >
-        <button type="submit" style="display: none;">Subscribe</button>
       </form>
     `
   }

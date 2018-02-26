@@ -173,7 +173,6 @@ button {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--expanded);
-  overflow: hidden;
   font-weight: normal;
   padding: 0 6rem;
   position: relative;
@@ -211,13 +210,20 @@ input[type="email"] {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
   width: 100%;
-  transition: opacity 100ms ease-out, 100ms ease-out border;
+  transition: opacity 100ms ease-out, transform 100ms ease;
 }
 
+input[type="email"]:not([value=""]),
 input[type="email"]:hover,
 input[type="email"]:focus {
   opacity: 1;
+}
+
+input:not([value=""]),
+input[type="email"]:focus {
+  transform: translateX(-3rem);
 }
 
 input, input:focus {
@@ -225,7 +231,26 @@ input, input:focus {
 }
 
 input:not([value=""]):invalid {
-  border: 3px solid var(--red);
+  color: var(--red);
+}
+
+button[type="submit"] {
+  background: var(--blue);
+  padding: 0 2rem 0 4rem;
+  display: block;
+  font-family: var(--expanded);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 100ms ease-out, transform 100ms ease;
+}
+
+input:not([value=""]) + button[type="submit"],
+input[type="email"]:focus + button[type="submit"] {
+  opacity: 1;
+  transform: translateX(2rem);
 }
 
 /*
