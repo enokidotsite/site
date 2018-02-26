@@ -44,8 +44,8 @@ function view (state, emit) {
           <span>${page.quote}</span>
         </div>
         <div>
-          <a href="mailto:${page.email}">${page.email}</a><br>
-          <span>${page.location}</span>
+          <span>${page.location}</span><br>
+          <a href="mailto:${page.email}">${page.email}</a>
         </div>
       </footer>
     </body>
