@@ -383,8 +383,8 @@ ul.features > li {
 @font-face {
   font-family: 'lunchtype24expanded_regular';
   src: url('/assets/lunchtype22-medium-webfont.eot') format('eot'),
-  src: url('/assets/lunchtype22-medium-webfont.ttf') format('ttf'),
-  src: url('/assets/lunchtype22-medium-webfont.woff2') format('woff2'),
+       url('/assets/lunchtype22-medium-webfont.ttf') format('ttf'),
+       url('/assets/lunchtype22-medium-webfont.woff2') format('woff2'),
        url('/assets/lunchtype22-medium-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
