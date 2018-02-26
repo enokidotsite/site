@@ -13,24 +13,19 @@ module.exports = view
 
 function view (state, emit) {
   if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
-  var page = state.content[state.href || '/']
-
-  if (!page) return html`<body></body>`
+  var page = state.content[state.href || '/'] || { }
 
   return html`
     <body>
-      ${header.render({
-        title: page.title,
-        subtitle: page.subtitle
-      })}
+      ${header.render()}
       <nav class="action-bar">
         <div class="button get-started">
-          ${page.started}
+          Beta Coming Soon
           ${subscribe.render()}
         </div>
       </nav>
       <section class="subtitle">
-        <h2>${raw(md(page.subtitle))}</h2>
+        <h2>${raw(md(page.subtitle || ''))}</h2>
       </section>
       <section class="features">
         ${renderFeatures({
@@ -40,7 +35,7 @@ function view (state, emit) {
       </section>
       <footer>
         <div>
-          ${raw(md(page.credit))}
+          ${raw(md(page.credit || ''))}
           <span>${page.quote}</span>
         </div>
         <div>
@@ -53,6 +48,7 @@ function view (state, emit) {
 }
 
 function renderFeatures (props) {
+  if (!props.features) return
   var features = props.features.order
     .split('\n')
     .map(feature => feature.replace('- ', ''))
