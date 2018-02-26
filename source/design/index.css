@@ -1,7 +1,7 @@
 :root {
   --foreground: #e5e5e5; 
   --background: #1a1a1a;
-  --grey25: #ddd;
+  --grey25: #aaa;
   --grey50: #999;
   --grey75: #666;
   --blue: #005FD2;
@@ -65,17 +65,16 @@ header canvas {
 
 footer {
   background: var(--foreground);
-  color: var(--grey75);
+  color: var(--grey50);
   font-family: var(--mono);
-  display: flex;
+  display: block;
   padding: 2rem 2rem 10rem;
   font-size: 1.2rem;
   text-transform: uppercase;
   justify-content: space-between;
 }
 
-footer > div:nth-child(1) { text-align: left }
-footer > div:nth-child(2) { text-align: right }
+footer > div { text-align: center }
 
 footer a {
   color: var(--grey75);
@@ -204,7 +203,6 @@ input {
   border-radius: 3rem;
   text-align: center;
   border: 3px solid var(--yellow);
-  transition: 100ms ease-out border;
 }
 
 input[type="email"] {
@@ -213,7 +211,7 @@ input[type="email"] {
   top: 0;
   left: 0;
   width: 100%;
-  transition: opacity 100ms ease-out;
+  transition: opacity 100ms ease-out, 100ms ease-out border;
 }
 
 input[type="email"]:hover,
@@ -245,6 +243,21 @@ button:active {
 .button.get-started {
   background: var(--yellow);
   cursor: default;
+}
+
+section.ps {
+  background: var(--foreground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 10rem);
+}
+
+section.ps > div {
+  background: var(--grey25);
+  box-shadow: 0 0 7rem 7rem var(--grey25);
+  height: 25vh;
+  width: 50vw;
 }
 
 section.subtitle {
@@ -329,8 +342,12 @@ ul.features > li {
 
 @media (min-width: 767px) {
   footer {
+    display: flex;
     padding: 4rem;
   }
+
+  footer > div:nth-child(1) { text-align: left }
+  footer > div:nth-child(2) { text-align: right }
 
   section.subtitle {
     padding: 8rem 6rem;
