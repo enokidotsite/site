@@ -38,7 +38,8 @@ module.exports = class Header extends Nanocomponent {
   }
 
   unload (element) {
-    if (this.observerver) this.observer.disconnect()
+    if (typeof IntersectionObserver === 'undefined') return
+    this.observer.disconnect()
   }
 
   createElement (props) {

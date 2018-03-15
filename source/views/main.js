@@ -1,4 +1,5 @@
 var Subscribe = require('../components/subscribe')
+var Prerelease = require('../components/prerelease')
 var Header = require('../components/header')
 var raw = require('choo/html/raw')
 var md = require('nano-markdown')
@@ -6,6 +7,7 @@ var html = require('choo/html')
 
 var header = new Header()
 var subscribe = new Subscribe()
+var prerelease = new Prerelease()
 
 var TITLE = 'Enoki'
 
@@ -17,6 +19,7 @@ function view (state, emit) {
 
   return html`
     <body>
+      ${prerelease.render()}
       ${header.render()}
       <nav class="action-bar">
         <div class="button get-started">
