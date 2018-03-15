@@ -64,26 +64,6 @@
       }
     }
   },
-  "/features/data": {
-    "title": "Own your content",
-    "view": "feature",
-    "text": "This is a tool! Your content stays with you, not a greedy platform.",
-    "name": "data",
-    "path": "/content/features/data",
-    "url": "/features/data",
-    "files": {},
-    "pages": {}
-  },
-  "/todo": {
-    "title": "Todo",
-    "view": "default",
-    "text": "## Homepage\n\n- Add a reference to Peer-to-Peer Web for more information, community, events, etc…\n- Start with basic features, dive into developer features.",
-    "name": "todo",
-    "path": "/content/todo",
-    "url": "/todo",
-    "files": {},
-    "pages": {}
-  },
   "/features/db": {
     "title": "No database",
     "view": "feature",
@@ -91,16 +71,6 @@
     "name": "db",
     "path": "/content/features/db",
     "url": "/features/db",
-    "files": {},
-    "pages": {}
-  },
-  "/features/extendable": {
-    "title": "Extensibile",
-    "view": "feature",
-    "text": "Easily create custom field types for project specific interfaces.",
-    "name": "extendable",
-    "path": "/content/features/extendable",
-    "url": "/features/extendable",
     "files": {},
     "pages": {}
   },
@@ -114,13 +84,53 @@
     "files": {},
     "pages": {}
   },
+  "/todo": {
+    "title": "Todo",
+    "view": "default",
+    "text": "## Homepage\n\n- Add a reference to Peer-to-Peer Web for more information, community, events, etc…\n- Start with basic features, dive into developer features.",
+    "name": "todo",
+    "path": "/content/todo",
+    "url": "/todo",
+    "files": {},
+    "pages": {}
+  },
+  "/features/data": {
+    "title": "Own your content",
+    "view": "feature",
+    "text": "This is a tool! Your content stays with you, not a greedy platform.",
+    "name": "data",
+    "path": "/content/features/data",
+    "url": "/features/data",
+    "files": {},
+    "pages": {}
+  },
+  "/features/extendable": {
+    "title": "Extensibile",
+    "view": "feature",
+    "text": "Easily create custom field types for project specific interfaces.",
+    "name": "extendable",
+    "path": "/content/features/extendable",
+    "url": "/features/extendable",
+    "files": {},
+    "pages": {}
+  },
   "/features/history": {
     "title": "Archival",
     "view": "feature",
-    "text": "Easily go back in time and revert to previous verisons of your site whenever!",
+    "text": "Easily go back in time and revert to previous versions of your site whenever!",
     "name": "history",
     "path": "/content/features/history",
     "url": "/features/history",
+    "files": {},
+    "pages": {}
+  },
+  "/features/opensource": {
+    "title": "Open source",
+    "view": "feature",
+    "text": "Built with open source projects; released as an [open source](https://github.com/jondashkyle/enoki) project.",
+    "name": "opensource",
+    "path": "/content/features/opensource",
+    "url": "/features/opensource",
     "files": {},
     "pages": {}
   },
@@ -131,16 +141,6 @@
     "name": "offline",
     "path": "/content/features/offline",
     "url": "/features/offline",
-    "files": {},
-    "pages": {}
-  },
-  "/features/simple": {
-    "title": "Beginner friendly",
-    "view": "feature",
-    "text": "[Choo](https://choo.io) is the foundation for every Design, and even the Panel.",
-    "name": "simple",
-    "path": "/content/features/simple",
-    "url": "/features/simple",
     "files": {},
     "pages": {}
   },
@@ -174,13 +174,13 @@
       }
     }
   },
-  "/features/opensource": {
-    "title": "Open source",
+  "/features/simple": {
+    "title": "Beginner friendly",
     "view": "feature",
-    "text": "Built with open source projects; released as an [open source](https://github.com/jondashkyle/enoki) project.",
-    "name": "opensource",
-    "path": "/content/features/opensource",
-    "url": "/features/opensource",
+    "text": "[Choo](https://choo.io) is the foundation for every Design, and even the Panel.",
+    "name": "simple",
+    "path": "/content/features/simple",
+    "url": "/features/simple",
     "files": {},
     "pages": {}
   },
