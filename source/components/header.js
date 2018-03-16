@@ -46,13 +46,7 @@ module.exports = class Header extends Nanocomponent {
     this.state = Object.assign(this.state, props)
 
     return html`
-      <header
-        style="
-          --unit: ${this.state.unit[0]};
-          --unitx: ${this.state.unit[1]};
-          --unity: ${this.state.unit[2]};
-        "
-      >
+      <header>
         <div class="colors">
           <div></div>
           <div></div>
