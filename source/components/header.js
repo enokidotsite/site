@@ -76,9 +76,9 @@ module.exports = class Header extends Nanocomponent {
     this.state.unit[0] += diff * 0.1
     this.state.unit[1] += (diffx * 0.1) / 2
     this.state.unit[2] += (diffy * 0.1) / 2
-    this.element.style.setProperty('--unit', this.state.unit[0])
-    this.element.style.setProperty('--unitx', this.state.unit[1])
-    this.element.style.setProperty('--unity', this.state.unit[2])
+    // this.element.style.setProperty('--unit', this.state.unit[0])
+    // this.element.style.setProperty('--unitx', this.state.unit[1])
+    // this.element.style.setProperty('--unity', this.state.unit[2])
     moire.refresh({ unit: this.state.unit })
     this.frame = window.requestAnimationFrame(this.createFrame)
   }
