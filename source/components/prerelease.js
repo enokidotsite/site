@@ -34,7 +34,7 @@ module.exports = class Prerelease extends Nanocomponent {
 
     this.state = {
       offset: 0,
-      amount: 0
+      amount: 0.5
     }
 
     this.observer
