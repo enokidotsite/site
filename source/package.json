@@ -14,6 +14,8 @@
     "brfs": "^1.4.3",
     "choo": "^6.0.0",
     "enoki": "^2.0.2",
+    "markdown-it": "^8.4.1",
+    "markdown-it-external-links": "0.0.6",
     "nano-markdown": "^1.2.0",
     "nanocomponent": "^6.4.0",
     "nanoreset": "^1.2.0",
