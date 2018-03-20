@@ -112,6 +112,7 @@
 :host textarea {
   background: #fff;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  white-space: pre-line;
   display: block;
   border-radius: 2rem;
   line-height: 1.8rem;

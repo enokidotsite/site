@@ -55,7 +55,7 @@ module.exports = class Header extends Nanocomponent {
     this.stop()
     element.addEventListener('mouseenter', this.handleEnter, false)
     element.addEventListener('mouseleave', this.handleLeave, false)
-    window.removeEventListener('mousemove', this.handleMove, false)
+    element.removeEventListener('mousemove', this.handleMove, false)
     if (typeof IntersectionObserver === 'undefined') return
     this.observer.disconnect()
   }
@@ -87,8 +87,13 @@ module.exports = class Header extends Nanocomponent {
   update (props) {
     if (this.state.active !== props.active) {
       this.state.active = props.active
-      if (props.active) this.start()
-      else this.stop()
+      if (props.active) {
+        this.start()
+        this.element.addEventListener('mouseenter', this.handleEnter, false)
+        this.element.addEventListener('mouseleave', this.handleLeave, false)
+      } else {
+        this.stop()
+      }
     }
 
     return false
@@ -138,10 +143,10 @@ module.exports = class Header extends Nanocomponent {
   handleIntersection (event) {
     if (event[0].isIntersecting) {
       if (this.state.paused) this.start()
-      window.addEventListener('mousemove', this.handleMove, false)
+      this.element.addEventListener('mousemove', this.handleMove, false)
     } else {
       this.stop()
-      window.removeEventListener('mousemove', this.handleMove, false)
+      this.element.removeEventListener('mousemove', this.handleMove, false)
     }
   }
 }

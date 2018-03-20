@@ -140,8 +140,12 @@ module.exports = class Prerelease extends Nanocomponent {
   update (props) {
     if (this.state.active !== props.active) {
       this.state.active = props.active
-      if (props.active) this.start()
-      else this.stop()
+      if (props.active) {
+        this.start()
+        window.addEventListener('mousemove', this.handleMousemove, false)
+      } else {
+        this.stop()
+      }
     }
 
     return false
