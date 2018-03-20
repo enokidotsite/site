@@ -1,0 +1,183 @@
+/**
+ * container
+ */
+
+:host {
+  display: flex;
+}
+
+/**
+ * channel
+ */
+
+:host .channel-container {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-height: 40rem;
+  max-height: 100vh;
+}
+
+:host .channel {
+  position: relative;
+  padding-bottom: 56.25%;
+  width: 100%;
+}
+
+:host .channel iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;  
+}
+
+/**
+ * chat
+ */
+
+:host .chat-container {
+  background: #fff;
+  color: var(--background);
+  width: 30rem;
+}
+
+:host .chat {
+  height: 100%;
+  position: relative; 
+}
+
+:host .chat-messages {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 1.4rem;
+  overflow: scroll;
+  padding: 0.5rem 0.5rem 7.5rem;
+}
+
+:host .message {
+  background: var(--foreground);
+  color: var(--background);
+  border-radius: 2rem;
+  margin: 0.5rem;
+  padding: 1rem 1.5rem
+}
+
+:host .message.active {
+  background: var(--blue);
+  color: var(--foreground);
+}
+
+:host .message a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+:host .message > * {
+  margin: 0.75rem 0;
+}
+
+:host .message > *:first-child { margin-top: 0 }
+:host .message > *:last-child { margin-bottom: 0 }
+
+:host form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+:host form:before {
+  display: none;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -moz-linear-gradient(top, rgba(255,255,255,0 ) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0 ) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,0 ) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+:host textarea {
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  display: block;
+  border-radius: 2rem;
+  line-height: 1.8rem;
+  height: 6rem;
+  font-size: 1.4rem;
+  font-family: inherit;
+  resize: none;
+  width: calc(100% - 2rem);
+  outline: 0;
+  margin: 1rem;
+  position: relative;
+  padding: 1rem 4rem 1rem 1.5rem;
+  z-index: 2;
+}
+
+:host button {
+  background: var(--blue);
+  color: var(--foreground);
+  border-radius: 2rem;
+  overflow: hidden;
+  text-indent: 100px;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  height: 3rem;
+  width: 3rem;
+  outline: 0;
+  z-index: 3;
+}
+
+:host button:before {
+  content: '→';
+  font-family: var(--mono);
+  text-indent: 0;
+  color: #fff;
+  display: block;
+  transform: rotate(-90deg) translate(18%, -100%);
+  transform-origin: 100% 0;
+  height: 4rem;
+  width: 4rem;
+  line-height: 1.9rem;
+  font-size: 2rem;
+}
+
+
+
+/**
+ * mobile
+ */
+
+@media (max-width: 767px) {
+  :host {
+    display: block;
+  }
+
+  :host .channel-container {
+    min-height: auto;
+    width: 100%;
+  }
+
+  :host .channel {
+    width: 100%;
+  }
+
+  :host .chat-container {
+    height: 50vh;
+    width: 100%;
+  }
+}

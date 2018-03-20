@@ -8,6 +8,7 @@ var html = require('choo/html')
 
 var header = new Header()
 var subscribe = new Subscribe()
+var prerelease = new Prerelease()
 
 var TITLE = 'Enoki'
 
@@ -19,14 +20,23 @@ function view (state, emit) {
 
   return html`
     <body>
-      ${livestream(state, emit)}
-      ${header.render()}
       <nav class="action-bar">
         <div class="button get-started">
           Request an invite
           ${subscribe.render()}
         </div>
       </nav>
+      ${state.chat.live
+        ? livestream(state, emit)
+        : state.chat.scratch !== 'end'
+          ? prerelease.render({
+            active: state.chat.live !== true
+          })
+          : ''
+      }
+      ${header.render({
+        active: state.chat.live !== true
+      })}
       <section class="subtitle">
         <h2>${raw(md(page.subtitle || ''))}</h2>
       </section>

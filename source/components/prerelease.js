@@ -1,7 +1,9 @@
 var Nanocomponent = require('nanocomponent')
 var html = require('choo/html')
-var Warp = require('warpjs')
+var xtend = require('xtend')
 var css = require('sheetify')
+
+var Warp = require('warpjs')
 
 var styles = css`
   :host {
@@ -33,6 +35,8 @@ module.exports = class Prerelease extends Nanocomponent {
     super()
 
     this.state = {
+      active: true,
+      paused: true,
       offset: 0,
       amount: 0.5
     }
@@ -43,6 +47,8 @@ module.exports = class Prerelease extends Nanocomponent {
 
     this.handleIntersection = this.handleIntersection.bind(this)
     this.handleMousemove = this.handleMousemove.bind(this)
+    this.handleEnter = this.handleEnter.bind(this)
+    this.handleLeave = this.handleLeave.bind(this)
     this.animate = this.animate.bind(this)
   }
 
@@ -54,16 +60,26 @@ module.exports = class Prerelease extends Nanocomponent {
     this.warp.transform(([ x, y ]) => [ x, y, y ])
     this.warp.transform(([ x, y, oy ]) => [ x, oy + 4 * Math.sin(x / 16 + this.state.offset), oy ])
 
+    element.addEventListener('mouseenter', this.handleEnter, false)
+    element.addEventListener('mouseleave', this.handleLeave, false)
     window.addEventListener('mousemove', this.handleMousemove, false)
 
-    if (typeof IntersectionObserver !== 'undefined') {
-      this.observer = new IntersectionObserver(this.handleIntersection)
-      this.observer.observe(element)
+    if (
+      typeof IntersectionObserver === 'undefined' ||
+      this.state.active === false
+    ) {
+      return // skip
     }
+
+    this.observer = new IntersectionObserver(this.handleIntersection)
+    this.observer.observe(element)
   }
 
   unload () {
     window.removeEventListener('mousemove', this.handleMousemove, false)
+    this.stop()
+    element.addEventListener('mouseenter', this.handleEnter, false)
+    element.addEventListener('mouseleave', this.handleLeave, false)
     if (typeof IntersectionObserver === 'undefined') return
     this.observer.disconnect()
   }
@@ -83,7 +99,27 @@ module.exports = class Prerelease extends Nanocomponent {
     this.state.amount = 1 - unit
   }
 
+  start () {
+    if (this.state.paused) this.animate()
+    this.state.paused = false
+  }
+
+  stop () {
+    this.state.paused = true
+    window.cancelAnimationFrame(this.frame)
+  }
+
+  handleEnter (event) {
+    if (!this.state.active) this.start()
+  }
+
+  handleLeave (event) {
+    if (!this.state.active) this.stop()
+  }
+
   createElement (props) {
+    this.state = xtend(this.state, props)
+
     return html`
       <div class="${styles}">
         <svg width="631px" height="361px" viewBox="0 0 631 361">
@@ -102,15 +138,21 @@ module.exports = class Prerelease extends Nanocomponent {
   }
 
   update (props) {
+    if (this.state.active !== props.active) {
+      this.state.active = props.active
+      if (props.active) this.start()
+      else this.stop()
+    }
+
     return false
   }
 
   handleIntersection (event) {
     if (event[0].isIntersecting) {
-      this.animate()
+      if (this.state.paused) this.start()
       window.addEventListener('mousemove', this.handleMove, false)
     } else {
-      window.cancelAnimationFrame(this.frame)
+      this.stop()
       window.removeEventListener('mousemove', this.handleMove, false)
     }
   }

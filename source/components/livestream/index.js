@@ -10,7 +10,12 @@ module.exports = livestream
 function livestream (state, emit) {
   return html`
     <div class="${styles}">
-      hi!
+      <div class="channel-container">
+        ${channel()}
+      </div>
+      <div class="chat-container">
+        ${chat(state, emit)}
+      </div>
     </div>
   `
 }

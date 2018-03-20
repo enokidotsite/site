@@ -1,36 +1,50 @@
 var Nanocomponent = require('nanocomponent')
-var Moire = require('./moire')
 var raw = require('choo/html/raw')
 var md = require('nano-markdown')
 var html = require('choo/html')
+var xtend = require('xtend')
 
+var Moire = require('./moire')
 var moire = new Moire()
 
 module.exports = class Header extends Nanocomponent {
   constructor () {
     super()
 
-    this.observer
-    this.frame
     this.state = {
       title: '',
       target: [1, 0, -0.5],
       unit: [1, 0, -0.5],
+      active: true,
+      paused: true,
       img: {
         loaded: false,
         src: '/assets/ui.svg'
       }
     }
 
+    this.observer
+    this.frame
+
     this.handleIntersection = this.handleIntersection.bind(this)
     this.createFrame = this.createFrame.bind(this)
     this.handleMove = this.handleMove.bind(this)
+    this.handleEnter = this.handleEnter.bind(this)
+    this.handleLeave = this.handleLeave.bind(this)
   }
 
   load (element) {
     var self = this
 
-    if (typeof IntersectionObserver === 'undefined') return
+    element.addEventListener('mouseenter', this.handleEnter, false)
+    element.addEventListener('mouseleave', this.handleLeave, false)
+
+    if (
+      typeof IntersectionObserver === 'undefined' ||
+      this.state.active === false
+    ) {
+      return // skip
+    }
 
     // track position
     this.observer = new IntersectionObserver(this.handleIntersection)
@@ -38,16 +52,21 @@ module.exports = class Header extends Nanocomponent {
   }
 
   unload (element) {
+    this.stop()
+    element.addEventListener('mouseenter', this.handleEnter, false)
+    element.addEventListener('mouseleave', this.handleLeave, false)
+    window.removeEventListener('mousemove', this.handleMove, false)
     if (typeof IntersectionObserver === 'undefined') return
     this.observer.disconnect()
   }
 
   createElement (props) {
-    this.state = Object.assign(this.state, props)
+    this.state = xtend(this.state, props)
 
     return html`
       <header>
         <div class="colors">
+          <div></div>
           <div></div>
           <div></div>
           <div></div>
@@ -66,7 +85,23 @@ module.exports = class Header extends Nanocomponent {
   }
 
   update (props) {
+    if (this.state.active !== props.active) {
+      this.state.active = props.active
+      if (props.active) this.start()
+      else this.stop()
+    }
+
     return false
+  }
+
+  start () {
+    if (this.state.paused) this.createFrame()
+    this.state.paused = false
+  }
+
+  stop () {
+    this.state.paused = true
+    window.cancelAnimationFrame(this.frame)
   }
 
   createFrame () {
@@ -83,6 +118,14 @@ module.exports = class Header extends Nanocomponent {
     this.frame = window.requestAnimationFrame(this.createFrame)
   }
 
+  handleEnter (event) {
+    if (!this.state.active) this.start()
+  }
+
+  handleLeave (event) {
+    if (!this.state.active) this.stop()
+  }
+
   handleMove (event) {
     var width = window.innerWidth / 2
     var height = window.innerHeight * 0.9
@@ -94,10 +137,10 @@ module.exports = class Header extends Nanocomponent {
 
   handleIntersection (event) {
     if (event[0].isIntersecting) {
-      this.createFrame()
+      if (this.state.paused) this.start()
       window.addEventListener('mousemove', this.handleMove, false)
     } else {
-      window.cancelAnimationFrame(this.frame)
+      this.stop()
       window.removeEventListener('mousemove', this.handleMove, false)
     }
   }

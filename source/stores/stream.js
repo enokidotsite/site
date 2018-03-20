@@ -1,3 +1,4 @@
+var uuid = require('uuid-v4')
 var WebSocket = require('../lib/ws')
 var xtend = require('xtend')
 
@@ -7,14 +8,14 @@ function chat (state, emitter) {
   var ws
   state.chat = {
     address: 'wss://amusing-cub.glitch.me/',
-    active: false,
+    loaded: false,
     live: false,
     note: 'loading',
     messages: [ ],
     scratch: '',
     editing: false,
     user: {
-      name: 'nice',
+      name: uuid(),
       message: ''
     }
   }
@@ -30,21 +31,23 @@ function chat (state, emitter) {
     ws = new WebSocket(state.chat.address)
 
     ws.addEventListener('open', function (event) {
-      state.chat.active = true
+      state.chat.loaded = true
       emitter.emit(state.events.CHAT_READY)
       emitter.emit(state.events.RENDER)
 
       setTimeout(function () {
-        if (state.chat.live) {
-          var elMessages = document.querySelector('[data-messages]')
-          elMessages.scrollTo(0, elMessages.scrollHeight)
+        var elMessages = document.querySelector('[data-messages]')
+        if (state.chat.live && elMessages) {
+          elMessages.scrollTop = elMessages.scrollHeight
         }
       }, 100)
     })
 
     ws.addEventListener('error', function (event) {
-      alert('Problem with chat, sorry!')
-      console.warn(error)
+      var shouldRender = state.chat.loaded || state.chat.live
+      state.chat.loaded = true
+      state.chat.live = false
+      if (shouldRender) emitter.emit(state.events.RENDER)
     })
 
     ws.addEventListener('message', function (event) {
@@ -73,7 +76,7 @@ function chat (state, emitter) {
       // message
       if (data.message) {
         state.chat.messages.push(data)
-        if (state.chat.live) scrollMessages('[data-messages]')
+        scrollMessages('[data-messages]')
         if (data.message === state.chat.user.message) {
           emitter.emit(state.events.CHAT_USER, { message: '' })
         }
@@ -100,7 +103,6 @@ function chat (state, emitter) {
   })
 
   emitter.on(state.events.CHAT_LIVE, function (data) {
-    console.log(state.chat.live)
     if (data && data.live !== undefined) {
       state.chat.live = data.live
       ws.send(JSON.stringify(data))
@@ -126,7 +128,7 @@ function scrollMessages (selector) {
     if (elMessages.scrollHeight - elMessages.offsetHeight === elMessages.scrollTop) {
       setTimeout(function () {
         var elMessages = document.querySelector(selector)
-        elMessages.scrollTo(0, elMessages.scrollHeight)
+        elMessages.scrollTop = elMessages.scrollHeight
       }, 100)
     }
   }

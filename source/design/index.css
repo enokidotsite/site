@@ -105,12 +105,13 @@ h1 {
   width: 1rem;
 }
 
+.colors > div:nth-child(2) { background: #fff }
 .colors > div:nth-child(1) { background: var(--foreground) }
-.colors > div:nth-child(2) { background: var(--background) }
-.colors > div:nth-child(3) { background: var(--blue) }
-.colors > div:nth-child(4) { background: var(--yellow) }
-.colors > div:nth-child(5) { background: var(--green) }
-.colors > div:nth-child(6) { background: var(--red) }
+.colors > div:nth-child(3) { background: var(--background) }
+.colors > div:nth-child(4) { background: var(--blue) }
+.colors > div:nth-child(5) { background: var(--yellow) }
+.colors > div:nth-child(6) { background: var(--green) }
+.colors > div:nth-child(7) { background: var(--red) }
 
 header svg {
   position: relative;
@@ -149,7 +150,7 @@ p del:after {
   position: absolute;
   top: 55%;
   left: 0;
-  height: 0.6rem;
+  height: 0.1em;
   width: 100%;
 }
 
@@ -168,15 +169,15 @@ nav.action-bar > * {
   pointer-events: auto;
 }
 
-.button,
-button {
+nav.action-bar .button,
+nav.action-bar button {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--expanded);
   font-weight: normal;
   padding: 0 6rem;
   position: relative;
-  line-height: 5.6rem;
+  line-height: 6rem;
   font-size: var(--fs1);
   border-radius: 3rem;
   cursor: pointer;
@@ -191,7 +192,7 @@ button {
   -webkit-appearance: none;
 }
 
-input {
+nav.action-bar input {
   font-size: var(--fs1);
   background: var(--background);
   font-family: var(--expanded);
@@ -202,72 +203,59 @@ input {
   text-align: center;
 }
 
-input[type="email"] {
-  background: var(--foreground);
+nav.action-bar input[type="email"] {
+  background: #fff;
   color: var(--background);
-  border: 0.2rem solid var(--background);
   opacity: 0;
   position: absolute;
-  top: -0.2rem;
-  left: -0.2rem;
+  top: 0;
+  left: 0;
   z-index: 2;
-  width: calc(100% + 0.4rem);
+  width: 100%;
   transition: opacity 100ms ease-out, transform 100ms ease;
 }
 
-input[type="email"]:not([value=""]),
-input[type="email"]:hover,
-input[type="email"]:focus {
+nav.action-bar input[type="email"]:not([value=""]),
+nav.action-bar input[type="email"]:hover,
+nav.action-bar input[type="email"]:focus {
   opacity: 1;
 }
 
-input:not([value=""]),
-input[type="email"]:focus {
-  transform: translateX(-3rem);
+nav.action-bar input:not([value=""]),
+nav.action-bar input[type="email"]:focus {
+  transform: translateX(-1.5rem);
 }
 
-input, input:focus {
+nav.action-bar input, input:focus {
   outline: 0;
 }
 
-input:not([value=""]):invalid {
+nav.action-bar input:not([value=""]):invalid {
   color: var(--red);
 }
 
-button[type="submit"] {
-  padding: 0 2rem 0 6rem;
+nav.action-bar button[type="submit"] {
+  background: #fff;
+  color: var(--blue);
+  padding: 0 1.5rem 0 4rem;
   display: block;
-  font-family: var(--expanded);
+  font-family: var(--mono);
   position: absolute;
-  top: -0.2rem;
+  top:0;
   right: 0;
   z-index: -1;
   opacity: 0;
   transition: opacity 100ms ease-out, transform 100ms ease;
 }
 
-input:not([value=""]) + button[type="submit"],
-input[type="email"]:focus + button[type="submit"] {
+nav.action-bar input:not([value=""]) + button[type="submit"],
+nav.action-bar input[type="email"]:focus + button[type="submit"] {
   opacity: 1;
-  transform: translateX(2rem);
+  transform: translateX(1.5rem);
 }
 
-/*
-.button:hover,
-button:hover {
-  transform: translateY(-0.2rem);
-}
-
-.button:active,
-button:active {
-  transform: translateY(0.2rem);
-  transition: transform 50ms ease-in-out;
-}
-*/
-
-.button.get-started {
-  background: var(--foreground);
-  border: 0.2rem solid var(--background);
+nav.action-bar .button.get-started {
+  background: #fff;
   color: var(--background);
   cursor: default;
 }
