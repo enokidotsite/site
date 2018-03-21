@@ -75,7 +75,7 @@ module.exports = class Prerelease extends Nanocomponent {
     this.observer.observe(element)
   }
 
-  unload () {
+  unload (element) {
     window.removeEventListener('mousemove', this.handleMousemove, false)
     this.stop()
     element.addEventListener('mouseenter', this.handleEnter, false)

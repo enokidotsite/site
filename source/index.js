@@ -1,6 +1,6 @@
 var choo = require('choo')
-require('./design')
 var wrapper = require('./views/wrapper')
+require('./design')
 
 var app = choo()
 

@@ -42,11 +42,14 @@
 
 :host .chat-container {
   background: #fff;
+  display: flex;
+  flex-direction: column;
   color: var(--background);
   width: 30rem;
 }
 
 :host .chat {
+  flex: 1;
   height: 100%;
   position: relative; 
 }

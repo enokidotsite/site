@@ -12,7 +12,7 @@
   --fs2: 2.7rem;
   --fs3: 3.6rem;
   --fs4: 5.4rem;
-  --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  --mono: "SF Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   --expanded: 'lunchtype24expanded_regular',  -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -201,6 +201,7 @@ nav.action-bar input {
   line-height: 6rem;
   border-radius: 3rem;
   text-align: center;
+  outline: 0;
 }
 
 nav.action-bar input[type="email"] {

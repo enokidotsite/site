@@ -26,14 +26,6 @@ function view (state, emit) {
           ${subscribe.render()}
         </div>
       </nav>
-      ${state.chat.live
-        ? livestream(state, emit)
-        : state.chat.scratch !== 'end'
-          ? prerelease.render({
-            active: state.chat.live !== true
-          })
-          : ''
-      }
       ${header.render({
         active: state.chat.live !== true
       })}

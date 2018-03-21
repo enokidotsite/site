@@ -54,7 +54,7 @@ function chat (state, emit) {
   }
 
   function handleKeyPress (event) {
-    if (event.charCode === 13 && !event.shiftKey) {
+    if ((event.charCode || event.keyCode) === 13 && !event.shiftKey) {
       emit(state.events.CHAT_SEND, state.chat.user)
       event.preventDefault()
     }

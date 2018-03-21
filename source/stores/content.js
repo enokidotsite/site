@@ -7,7 +7,7 @@ function content (state, emitter, app) {
       subtitle: 'An experimental tool for self-publishing\non the peer-to-peer web',
       started: 'Get Started',
       credit: '2018 — Los Angles, Calif.',
-      quote: 'It unfolds as you write it'
+      quote: 'It unfolds as you make it'
     },
     '/features': {
       free: {
