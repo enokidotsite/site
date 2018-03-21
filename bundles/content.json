@@ -1,4 +1,28 @@
 {
+  "/log": {
+    "name": "log",
+    "path": "/content/log",
+    "url": "/log",
+    "files": {},
+    "pages": {
+      "18-03-20-pre-release-livestream": {
+        "name": "18-03-20-pre-release-livestream",
+        "path": "/content/log/18-03-20-pre-release-livestream",
+        "url": "/log/18-03-20-pre-release-livestream",
+        "source": "/content/log/18-03-20-pre-release-livestream"
+      }
+    }
+  },
+  "/todo": {
+    "title": "Todo",
+    "view": "default",
+    "text": "## Homepage\n\n- Add a reference to Peer-to-Peer Web for more information, community, events, etc…\n- Start with basic features, dive into developer features.",
+    "name": "todo",
+    "path": "/content/todo",
+    "url": "/todo",
+    "files": {},
+    "pages": {}
+  },
   "/features": {
     "title": "Features",
     "view": "features",
@@ -8,11 +32,11 @@
     "url": "/features",
     "files": {},
     "pages": {
-      "data": {
-        "name": "data",
-        "path": "/content/features/data",
-        "url": "/features/data",
-        "source": "/content/features/data"
+      "history": {
+        "name": "history",
+        "path": "/content/features/history",
+        "url": "/features/history",
+        "source": "/content/features/history"
       },
       "db": {
         "name": "db",
@@ -20,23 +44,17 @@
         "url": "/features/db",
         "source": "/content/features/db"
       },
-      "extendable": {
-        "name": "extendable",
-        "path": "/content/features/extendable",
-        "url": "/features/extendable",
-        "source": "/content/features/extendable"
-      },
       "free": {
         "name": "free",
         "path": "/content/features/free",
         "url": "/features/free",
         "source": "/content/features/free"
       },
-      "history": {
-        "name": "history",
-        "path": "/content/features/history",
-        "url": "/features/history",
-        "source": "/content/features/history"
+      "extendable": {
+        "name": "extendable",
+        "path": "/content/features/extendable",
+        "url": "/features/extendable",
+        "source": "/content/features/extendable"
       },
       "offline": {
         "name": "offline",
@@ -44,11 +62,11 @@
         "url": "/features/offline",
         "source": "/content/features/offline"
       },
-      "opensource": {
-        "name": "opensource",
-        "path": "/content/features/opensource",
-        "url": "/features/opensource",
-        "source": "/content/features/opensource"
+      "simple": {
+        "name": "simple",
+        "path": "/content/features/simple",
+        "url": "/features/simple",
+        "source": "/content/features/simple"
       },
       "p2p": {
         "name": "p2p",
@@ -56,13 +74,29 @@
         "url": "/features/p2p",
         "source": "/content/features/p2p"
       },
-      "simple": {
-        "name": "simple",
-        "path": "/content/features/simple",
-        "url": "/features/simple",
-        "source": "/content/features/simple"
+      "data": {
+        "name": "data",
+        "path": "/content/features/data",
+        "url": "/features/data",
+        "source": "/content/features/data"
+      },
+      "opensource": {
+        "name": "opensource",
+        "path": "/content/features/opensource",
+        "url": "/features/opensource",
+        "source": "/content/features/opensource"
       }
     }
+  },
+  "/features/history": {
+    "title": "Archival",
+    "view": "feature",
+    "text": "Easily go back in time and revert to previous versions of your site whenever!",
+    "name": "history",
+    "path": "/content/features/history",
+    "url": "/features/history",
+    "files": {},
+    "pages": {}
   },
   "/features/db": {
     "title": "No database",
@@ -84,26 +118,6 @@
     "files": {},
     "pages": {}
   },
-  "/todo": {
-    "title": "Todo",
-    "view": "default",
-    "text": "## Homepage\n\n- Add a reference to Peer-to-Peer Web for more information, community, events, etc…\n- Start with basic features, dive into developer features.",
-    "name": "todo",
-    "path": "/content/todo",
-    "url": "/todo",
-    "files": {},
-    "pages": {}
-  },
-  "/features/data": {
-    "title": "Own your content",
-    "view": "feature",
-    "text": "This is a tool! Your content stays with you, not a greedy platform.",
-    "name": "data",
-    "path": "/content/features/data",
-    "url": "/features/data",
-    "files": {},
-    "pages": {}
-  },
   "/features/extendable": {
     "title": "Extensibile",
     "view": "feature",
@@ -111,26 +125,6 @@
     "name": "extendable",
     "path": "/content/features/extendable",
     "url": "/features/extendable",
-    "files": {},
-    "pages": {}
-  },
-  "/features/history": {
-    "title": "Archival",
-    "view": "feature",
-    "text": "Easily go back in time and revert to previous versions of your site whenever!",
-    "name": "history",
-    "path": "/content/features/history",
-    "url": "/features/history",
-    "files": {},
-    "pages": {}
-  },
-  "/features/opensource": {
-    "title": "Open source",
-    "view": "feature",
-    "text": "Built with open source projects; released as an [open source](https://github.com/jondashkyle/enoki) project.",
-    "name": "opensource",
-    "path": "/content/features/opensource",
-    "url": "/features/opensource",
     "files": {},
     "pages": {}
   },
@@ -143,36 +137,6 @@
     "url": "/features/offline",
     "files": {},
     "pages": {}
-  },
-  "/": {
-    "title": "enoki",
-    "view": "home",
-    "subtitle": "An experimental ~~platform~~ tool \nfor peer-to-peer publishing",
-    "text": "Super wow",
-    "started": "Beta coming soon",
-    "credit": "Thanks [Lunchtype](http://lunchtype.com), [Choo](https://choo.io), [Beaker](https://beakerbrowser.com)",
-    "quote": "It unfolds as you make it",
-    "email": "yo@enoki.site",
-    "location": "2018 — Los Angeles, CA",
-    "creditlink": "http://lunchtype.com",
-    "name": "content",
-    "path": "/content",
-    "url": "/",
-    "files": {},
-    "pages": {
-      "features": {
-        "name": "features",
-        "path": "/content/features",
-        "url": "/features",
-        "source": "/content/features"
-      },
-      "todo": {
-        "name": "todo",
-        "path": "/content/todo",
-        "url": "/todo",
-        "source": "/content/todo"
-      }
-    }
   },
   "/features/simple": {
     "title": "Beginner friendly",
@@ -192,6 +156,85 @@
     "path": "/content/features/p2p",
     "url": "/features/p2p",
     "files": {},
+    "pages": {}
+  },
+  "/features/data": {
+    "title": "Own your content",
+    "view": "feature",
+    "text": "This is a tool! Your content stays with you, not a greedy platform.",
+    "name": "data",
+    "path": "/content/features/data",
+    "url": "/features/data",
+    "files": {},
+    "pages": {}
+  },
+  "/features/opensource": {
+    "title": "Open source",
+    "view": "feature",
+    "text": "Built with open source projects; released as an [open source](https://github.com/jondashkyle/enoki) project.",
+    "name": "opensource",
+    "path": "/content/features/opensource",
+    "url": "/features/opensource",
+    "files": {},
+    "pages": {}
+  },
+  "/": {
+    "title": "enoki",
+    "view": "home",
+    "subtitle": "An experimental ~~platform~~ tool \nfor peer-to-peer publishing",
+    "text": "Super wow",
+    "started": "Beta coming soon",
+    "credit": "Thanks [Lunchtype](http://lunchtype.com), [Choo](https://choo.io), [Beaker](https://beakerbrowser.com)",
+    "quote": "It unfolds as you make it",
+    "email": "yo@enoki.site",
+    "location": "2018 — Los Angeles, CA",
+    "creditlink": "http://lunchtype.com",
+    "name": "content",
+    "path": "/content",
+    "url": "/",
+    "files": {},
+    "pages": {
+      "todo": {
+        "name": "todo",
+        "path": "/content/todo",
+        "url": "/todo",
+        "source": "/content/todo"
+      },
+      "features": {
+        "name": "features",
+        "path": "/content/features",
+        "url": "/features",
+        "source": "/content/features"
+      },
+      "log": {
+        "name": "log",
+        "path": "/content/log",
+        "url": "/log",
+        "source": "/content/log"
+      }
+    }
+  },
+  "/log/18-03-20-pre-release-livestream": {
+    "title": "Panel Pre-Release Livestream",
+    "tags": [
+      "hang"
+    ],
+    "date": "2018/03/20",
+    "text": "hey whats good!",
+    "name": "18-03-20-pre-release-livestream",
+    "path": "/content/log/18-03-20-pre-release-livestream",
+    "url": "/log/18-03-20-pre-release-livestream",
+    "files": {
+      "stream.svg": {
+        "name": "stream",
+        "path": "/content/log/18-03-20-pre-release-livestream/stream.svg",
+        "url": "/log/18-03-20-pre-release-livestream/stream.svg",
+        "source": "dat://16154835f9452d1760ac422435d3e46654362ae7e14c77352216b6a862f912ba/content/log/18-03-20-pre-release-livestream/stream.svg",
+        "extension": ".svg",
+        "filename": "stream.svg",
+        "type": "image"
+      }
+    },
     "pages": {}
   }
 }

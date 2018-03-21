@@ -33,7 +33,7 @@ function chat (state, emit) {
         oninput=${handleInput}
         placeholder="message…"
         class="w100 fs1 ff-sans m0 px1 py0-5 bgc-black fc-white br1-5 lh1-5"
-      />${state.chat.user.message}</textarea>
+      />${raw(state.chat.user.message)}</textarea>
     `
   }
 
@@ -54,7 +54,7 @@ function chat (state, emit) {
   }
 
   function handleKeyPress (event) {
-    if (event.charCode === 13 && !event.shiftKey) {
+    if ((event.charCode || event.keyCode) === 13 && !event.shiftKey) {
       emit(state.events.CHAT_SEND, state.chat.user)
       event.preventDefault()
     }

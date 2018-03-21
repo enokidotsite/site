@@ -1,0 +1,24 @@
+{
+  "title": "Default",
+  "pages": false,
+  "fields": {
+    "title": {
+      "label": "Title",
+      "type": "text"
+    },
+    "tags": {
+      "label": "Tags",
+      "type": "tags",
+      "width": "/1/2"
+    },
+    "date": {
+      "label": "Date",
+      "type": "date",
+      "default": "today"
+    },
+    "text": {
+      "label": "Text",
+      "type": "textarea"
+    }
+  }
+}

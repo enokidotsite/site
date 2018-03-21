@@ -1,0 +1,12 @@
+{
+  "title": "Log",
+  "pages": {
+    "view": "entry"
+  },
+  "fields": {
+    "title": {
+      "label": "Title",
+      "type": "text"
+    }
+  }
+}

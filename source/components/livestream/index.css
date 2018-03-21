@@ -42,11 +42,14 @@
 
 :host .chat-container {
   background: #fff;
+  display: flex;
+  flex-direction: column;
   color: var(--background);
   width: 30rem;
 }
 
 :host .chat {
+  flex: 1;
   height: 100%;
   position: relative; 
 }
@@ -112,6 +115,7 @@
 :host textarea {
   background: #fff;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  white-space: pre-line;
   display: block;
   border-radius: 2rem;
   line-height: 1.8rem;

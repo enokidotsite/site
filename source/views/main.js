@@ -4,11 +4,11 @@ var livestream = require('../components/livestream')
 var Header = require('../components/header')
 var raw = require('choo/html/raw')
 var md = require('nano-markdown')
+var Page = require('enoki/page')
 var html = require('choo/html')
 
 var header = new Header()
 var subscribe = new Subscribe()
-var prerelease = new Prerelease()
 
 var TITLE = 'Enoki'
 
@@ -16,29 +16,26 @@ module.exports = view
 
 function view (state, emit) {
   if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
-  var page = state.content[state.href || '/'] || { }
+  var page = Page(state)
+  var active = state.content[state.href || '/'] || { }
+  var log = page('/log')
+    .children()
+    .sortBy('date', 'desc')
+    .value()
 
   return html`
     <body>
       <nav class="action-bar">
         <div class="button get-started">
-          Request an invite
+          Request an Invite
           ${subscribe.render()}
         </div>
       </nav>
-      ${state.chat.live
-        ? livestream(state, emit)
-        : state.chat.scratch !== 'end'
-          ? prerelease.render({
-            active: state.chat.live !== true
-          })
-          : ''
-      }
       ${header.render({
         active: state.chat.live !== true
       })}
       <section class="subtitle">
-        <h2>${raw(md(page.subtitle || ''))}</h2>
+        <h2>${raw(md(active.subtitle || ''))}</h2>
       </section>
       <section class="features">
         ${renderFeatures({
@@ -46,18 +43,43 @@ function view (state, emit) {
           content: state.content
         })}
       </section>
+      <section class="featured">
+        ${renderLogFeatured(log[0])}
+        ${renderP2pWeb()}
+      </section>
       <footer>
         <div>
-          ${raw(md(page.credit || ''))}
-          <span>${page.quote}</span>
+          ${raw(md(active.credit || ''))}
+          <span>${active.quote}</span>
         </div>
         <div>
-          <span>${page.location}</span>
-          <p><a href="mailto:${page.email}">${page.email}</a></p>
+          <span>${active.location}</span>
+          <p><a href="mailto:${active.email}">${active.email}</a></p>
         </div>
       </footer>
     </body>
   `
+
+  function renderP2pWeb (props) {
+    return html`
+      <div class="p2p-web">
+        <a href="${state.site.p2p ? 'dat://' : 'https://'}peer-to-peer-web.com" target="_blank">
+          <img src="/assets/p2p-web.svg">
+        </a>
+      </div>
+    `
+  }
+
+  function renderLogFeatured (props) {
+    var image = page(props).files().first()
+    return html`
+      <div class="log-featured">
+        <a href="#">
+          <img src="${image.value('source')}">
+        </a>
+      </div>
+    `
+  }
 }
 
 function renderFeatures (props) {
