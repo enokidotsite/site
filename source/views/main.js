@@ -68,7 +68,7 @@ function view (state, emit) {
     return html`
       <div class="log-featured">
         <a href="${props.url}">
-          <img src="${background.value('url')}">
+          <img src="${background.value('path')}">
         </a>
       </div>
     `

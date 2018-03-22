@@ -25,7 +25,7 @@ function view (state, emit) {
         <div class="media-entry-video">
           <div
             class="media-entry-video-thumbnail"
-            style="background-image: url(${thumbnail.value('source')})"
+            style="background-image: url(${thumbnail.value('path')})"
             onclick=${handleClick}
           >${state.site.p2p ? 'PLAY' : ''}</div>
           ${!state.site.p2p ? renderHttp() : ''}
@@ -56,7 +56,7 @@ function view (state, emit) {
     var video = html`
       <div>
         <video
-          poster="${thumbnail.value('source')}"
+          poster="${thumbnail.value('path')}"
           src="${page().value('video')}"
           onclick=${handleVideoClick}
           autoplay
