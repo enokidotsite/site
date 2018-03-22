@@ -1,18 +1,4 @@
 {
-  "/log": {
-    "name": "log",
-    "path": "/content/log",
-    "url": "/log",
-    "files": {},
-    "pages": {
-      "18-03-20-pre-release-livestream": {
-        "name": "18-03-20-pre-release-livestream",
-        "path": "/content/log/18-03-20-pre-release-livestream",
-        "url": "/log/18-03-20-pre-release-livestream",
-        "source": "/content/log/18-03-20-pre-release-livestream"
-      }
-    }
-  },
   "/todo": {
     "title": "Todo",
     "view": "default",
@@ -85,6 +71,21 @@
         "path": "/content/features/opensource",
         "url": "/features/opensource",
         "source": "/content/features/opensource"
+      }
+    }
+  },
+  "/log": {
+    "title": "Log",
+    "name": "log",
+    "path": "/content/log",
+    "url": "/log",
+    "files": {},
+    "pages": {
+      "18-03-20-pre-release-livestream": {
+        "name": "18-03-20-pre-release-livestream",
+        "path": "/content/log/18-03-20-pre-release-livestream",
+        "url": "/log/18-03-20-pre-release-livestream",
+        "source": "/content/log/18-03-20-pre-release-livestream"
       }
     }
   },
@@ -220,11 +221,21 @@
       "hang"
     ],
     "date": "2018/03/20",
+    "video": "dat://35ccbb2ec4ce923d3b5a53178b81d11bfc6ff545259bde161d5e0c8c0783d488/2018-03-20-prerelease-livestream.mp4",
     "text": "hey whats good!",
     "name": "18-03-20-pre-release-livestream",
     "path": "/content/log/18-03-20-pre-release-livestream",
     "url": "/log/18-03-20-pre-release-livestream",
     "files": {
+      "thumbnail.png": {
+        "name": "thumbnail",
+        "path": "/content/log/18-03-20-pre-release-livestream/thumbnail.png",
+        "url": "/log/18-03-20-pre-release-livestream/thumbnail.png",
+        "source": "dat://16154835f9452d1760ac422435d3e46654362ae7e14c77352216b6a862f912ba/content/log/18-03-20-pre-release-livestream/thumbnail.png",
+        "extension": ".png",
+        "filename": "thumbnail.png",
+        "type": "image"
+      },
       "stream.svg": {
         "name": "stream",
         "path": "/content/log/18-03-20-pre-release-livestream/stream.svg",

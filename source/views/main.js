@@ -1,16 +1,18 @@
-var Subscribe = require('../components/subscribe')
-var Prerelease = require('../components/prerelease')
-var livestream = require('../components/livestream')
-var Header = require('../components/header')
 var raw = require('choo/html/raw')
 var md = require('nano-markdown')
 var Page = require('enoki/page')
 var html = require('choo/html')
 
+var Subscribe = require('../components/subscribe')
+var Prerelease = require('../components/prerelease')
+var livestream = require('../components/livestream')
+var Header = require('../components/header')
+var footer = require('../components/footer')
+
 var header = new Header()
 var subscribe = new Subscribe()
 
-var TITLE = 'Enoki'
+var TITLE = 'enoki'
 
 module.exports = view
 
@@ -24,7 +26,7 @@ function view (state, emit) {
     .value()
 
   return html`
-    <body>
+    <div>
       <nav class="action-bar">
         <div class="button get-started">
           Request an Invite
@@ -47,17 +49,8 @@ function view (state, emit) {
         ${renderLogFeatured(log[0])}
         ${renderP2pWeb()}
       </section>
-      <footer>
-        <div>
-          ${raw(md(active.credit || ''))}
-          <span>${active.quote}</span>
-        </div>
-        <div>
-          <span>${active.location}</span>
-          <p><a href="mailto:${active.email}">${active.email}</a></p>
-        </div>
-      </footer>
-    </body>
+      ${footer(state)}
+    </div>
   `
 
   function renderP2pWeb (props) {
@@ -71,11 +64,11 @@ function view (state, emit) {
   }
 
   function renderLogFeatured (props) {
-    var image = page(props).files().first()
+    var background = page(props).file('stream.svg')
     return html`
       <div class="log-featured">
-        <a href="#">
-          <img src="${image.value('source')}">
+        <a href="${props.url}">
+          <img src="${background.value('source')}">
         </a>
       </div>
     `
@@ -88,6 +81,7 @@ function renderFeatures (props) {
     .split('\n')
     .map(feature => feature.replace('- ', ''))
     .map(feature => props.content[props.features.pages[feature].url])
+    
   return html`
     <ul class="features">
       ${features.map(renderFeature)}
