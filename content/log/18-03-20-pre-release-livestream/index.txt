@@ -1,4 +1,4 @@
-title: Panel Pre-Release Livestream
+title: Pre-Release Livestream
 ----
 tags:
   - hang
@@ -8,5 +8,3 @@ date: 2018/03/20
 video: dat://35ccbb2ec4ce923d3b5a53178b81d11bfc6ff545259bde161d5e0c8c0783d488/2018-03-20-prerelease-livestream.mp4
 ----
 text:
-
-hey whats good!
