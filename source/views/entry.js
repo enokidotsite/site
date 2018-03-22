@@ -63,7 +63,7 @@ function view (state, emit) {
         ></video>
         <div class="non-p2p-links">
           <div></div>
-          <span style="cursor: pointer;" onclick=${handleCopyClick}>create a copy</span>
+          <a href="${page().value('video')}" download>download</a>
         </div>
       </div>
     `
