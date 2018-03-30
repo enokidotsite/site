@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "choo": "^6.0.0",
-    "enoki": "^2.0.5",
+    "enoki": "^2.0.7",
     "markdown-it": "^8.4.1",
     "markdown-it-external-links": "0.0.6",
     "nano-markdown": "^1.2.0",
