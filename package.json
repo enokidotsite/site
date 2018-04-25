@@ -1,7 +1,7 @@
 {
   "name": "enoki-site",
-  "version": "2.0.0",
-  "description": "A simple place to start",
+  "version": "2.1.0",
+  "description": "The Enoki website",
   "main": "source/index.js",
   "scripts": {
     "start": "enoki content -w & watchify source/index.js -o bundles/bundle.js -t brfs -t sheetify -p [ css-extract -o bundles/bundle.css ] source/index.js",
@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "choo": "^6.0.0",
-    "enoki": "^2.0.7",
+    "enoki": "^2.1.0",
     "markdown-it": "^8.4.1",
     "markdown-it-external-links": "0.0.6",
     "nano-markdown": "^1.2.0",
