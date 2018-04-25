@@ -2,6 +2,8 @@
 .git
 .dat
 .log
+node_modules
+node_modules/**
 source/node_modules
 source/node_modules/**
 package-lock.json

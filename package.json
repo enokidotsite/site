@@ -2,10 +2,11 @@
   "name": "enoki-site",
   "version": "2.0.0",
   "description": "A simple place to start",
-  "main": "index.js",
+  "main": "source/index.js",
   "scripts": {
-    "start": "watchify index.js -o ../bundles/bundle.js -t brfs -t sheetify -p [ css-extract -o ../bundles/bundle.css ] index.js",
-    "build": "browserify index.js -o ../bundles/bundle.js -t brfs -t yo-yoify -t  [ sheetify -u sheetify-cssnext ] -g es2040 -p [ css-extract -o ../bundles/bundle.css ] -p tinyify"
+    "start": "enoki content -w & watchify source/index.js -o bundles/bundle.js -t brfs -t sheetify -p [ css-extract -o bundles/bundle.css ] source/index.js",
+    "dev": "enoki content --watch & budo source/index.js --dir -s bundles/bundle.js -P -- -t sheetify -p [ css-extract -o bundles/bundle.css ]",
+    "build": "enoki content && browserify source/index.js -o bundles/bundle.js -t brfs -t yo-yoify -t  [ sheetify -u sheetify-cssnext ] -g es2040 -p [ css-extract -o bundles/bundle.css ] -p tinyify"
   },
   "keywords": [],
   "author": "Jon-Kyle <contact@jon-kyle.com> (http://jon-kyle.com)",
